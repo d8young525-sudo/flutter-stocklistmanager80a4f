@@ -33,7 +33,69 @@ class InventoryItem {
     required this.color,
     required this.trim,
     this.price,
+    this.earliestProdDate,
+    this.latestProdDate,
+    this.earliestDelivDate,
+    this.latestDelivDate,
+    this.allocationTotal = 0,
+    this.allocationContract = 0,
+    this.allocationAvailable = 0,
+    this.allocationBlocked = 0,
+    this.allocationWaiting = 0,
+    this.onlineTotal = 0,
+    this.onlineContract = 0,
+    this.onlineAvailable = 0,
+    this.onlineBlocked = 0,
+    this.onlineWaiting = 0,
   });
+
+  // JSON 직렬화
+  Map<String, dynamic> toJson() => {
+    'model': model,
+    'my': my,
+    'color': color,
+    'trim': trim,
+    'price': price,
+    'allocationTotal': allocationTotal,
+    'allocationContract': allocationContract,
+    'allocationAvailable': allocationAvailable,
+    'allocationBlocked': allocationBlocked,
+    'allocationWaiting': allocationWaiting,
+    'onlineTotal': onlineTotal,
+    'onlineContract': onlineContract,
+    'onlineAvailable': onlineAvailable,
+    'onlineBlocked': onlineBlocked,
+    'onlineWaiting': onlineWaiting,
+    'earliestProdDate': earliestProdDate,
+    'latestProdDate': latestProdDate,
+    'earliestDelivDate': earliestDelivDate,
+    'latestDelivDate': latestDelivDate,
+  };
+
+  // JSON 역직렬화
+  factory InventoryItem.fromJson(Map<String, dynamic> json) {
+    return InventoryItem(
+      model: json['model'] as String,
+      my: json['my'] as String,
+      color: json['color'] as String,
+      trim: json['trim'] as String,
+      price: json['price'] as String?,
+      allocationTotal: json['allocationTotal'] as int? ?? 0,
+      allocationContract: json['allocationContract'] as int? ?? 0,
+      allocationAvailable: json['allocationAvailable'] as int? ?? 0,
+      allocationBlocked: json['allocationBlocked'] as int? ?? 0,
+      allocationWaiting: json['allocationWaiting'] as int? ?? 0,
+      onlineTotal: json['onlineTotal'] as int? ?? 0,
+      onlineContract: json['onlineContract'] as int? ?? 0,
+      onlineAvailable: json['onlineAvailable'] as int? ?? 0,
+      onlineBlocked: json['onlineBlocked'] as int? ?? 0,
+      onlineWaiting: json['onlineWaiting'] as int? ?? 0,
+      earliestProdDate: json['earliestProdDate'] as String?,
+      latestProdDate: json['latestProdDate'] as String?,
+      earliestDelivDate: json['earliestDelivDate'] as String?,
+      latestDelivDate: json['latestDelivDate'] as String?,
+    );
+  }
 
   // 고유 키 생성 (모델, 연식, 색상, 트림 조합)
   String get uniqueKey => '$model|$my|$color|$trim';

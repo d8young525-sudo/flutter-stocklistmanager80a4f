@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../services/auth_service.dart';
 import 'signup_screen.dart';
 import 'home_screen.dart';
@@ -47,6 +48,9 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const HomeScreen()),
         );
+        
+        // 패치 노트 표시 (처음 1회만)
+        _showPatchNotesIfNeeded();
       } else {
         // 로그인 실패 - 에러 메시지 표시
         ScaffoldMessenger.of(context).showSnackBar(
@@ -72,6 +76,107 @@ class _LoginScreenState extends State<LoginScreen> {
         });
       }
     }
+  }
+
+  // 패치 노트 표시 (버전별로 1회만)
+  Future<void> _showPatchNotesIfNeeded() async {
+    const currentVersion = 'v3.1';
+    final prefs = await SharedPreferences.getInstance();
+    final lastSeenVersion = prefs.getString('last_seen_patch_version');
+    
+    if (lastSeenVersion != currentVersion) {
+      // 새 버전 패치 노트를 보지 않은 경우에만 표시
+      if (mounted) {
+        await Future.delayed(const Duration(milliseconds: 500)); // 화면 전환 후 표시
+        if (mounted) {
+          _showPatchDialog();
+          await prefs.setString('last_seen_patch_version', currentVersion);
+        }
+      }
+    }
+  }
+
+  void _showPatchDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Row(
+          children: [
+            Icon(Icons.new_releases, color: Colors.orange, size: 28),
+            SizedBox(width: 8),
+            Text('업데이트 공지'),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '버전 3.1 업데이트',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue[700],
+                ),
+              ),
+              const SizedBox(height: 16),
+              _buildPatchItem('✅', '재고 중복 업로드 버그 수정', 
+                '같은 파일을 여러 번 업로드해도 재고 수량이 정확하게 표시됩니다.'),
+              _buildPatchItem('💾', '데이터 자동 저장 기능', 
+                '앱을 종료하고 다시 열어도 업로드한 파일이 자동으로 유지됩니다.'),
+              _buildPatchItem('🔐', '비밀번호 정책 강화', 
+                '회원가입 시 비밀번호를 최소 6글자 이상 입력해야 합니다.'),
+              _buildPatchItem('🔍', '검색 자동완성 개선', 
+                '모델명 검색 시 더 정확한 자동완성 결과를 제공합니다.'),
+              _buildPatchItem('📚', 'Mercedes-Benz 카탈로그 바로가기', 
+                'FAB 메뉴에서 공식 카탈로그로 빠르게 이동할 수 있습니다.'),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('확인', style: TextStyle(fontSize: 16)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPatchItem(String icon, String title, String description) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(icon, style: const TextStyle(fontSize: 20)),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  description,
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   @override

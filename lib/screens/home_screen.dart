@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import 'package:file_picker/file_picker.dart';
 import '../providers/inventory_provider.dart';
@@ -23,11 +24,21 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isFileInfoExpanded = true;
   bool _showDropdown = false;
   List<String> _suggestions = [];
+  bool _isFabMenuOpen = false; // FAB 메뉴 열림 상태
 
   @override
   void initState() {
     super.initState();
     _startSessionValidation();
+    _loadSavedData(); // 저장된 데이터 불러오기
+  }
+
+  // 저장된 데이터 불러오기
+  void _loadSavedData() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final provider = Provider.of<InventoryProvider>(context, listen: false);
+      provider.loadSavedData();
+    });
   }
 
   @override
@@ -164,6 +175,121 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  // 카탈로그 열기 (외부 링크)
+  void _openCatalog() {
+    const url = 'https://www.mercedes-benz.co.kr/passengercars/models/catalog.html';
+    
+    // Web 플랫폼에서 새 탭으로 열기
+    if (kIsWeb) {
+      // ignore: avoid_web_libraries_in_flutter
+      import 'dart:html' as html show window;
+      html.window.open(url, '_blank');
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('카탈로그 페이지를 새 탭에서 엽니다'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    } else {
+      // 모바일에서는 안내 메시지
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text('카탈로그 링크가 복사되었습니다'),
+          action: SnackBarAction(
+            label: '확인',
+            onPressed: () {},
+          ),
+          duration: const Duration(seconds: 4),
+        ),
+      );
+    }
+  }
+
+  // 패치 노트 표시
+  void _showPatchNotes() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Row(
+          children: [
+            Icon(Icons.new_releases, color: Colors.orange, size: 28),
+            SizedBox(width: 8),
+            Text('업데이트 공지'),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '버전 3.1 업데이트',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue[700],
+                ),
+              ),
+              const SizedBox(height: 16),
+              _buildPatchItem('✅', '재고 중복 업로드 버그 수정', 
+                '같은 파일을 여러 번 업로드해도 재고 수량이 정확하게 표시됩니다.'),
+              _buildPatchItem('💾', '데이터 자동 저장 기능', 
+                '앱을 종료하고 다시 열어도 업로드한 파일이 자동으로 유지됩니다.'),
+              _buildPatchItem('🔐', '비밀번호 정책 강화', 
+                '회원가입 시 비밀번호를 최소 6글자 이상 입력해야 합니다.'),
+              _buildPatchItem('🔍', '검색 자동완성 개선', 
+                '모델명 검색 시 더 정확한 자동완성 결과를 제공합니다.'),
+              _buildPatchItem('📚', 'Mercedes-Benz 카탈로그 바로가기', 
+                'FAB 메뉴에서 공식 카탈로그로 빠르게 이동할 수 있습니다.'),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('확인', style: TextStyle(fontSize: 16)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPatchItem(String icon, String title, String description) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(icon, style: const TextStyle(fontSize: 20)),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  description,
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -181,15 +307,70 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: _showFileUploadDialog,
-        backgroundColor: Colors.blue[700],
-        icon: const Icon(Icons.add, size: 28),
-        label: const Text('파일 업로드', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-        elevation: 6,
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          // 공지사항 버튼
+          if (_isFabMenuOpen) ...[
+            FloatingActionButton.extended(
+              heroTag: 'notice',
+              onPressed: () {
+                setState(() => _isFabMenuOpen = false);
+                _showPatchNotes();
+              },
+              backgroundColor: Colors.orange[700],
+              icon: const Icon(Icons.campaign, size: 20),
+              label: const Text('공지사항'),
+            ),
+            const SizedBox(height: 10),
+            // 파일 업로드 버튼
+            FloatingActionButton.extended(
+              heroTag: 'upload',
+              onPressed: () {
+                setState(() => _isFabMenuOpen = false);
+                _showFileUploadDialog();
+              },
+              backgroundColor: Colors.blue[700],
+              icon: const Icon(Icons.upload_file, size: 20),
+              label: const Text('파일 업로드'),
+            ),
+            const SizedBox(height: 10),
+            // 카탈로그 버튼
+            FloatingActionButton.extended(
+              heroTag: 'catalog',
+              onPressed: () {
+                setState(() => _isFabMenuOpen = false);
+                _openCatalog();
+              },
+              backgroundColor: Colors.green[700],
+              icon: const Icon(Icons.menu_book, size: 20),
+              label: const Text('카탈로그'),
+            ),
+            const SizedBox(height: 10),
+          ],
+          // 메인 + 버튼
+          FloatingActionButton(
+            heroTag: 'main',
+            onPressed: () {
+              setState(() => _isFabMenuOpen = !_isFabMenuOpen);
+            },
+            backgroundColor: _isFabMenuOpen ? Colors.grey[600] : Colors.blue[700],
+            child: Icon(_isFabMenuOpen ? Icons.close : Icons.add, size: 28),
+          ),
+        ],
       ),
-      body: SafeArea(
-        child: Column(
+      body: GestureDetector(
+        onTap: () {
+          // FAB 메뉴 열려있으면 닫기
+          if (_isFabMenuOpen) {
+            setState(() => _isFabMenuOpen = false);
+          }
+          // 포커스 해제
+          FocusScope.of(context).unfocus();
+        },
+        child: SafeArea(
+          child: Column(
           children: [
             // 상단 정보 영역
             Consumer<InventoryProvider>(
@@ -538,7 +719,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-    );
+      ), // GestureDetector
+    ); // Scaffold
   }
 }
 

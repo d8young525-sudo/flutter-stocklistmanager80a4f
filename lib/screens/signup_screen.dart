@@ -172,7 +172,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           obscureText: _obscurePassword,
                           decoration: InputDecoration(
                             labelText: '비밀번호',
-                            hintText: '최소 4글자 이상',
+                            hintText: '최소 6글자 이상',
                             prefixIcon: const Icon(Icons.lock_outlined),
                             suffixIcon: IconButton(
                               icon: Icon(
@@ -196,8 +196,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             if (value == null || value.isEmpty) {
                               return '비밀번호를 입력해주세요';
                             }
-                            if (value.length < 4) {
-                              return '비밀번호는 최소 4글자 이상이어야 합니다';
+                            if (value.length < 6) {
+                              return '비밀번호는 최소 6글자 이상이어야 합니다';
                             }
                             return null;
                           },
@@ -304,7 +304,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               ),
                               const SizedBox(height: 8),
                               Text(
-                                '• 비밀번호는 최소 4글자 이상\n'
+                                '• 비밀번호는 최소 6글자 이상\n'
                                 '• 회원가입 후 관리자 승인 필요\n'
                                 '• 승인 후 로그인이 가능합니다',
                                 style: TextStyle(
