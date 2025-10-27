@@ -123,26 +123,29 @@ class AuthService {
       // 새로운 세션 토큰 생성 (타임스탬프)
       String sessionToken = DateTime.now().millisecondsSinceEpoch.toString();
       
+      // ignore: avoid_print
+      print('🔐 [로그인] 세션 토큰 생성: ${sessionToken.substring(0, 10)}...');
+      // ignore: avoid_print
+      print('🔐 [로그인] UID: ${uid.substring(0, 8)}...');
+      
       // SharedPreferences에 저장
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setString('session_token_$uid', sessionToken);
+      // ignore: avoid_print
+      print('✅ [로그인] 로컬 저장 완료');
       
       // Firestore에 저장 (기존 세션 자동 덮어쓰기)
       await _firestore.collection('users').doc(uid).update({
         'sessionToken': sessionToken,
         'lastLoginAt': FieldValue.serverTimestamp(),
       });
+      // ignore: avoid_print
+      print('✅ [로그인] Firestore 업데이트 완료');
 
       // 🔥 SessionService 업데이트 (다중 세션 방지용)
       await SessionService().updateSession(sessionToken);
-
-      if (kDebugMode) {
-        debugPrint('✅ AuthService: 세션 토큰 생성 완료');
-        debugPrint('   UID: $uid');
-        debugPrint('   세션 토큰: $sessionToken');
-      }
       // ignore: avoid_print
-      print('✅ 로그인 성공! 세션 토큰: ${sessionToken.substring(0, 10)}...');
+      print('✅ [로그인] SessionService 업데이트 완료');
 
       return {
         'success': true,

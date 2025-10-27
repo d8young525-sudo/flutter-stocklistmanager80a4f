@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SessionService {
   static final SessionService _instance = SessionService._internal();
@@ -41,6 +42,16 @@ class SessionService {
       // ignore: avoid_print
       print('🔍 [세션검증] 시작 - UID: ${user.uid.substring(0, 8)}...');
 
+      // 🔥 로컬 세션 ID가 null이면 SharedPreferences에서 복원
+      if (_currentSessionId == null) {
+        final prefs = await SharedPreferences.getInstance();
+        _currentSessionId = prefs.getString('local_session_id');
+        if (_currentSessionId != null) {
+          // ignore: avoid_print
+          print('💾 [세션검증] 로컬 저장소에서 복원: ${_currentSessionId!.substring(0, 10)}...');
+        }
+      }
+
       // Firestore users 컬렉션에서 sessionToken 조회
       final userDoc = await FirebaseFirestore.instance
           .collection('users')
@@ -73,6 +84,9 @@ class SessionService {
       // 첫 검증 시 현재 세션 ID 저장
       if (_currentSessionId == null) {
         _currentSessionId = serverSessionToken;
+        // 🔥 SharedPreferences에도 저장 (새로고침 대비)
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('local_session_id', serverSessionToken);
         // ignore: avoid_print
         print('✅ [세션검증] 현재 세션 저장: ${serverSessionToken.substring(0, 10)}...');
         return;
@@ -105,6 +119,11 @@ class SessionService {
   /// 세션 ID 업데이트 (로그인 시 호출)
   Future<void> updateSession(String sessionToken) async {
     _currentSessionId = sessionToken;
+    
+    // 🔥 SharedPreferences에도 저장 (새로고침 대비)
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('local_session_id', sessionToken);
+    
     // ignore: avoid_print
     print('✅ [세션] 로컬 세션 ID 업데이트: ${sessionToken.substring(0, 10)}...');
   }
@@ -113,8 +132,12 @@ class SessionService {
   Future<void> clearSession() async {
     stopValidation();
     _currentSessionId = null;
-    if (kDebugMode) {
-      print('✅ SessionService: 로컬 세션 삭제 완료');
-    }
+    
+    // 🔥 SharedPreferences에서도 삭제
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('local_session_id');
+    
+    // ignore: avoid_print
+    print('✅ [세션] 로컬 세션 삭제 완료');
   }
 }
