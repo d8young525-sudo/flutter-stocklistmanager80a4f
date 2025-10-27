@@ -118,7 +118,33 @@ class ExcelService {
     Uint8List bytes,
     Map<String, InventoryItem> existingItems,
   ) async {
-    Map<String, InventoryItem> items = Map.from(existingItems);
+    // ✅ 재고 데이터 초기화 (중복 카운팅 방지)
+    // 기존 아이템의 입항일정/가격 정보는 유지하되, 재고 카운터는 0으로 리셋
+    Map<String, InventoryItem> items = {};
+    for (var entry in existingItems.entries) {
+      var oldItem = entry.value;
+      items[entry.key] = InventoryItem(
+        model: oldItem.model,
+        my: oldItem.my,
+        color: oldItem.color,
+        trim: oldItem.trim,
+        productionDate: oldItem.productionDate,
+        deliveryDate: oldItem.deliveryDate,
+        vehiclePrice: oldItem.vehiclePrice,
+        optionPrice: oldItem.optionPrice,
+        // 재고 카운터는 0으로 초기화 (새 파일에서 다시 계산)
+        allocationTotal: 0,
+        allocationContract: 0,
+        allocationBlocked: 0,
+        allocationWaiting: 0,
+        allocationAvailable: 0,
+        onlineTotal: 0,
+        onlineContract: 0,
+        onlineBlocked: 0,
+        onlineWaiting: 0,
+        onlineAvailable: 0,
+      );
+    }
     
     try {
       var decoder = SpreadsheetDecoder.decodeBytes(bytes);
