@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => InventoryProvider()),
       ],
       child: MaterialApp(
-        title: '🔥BUILD-TEST-999🔥',
+        title: '✅ 드롭다운 수정완료 v2.0',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
