@@ -412,29 +412,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
   ),
 );
-
-                                          child: Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                              horizontal: 16.0,
-                                              vertical: 12.0,
-                                            ),
-                                            child: Row(
-                                              children: [
-                                                const Icon(Icons.search, size: 20, color: Colors.grey),
-                                                const SizedBox(width: 12),
-                                                Expanded(
-                                                child: Text(
-                                                  suggestion,
-                                                  style: const TextStyle(
-                                                    fontSize: 14,
-                                                    color: Colors.black87,
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      );
                                     },
                                   ),
                                 ),
