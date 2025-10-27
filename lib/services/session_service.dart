@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 class SessionService {
   static final SessionService _instance = SessionService._internal();
@@ -128,14 +129,4 @@ class SessionService {
       }
     }
   }
-}
-
-// Debug mode check (Flutter Foundation에서 제공)
-bool get kDebugMode {
-  bool debugMode = false;
-  assert(() {
-    debugMode = true;
-    return true;
-  }());
-  return debugMode;
 }
