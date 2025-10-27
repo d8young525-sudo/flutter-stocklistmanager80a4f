@@ -369,49 +369,29 @@ class _HomeScreenState extends State<HomeScreen> {
                                     itemCount: _suggestions.length,
                                     itemBuilder: (context, index) {
                                       final suggestion = _suggestions[index];
-                                   return InkWell(
+                                 return ListTile(
+  leading: const Icon(Icons.search, size: 20, color: Colors.grey),
+  title: Text(
+    suggestion,
+    style: const TextStyle(fontSize: 14, color: Colors.black87),
+  ),
   onTap: () {
-    print('🔥 드롭다운 클릭: $suggestion'); // 디버그용
-    
-    // TextField 업데이트
+    // 1. 검색창에 텍스트 설정
     _searchController.text = suggestion;
     
-    // Provider 업데이트 (필터링 실행)
+    // 2. Provider에 검색어 설정 (핵심!)
     provider.setSearchQuery(suggestion);
     
-    print('✅ 검색어 설정됨: ${provider.searchQuery}'); // 디버그용
-    print('✅ 필터링된 아이템 수: ${provider.filteredItems.length}'); // 디버그용
-    
-    // UI 업데이트
+    // 3. 드롭다운 닫기
     setState(() {
       _showDropdown = false;
     });
     
-    // 키보드 닫기
+    // 4. 키보드 닫기
     _searchFocusNode.unfocus();
   },
-  child: Padding(
-    padding: const EdgeInsets.symmetric(
-      horizontal: 16.0,
-      vertical: 12.0,
-    ),
-    child: Row(
-      children: [
-        const Icon(Icons.search, size: 20, color: Colors.grey),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Text(
-            suggestion,
-            style: const TextStyle(
-              fontSize: 14,
-              color: Colors.black87,
-            ),
-          ),
-        ),
-      ],
-    ),
-  ),
 );
+
                                     },
                                   ),
                                 ),
