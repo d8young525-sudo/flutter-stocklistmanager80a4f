@@ -27,40 +27,57 @@ class SessionService {
     _sessionTimer = null;
   }
 
-  /// Firebase에서 세션 검증
+  /// Firebase에서 세션 검증 (users 컬렉션의 sessionToken 사용)
   Future<void> _validateSession() async {
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) {
-        // 사용자가 로그아웃된 경우
+        if (kDebugMode) print('⚠️ 사용자 로그아웃 상태, 검증 중지');
         stopValidation();
         return;
       }
 
-      // Firestore에서 사용자 세션 정보 조회
-      final sessionDoc = await FirebaseFirestore.instance
-          .collection('sessions')
+      if (kDebugMode) print('🔍 세션 검증 중... UID: ${user.uid}');
+
+      // Firestore users 컬렉션에서 sessionToken 조회
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
           .doc(user.uid)
           .get();
 
-      if (!sessionDoc.exists) {
-        // 세션 정보가 없는 경우 (최초 로그인 또는 세션 만료)
+      if (!userDoc.exists) {
+        if (kDebugMode) print('⚠️ 사용자 문서 없음');
+        stopValidation();
+        onSessionInvalidated?.call();
         return;
       }
 
-      final sessionData = sessionDoc.data();
-      if (sessionData == null) return;
+      final userData = userDoc.data();
+      if (userData == null) {
+        if (kDebugMode) print('⚠️ 사용자 데이터 없음');
+        return;
+      }
 
-      final String? firestoreSessionId = sessionData['sessionId'];
-      final Timestamp? lastActive = sessionData['lastActive'];
+      final String? serverSessionToken = userData['sessionToken'];
+      
+      if (serverSessionToken == null) {
+        if (kDebugMode) print('⚠️ 서버 세션 토큰 없음');
+        return;
+      }
 
       // 첫 검증 시 현재 세션 ID 저장
-      _currentSessionId ??= firestoreSessionId;
+      if (_currentSessionId == null) {
+        _currentSessionId = serverSessionToken;
+        if (kDebugMode) print('✅ 현재 세션 ID 저장: ${serverSessionToken.substring(0, 10)}...');
+        return;
+      }
 
-      // 세션 ID가 변경되었는지 확인 (다른 기기에서 로그인)
-      if (firestoreSessionId != _currentSessionId) {
+      // 세션 토큰이 변경되었는지 확인 (다른 기기에서 로그인)
+      if (serverSessionToken != _currentSessionId) {
         if (kDebugMode) {
-          print('🚨 다른 기기 로그인 감지! 세션 무효화');
+          print('🚨 다른 기기 로그인 감지!');
+          print('   로컬 세션: ${_currentSessionId!.substring(0, 10)}...');
+          print('   서버 세션: ${serverSessionToken.substring(0, 10)}...');
         }
         
         // 세션 무효 콜백 실행
@@ -69,22 +86,8 @@ class SessionService {
         return;
       }
 
-      // 세션이 너무 오래된 경우 (30분 이상)
-      if (lastActive != null) {
-        final lastActiveTime = lastActive.toDate();
-        final now = DateTime.now();
-        final difference = now.difference(lastActiveTime);
-
-        if (difference.inMinutes > 30) {
-          if (kDebugMode) {
-            print('⏰ 세션 만료 (30분 이상 비활성)');
-          }
-          
-          stopValidation();
-          onSessionInvalidated?.call();
-          return;
-        }
-      }
+      if (kDebugMode) print('✅ 세션 검증 통과');
+      
     } catch (e) {
       if (kDebugMode) {
         print('❌ 세션 검증 오류: $e');
@@ -93,23 +96,11 @@ class SessionService {
   }
 
   /// 세션 ID 업데이트 (로그인 시 호출)
-  Future<void> updateSession(String sessionId) async {
-    _currentSessionId = sessionId;
-    
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return;
-
-    try {
-      await FirebaseFirestore.instance.collection('sessions').doc(user.uid).set({
-        'sessionId': sessionId,
-        'lastActive': FieldValue.serverTimestamp(),
-        'userId': user.uid,
-        'email': user.email,
-      });
-    } catch (e) {
-      if (kDebugMode) {
-        print('❌ 세션 업데이트 오류: $e');
-      }
+  Future<void> updateSession(String sessionToken) async {
+    _currentSessionId = sessionToken;
+    if (kDebugMode) {
+      print('✅ SessionService: 로컬 세션 ID 업데이트');
+      print('   세션 토큰: ${sessionToken.substring(0, 10)}...');
     }
   }
 
@@ -117,16 +108,8 @@ class SessionService {
   Future<void> clearSession() async {
     stopValidation();
     _currentSessionId = null;
-
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return;
-
-    try {
-      await FirebaseFirestore.instance.collection('sessions').doc(user.uid).delete();
-    } catch (e) {
-      if (kDebugMode) {
-        print('❌ 세션 삭제 오류: $e');
-      }
+    if (kDebugMode) {
+      print('✅ SessionService: 로컬 세션 삭제 완료');
     }
   }
 }
