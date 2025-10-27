@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart';
+import 'session_service.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -132,6 +133,9 @@ class AuthService {
         'lastLoginAt': FieldValue.serverTimestamp(),
       });
 
+      // 🔥 SessionService 업데이트 (다중 세션 방지용)
+      await SessionService().updateSession(sessionToken);
+
       if (kDebugMode) {
         debugPrint('✅ AuthService: 세션 토큰 생성 완료');
         debugPrint('   UID: $uid');
@@ -196,6 +200,9 @@ class AuthService {
       // 로컬 세션 토큰만 삭제
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.remove('session_token_$uid');
+      
+      // 🔥 SessionService 세션 삭제
+      await SessionService().clearSession();
       
       // Firebase Auth 로그아웃
       await _auth.signOut();
