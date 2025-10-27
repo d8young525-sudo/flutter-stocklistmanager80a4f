@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "407357129583",
+    "project_id": "stocklistmanager-80a4f",
+    "storage_bucket": "stocklistmanager-80a4f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407357129583:android:d2336557e62bfd26729e9a",
+        "android_client_info": {
+          "package_name": "com.example.stocklistmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHrEq_bBDe902iRX_qXqMfQd-UgpqnGPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
