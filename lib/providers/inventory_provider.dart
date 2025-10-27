@@ -23,14 +23,25 @@ class InventoryProvider with ChangeNotifier {
   bool get showOnlyAvailable => _showOnlyAvailable;
   String get searchQuery => _searchQuery;
 
-  // 필터링된 아이템 목록
+  // 필터링된 아이템 목록 (개선된 검색 로직)
   List<InventoryItem> get filteredItems {
     List<InventoryItem> filtered = _items.values.toList();
 
-    // 검색어 필터
+    // 검색어 필터 (개선: 모델명, 연식, 색상, 트림 모두 검색)
     if (_searchQuery.isNotEmpty) {
+      final query = _searchQuery.trim().toLowerCase();
+      
       filtered = filtered.where((item) {
-        return item.model.toLowerCase().contains(_searchQuery.toLowerCase());
+        final model = item.model.toLowerCase();
+        final my = item.my.toLowerCase();
+        final color = item.color.toLowerCase();
+        final trim = item.trim.toLowerCase();
+        
+        // 모델명, 연식, 색상, 트림 중 하나라도 일치하면 포함
+        return model.contains(query) || 
+               my.contains(query) || 
+               color.contains(query) || 
+               trim.contains(query);
       }).toList();
     }
 
@@ -90,10 +101,17 @@ class InventoryProvider with ChangeNotifier {
     }
   }
 
-  // 검색어 설정
+  // 검색어 설정 (디버깅 로그 추가)
   void setSearchQuery(String query) {
     _searchQuery = query;
+    if (kDebugMode) {
+      print('🔍 검색어 설정: "$query"');
+      print('📊 전체 아이템: ${_items.length}개');
+    }
     notifyListeners();
+    if (kDebugMode) {
+      print('✅ 필터링 결과: ${filteredItems.length}개');
+    }
   }
 
   // 현재미계약 필터 토글

@@ -94,23 +94,34 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
-  /// 자동완성 옵션 생성
+  /// 자동완성 옵션 생성 (개선된 버전)
   List<String> _getAutocompleteSuggestions(TextEditingValue textEditingValue, InventoryProvider provider) {
-    final query = textEditingValue.text.toLowerCase();
+    final query = textEditingValue.text.trim().toLowerCase();
     if (query.isEmpty) return [];
     
-    // 모든 고유한 모델명 추출
-    final allModels = provider.items.values.map((item) => item.model).toSet().toList();
+    // 모든 고유한 모델명 추출 (Set으로 중복 제거)
+    final allModels = provider.items.values
+        .map((item) => item.model)
+        .toSet()
+        .toList();
     
-    // 검색어로 시작하는 모델명 우선, 포함하는 모델명 나중에
-    final startsWith = allModels.where((model) => model.toLowerCase().startsWith(query)).toList();
-    final contains = allModels.where((model) => 
-      !model.toLowerCase().startsWith(query) && model.toLowerCase().contains(query)
-    ).toList();
+    // 검색어로 시작하는 모델명 우선
+    final startsWith = allModels
+        .where((model) => model.toLowerCase().startsWith(query))
+        .toList();
     
-    return [...startsWith, ...contains].take(5).toList();
+    // 검색어를 포함하는 모델명 (시작하는 것 제외)
+    final contains = allModels
+        .where((model) => 
+          !model.toLowerCase().startsWith(query) && 
+          model.toLowerCase().contains(query)
+        )
+        .toList();
+    
+    // 최대 10개까지 표시
+    return [...startsWith, ...contains].take(10).toList();
   }
+
 
   Future<void> _handleLogout() async {
     try {
@@ -369,28 +380,37 @@ class _HomeScreenState extends State<HomeScreen> {
                                     itemCount: _suggestions.length,
                                     itemBuilder: (context, index) {
                                       final suggestion = _suggestions[index];
-                                 return ListTile(
-  leading: const Icon(Icons.search, size: 20, color: Colors.grey),
-  title: Text(
-    suggestion,
-    style: const TextStyle(fontSize: 14, color: Colors.black87),
-  ),
-  onTap: () {
-    // 1. 검색창에 텍스트 설정
-    _searchController.text = suggestion;
-    
-    // 2. Provider에 검색어 설정 (핵심!)
-    provider.setSearchQuery(suggestion);
-    
-    // 3. 드롭다운 닫기
-    setState(() {
-      _showDropdown = false;
-    });
-    
-    // 4. 키보드 닫기
-    _searchFocusNode.unfocus();
-  },
-);
+                                                                      return ListTile(
+                                        leading: const Icon(Icons.search, size: 20, color: Colors.grey),
+                                        title: Text(
+                                          suggestion,
+                                          style: const TextStyle(fontSize: 14, color: Colors.black87),
+                                        ),
+                                        onTap: () {
+                                          if (kDebugMode) {
+                                            debugPrint('👆 드롭다운 선택: $suggestion');
+                                          }
+                                          
+                                          // 1. 검색창에 텍스트 설정
+                                          _searchController.text = suggestion;
+                                          
+                                          // 2. 드롭다운 닫기 (setState 안에서 실행)
+                                          setState(() {
+                                            _showDropdown = false;
+                                          });
+                                          
+                                          // 3. Provider에 검색어 설정 (핵심! setState 밖에서 실행)
+                                          provider.setSearchQuery(suggestion);
+                                          
+                                          // 4. 키보드 닫기
+                                          _searchFocusNode.unfocus();
+                                          
+                                          if (kDebugMode) {
+                                            debugPrint('✅ 필터링 결과: ${provider.filteredItems.length}개');
+                                          }
+                                        },
+                                      );
+
 
                                     },
                                   ),
