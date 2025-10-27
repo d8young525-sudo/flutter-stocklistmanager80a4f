@@ -8,6 +8,8 @@ import '../services/auth_service.dart';
 import '../services/session_service.dart';
 import '../widgets/inventory_card.dart';
 import 'login_screen.dart';
+// Web용 import (조건부)
+import 'dart:html' as html show window;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -181,8 +183,6 @@ class _HomeScreenState extends State<HomeScreen> {
     
     // Web 플랫폼에서 새 탭으로 열기
     if (kIsWeb) {
-      // ignore: avoid_web_libraries_in_flutter
-      import 'dart:html' as html show window;
       html.window.open(url, '_blank');
       
       ScaffoldMessenger.of(context).showSnackBar(

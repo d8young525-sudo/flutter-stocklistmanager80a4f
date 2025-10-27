@@ -19,11 +19,11 @@ class AuthService {
     required String password,
   }) async {
     try {
-      // 비밀번호 길이 검증 (최소 4글자)
-      if (password.length < 4) {
+      // 비밀번호 길이 검증 (최소 6글자 - Firebase 정책)
+      if (password.length < 6) {
         return {
           'success': false,
-          'message': '비밀번호는 최소 4글자 이상이어야 합니다.',
+          'message': '비밀번호는 최소 6글자 이상이어야 합니다.',
         };
       }
 
@@ -65,7 +65,7 @@ class AuthService {
           message = '올바른 이메일 형식이 아닙니다.';
           break;
         case 'weak-password':
-          message = '비밀번호가 너무 약합니다.';
+          message = '비밀번호가 너무 약합니다. 최소 6글자 이상 입력해주세요.';
           break;
         default:
           message = '회원가입 중 오류가 발생했습니다: ${e.message}';
