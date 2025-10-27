@@ -224,7 +224,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.1 업데이트',
+                '버전 3.2 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -232,16 +232,58 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
+              _buildPatchItem('📚', 'FAB 메뉴 추가', 
+                '우측 하단 + 버튼으로 공지사항, 카탈로그, 파일업로드 기능에 빠르게 접근할 수 있습니다.'),
+              _buildPatchItem('💾', '데이터 안정성 향상', 
+                '앱을 종료하고 다시 열어도 업로드한 파일이 자동으로 유지됩니다.'),
               _buildPatchItem('✅', '재고 중복 업로드 버그 수정', 
                 '같은 파일을 여러 번 업로드해도 재고 수량이 정확하게 표시됩니다.'),
-              _buildPatchItem('💾', '데이터 자동 저장 기능', 
-                '앱을 종료하고 다시 열어도 업로드한 파일이 자동으로 유지됩니다.'),
-              _buildPatchItem('🔐', '비밀번호 정책 강화', 
-                '회원가입 시 비밀번호를 최소 6글자 이상 입력해야 합니다.'),
-              _buildPatchItem('🔍', '검색 자동완성 개선', 
-                '모델명 검색 시 더 정확한 자동완성 결과를 제공합니다.'),
-              _buildPatchItem('📚', 'Mercedes-Benz 카탈로그 바로가기', 
+              _buildPatchItem('🌐', 'Mercedes-Benz 카탈로그 메뉴', 
                 'FAB 메뉴에서 공식 카탈로그로 빠르게 이동할 수 있습니다.'),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.blue[50],
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.blue[200]!),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.contact_support, size: 20, color: Colors.blue[700]),
+                        const SizedBox(width: 8),
+                        Text(
+                          '문의 및 제안',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue[700],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      '카카오톡: dalgr88',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.grey[800],
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      '이메일: kimu0288@gmail.com',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.grey[800],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
@@ -324,18 +366,6 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('공지사항'),
             ),
             const SizedBox(height: 10),
-            // 파일 업로드 버튼
-            FloatingActionButton.extended(
-              heroTag: 'upload',
-              onPressed: () {
-                setState(() => _isFabMenuOpen = false);
-                _showFileUploadDialog();
-              },
-              backgroundColor: Colors.blue[700],
-              icon: const Icon(Icons.upload_file, size: 20),
-              label: const Text('파일 업로드'),
-            ),
-            const SizedBox(height: 10),
             // 카탈로그 버튼
             FloatingActionButton.extended(
               heroTag: 'catalog',
@@ -346,6 +376,18 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: Colors.green[700],
               icon: const Icon(Icons.menu_book, size: 20),
               label: const Text('카탈로그'),
+            ),
+            const SizedBox(height: 10),
+            // 파일 업로드 버튼
+            FloatingActionButton.extended(
+              heroTag: 'upload',
+              onPressed: () {
+                setState(() => _isFabMenuOpen = false);
+                _showFileUploadDialog();
+              },
+              backgroundColor: Colors.blue[700],
+              icon: const Icon(Icons.upload_file, size: 20),
+              label: const Text('파일 업로드'),
             ),
             const SizedBox(height: 10),
           ],
