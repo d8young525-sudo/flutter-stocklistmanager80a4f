@@ -94,16 +94,27 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-  /// 자동완성 옵션 생성 (개선된 버전)
+  /// 자동완성 옵션 생성 (디버깅 강화 버전)
   List<String> _getAutocompleteSuggestions(TextEditingValue textEditingValue, InventoryProvider provider) {
     final query = textEditingValue.text.trim().toLowerCase();
-    if (query.isEmpty) return [];
+    
+    // 디버깅: 검색어 확인
+    debugPrint('🔍 자동완성 검색어: "$query"');
+    
+    if (query.isEmpty) {
+      debugPrint('❌ 검색어 비어있음');
+      return [];
+    }
     
     // 모든 고유한 모델명 추출 (Set으로 중복 제거)
     final allModels = provider.items.values
         .map((item) => item.model)
         .toSet()
         .toList();
+    
+    // 디버깅: 전체 모델 개수
+    debugPrint('📊 전체 모델 개수: ${allModels.length}개');
+    debugPrint('📋 모델 리스트: ${allModels.take(5).join(", ")}...');
     
     // 검색어로 시작하는 모델명 우선
     final startsWith = allModels
@@ -118,8 +129,13 @@ class _HomeScreenState extends State<HomeScreen> {
         )
         .toList();
     
-    // 최대 10개까지 표시
-    return [...startsWith, ...contains].take(10).toList();
+    final result = [...startsWith, ...contains].take(10).toList();
+    
+    // 디버깅: 자동완성 결과
+    debugPrint('✅ 자동완성 결과: ${result.length}개');
+    debugPrint('📝 결과 리스트: ${result.join(", ")}');
+    
+    return result;
   }
 
 
@@ -300,26 +316,36 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       const SizedBox(height: 12),
 
-                      // 검색 바 - 단순 TextField + 수동 드롭다운
-                      Stack(
-                        children: [
-                          TextField(
-                            controller: _searchController,
-                            focusNode: _searchFocusNode,
+                      // 검색 바 - Autocomplete 위젯 사용 (공식 위젯)
+                      Autocomplete<String>(
+                        optionsBuilder: (TextEditingValue textEditingValue) {
+                          return _getAutocompleteSuggestions(textEditingValue, provider);
+                        },
+                        onSelected: (String selection) {
+                          debugPrint('👆 자동완성 선택: $selection');
+                          provider.setSearchQuery(selection);
+                          _searchFocusNode.unfocus();
+                        },
+                        fieldViewBuilder: (BuildContext context,
+                            TextEditingController fieldTextEditingController,
+                            FocusNode fieldFocusNode,
+                            VoidCallback onFieldSubmitted) {
+                          
+                          return TextField(
+                            controller: fieldTextEditingController,
+                            focusNode: fieldFocusNode,
                             style: const TextStyle(color: Colors.white),
                             decoration: InputDecoration(
                               hintText: '모델명으로 검색...',
                               hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.6)),
                               prefixIcon: const Icon(Icons.search, color: Colors.white70),
-                              suffixIcon: _searchController.text.isNotEmpty
+                              suffixIcon: fieldTextEditingController.text.isNotEmpty
                                   ? IconButton(
                                       icon: const Icon(Icons.clear, color: Colors.white70),
                                       onPressed: () {
-                                        setState(() {
-                                          _searchController.clear();
-                                          provider.setSearchQuery('');
-                                          _showDropdown = false;
-                                        });
+                                        fieldTextEditingController.clear();
+                                        provider.setSearchQuery('');
+                                        setState(() {});
                                       },
                                     )
                                   : null,
@@ -335,89 +361,48 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             onChanged: (value) {
-                              setState(() {
-                                provider.setSearchQuery(value);
-                                if (value.isNotEmpty) {
-                                  _suggestions = _getAutocompleteSuggestions(
-                                    TextEditingValue(text: value),
-                                    provider,
-                                  );
-                                  _showDropdown = _suggestions.isNotEmpty;
-                                } else {
-                                  _showDropdown = false;
-                                }
-                              });
+                              provider.setSearchQuery(value);
+                              setState(() {});
                             },
-                            onTap: () {
-                              if (_searchController.text.isNotEmpty) {
-                                setState(() {
-                                  _suggestions = _getAutocompleteSuggestions(
-                                    TextEditingValue(text: _searchController.text),
-                                    provider,
-                                  );
-                                  _showDropdown = _suggestions.isNotEmpty;
-                                });
-                              }
-                            },
-                          ),
-                          if (_showDropdown && _suggestions.isNotEmpty)
-                            Positioned(
-                              top: 56,
-                              left: 0,
-                              right: 0,
-                              child: Material(
-                                elevation: 8.0,
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Container(
-                                  constraints: const BoxConstraints(maxHeight: 200),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                  child: ListView.builder(
-                                    padding: EdgeInsets.zero,
-                                    shrinkWrap: true,
-                                    itemCount: _suggestions.length,
-                                    itemBuilder: (context, index) {
-                                      final suggestion = _suggestions[index];
-                                                                      return ListTile(
-                                        leading: const Icon(Icons.search, size: 20, color: Colors.grey),
-                                        title: Text(
-                                          suggestion,
-                                          style: const TextStyle(fontSize: 14, color: Colors.black87),
-                                        ),
-                                        onTap: () {
-                                          if (kDebugMode) {
-                                            debugPrint('👆 드롭다운 선택: $suggestion');
-                                          }
-                                          
-                                          // 1. 검색창에 텍스트 설정
-                                          _searchController.text = suggestion;
-                                          
-                                          // 2. 드롭다운 닫기 (setState 안에서 실행)
-                                          setState(() {
-                                            _showDropdown = false;
-                                          });
-                                          
-                                          // 3. Provider에 검색어 설정 (핵심! setState 밖에서 실행)
-                                          provider.setSearchQuery(suggestion);
-                                          
-                                          // 4. 키보드 닫기
-                                          _searchFocusNode.unfocus();
-                                          
-                                          if (kDebugMode) {
-                                            debugPrint('✅ 필터링 결과: ${provider.filteredItems.length}개');
-                                          }
-                                        },
-                                      );
-
-
-                                    },
-                                  ),
+                          );
+                        },
+                        optionsViewBuilder: (BuildContext context,
+                            AutocompleteOnSelected<String> onSelected,
+                            Iterable<String> options) {
+                          return Align(
+                            alignment: Alignment.topLeft,
+                            child: Material(
+                              elevation: 8.0,
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width - 32,
+                                constraints: const BoxConstraints(maxHeight: 250),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                                child: ListView.builder(
+                                  padding: EdgeInsets.zero,
+                                  shrinkWrap: true,
+                                  itemCount: options.length,
+                                  itemBuilder: (context, index) {
+                                    final suggestion = options.elementAt(index);
+                                    return ListTile(
+                                      leading: const Icon(Icons.search, size: 20, color: Colors.grey),
+                                      title: Text(
+                                        suggestion,
+                                        style: const TextStyle(fontSize: 14, color: Colors.black87),
+                                      ),
+                                      onTap: () {
+                                        onSelected(suggestion);
+                                      },
+                                    );
+                                  },
                                 ),
                               ),
                             ),
-                        ],
+                          );
+                        },
                       ),
                       const SizedBox(height: 12),
 
