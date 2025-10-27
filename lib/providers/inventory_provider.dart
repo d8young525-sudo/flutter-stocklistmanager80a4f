@@ -22,26 +22,16 @@ class InventoryProvider with ChangeNotifier {
   String? get priceFileName => _priceFileName;
   bool get showOnlyAvailable => _showOnlyAvailable;
   String get searchQuery => _searchQuery;
-
-  // 필터링된 아이템 목록 (개선된 검색 로직)
+  // 필터링된 아이템 목록 (모델명 검색만)
   List<InventoryItem> get filteredItems {
     List<InventoryItem> filtered = _items.values.toList();
 
-    // 검색어 필터 (개선: 모델명, 연식, 색상, 트림 모두 검색)
+    // 검색어 필터 (모델명만 검색)
     if (_searchQuery.isNotEmpty) {
       final query = _searchQuery.trim().toLowerCase();
       
       filtered = filtered.where((item) {
-        final model = item.model.toLowerCase();
-        final my = item.my.toLowerCase();
-        final color = item.color.toLowerCase();
-        final trim = item.trim.toLowerCase();
-        
-        // 모델명, 연식, 색상, 트림 중 하나라도 일치하면 포함
-        return model.contains(query) || 
-               my.contains(query) || 
-               color.contains(query) || 
-               trim.contains(query);
+        return item.model.toLowerCase().contains(query);
       }).toList();
     }
 
@@ -57,6 +47,7 @@ class InventoryProvider with ChangeNotifier {
 
     return filtered;
   }
+
 
   // 모델명 자동완성 목록
   List<String> get modelNames {
