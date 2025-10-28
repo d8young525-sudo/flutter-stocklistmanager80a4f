@@ -155,6 +155,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _handleLogout() async {
     try {
+      // 로그아웃 전에 현재 사용자 재고 데이터 초기화
+      final provider = Provider.of<InventoryProvider>(context, listen: false);
+      provider.clearAllData();
+      
       await _authService.signOut();
       if (!mounted) return;
       Navigator.of(context).pushReplacement(
@@ -907,8 +911,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           
-                          // 검색 결과가 있을 때만 색상/트림 필터 표시
-                          if (provider.searchQuery.isNotEmpty && provider.items.isNotEmpty) ...[
+                          // 재고가 있으면 색상/트림 필터 표시 (검색 여부 무관)
+                          if (provider.items.isNotEmpty) ...[
                             const SizedBox(width: 8),
                             // 외장 색상 드롭다운
                             Expanded(

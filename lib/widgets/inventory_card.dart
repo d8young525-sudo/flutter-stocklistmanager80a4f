@@ -140,6 +140,16 @@ class _InventoryCardState extends State<InventoryCard> {
                               ),
                             ),
                             if (ColorMapping.getTrimName(widget.item.trim) != null) ...[
+                              const SizedBox(width: 4),
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: _parseColor(ColorMapping.getTrimHex(widget.item.trim) ?? '#808080'),
+                                  border: Border.all(color: Colors.grey[400]!, width: 1),
+                                  borderRadius: BorderRadius.circular(3),
+                                ),
+                              ),
                               const SizedBox(width: 3),
                               Expanded(
                                 child: Text(
@@ -149,16 +159,6 @@ class _InventoryCardState extends State<InventoryCard> {
                                     color: Colors.grey[600],
                                   ),
                                   overflow: TextOverflow.ellipsis,
-                                ),
-                              ),
-                              const SizedBox(width: 4),
-                              Container(
-                                width: 16,
-                                height: 16,
-                                decoration: BoxDecoration(
-                                  color: _parseColor(ColorMapping.getTrimHex(widget.item.trim) ?? '#808080'),
-                                  border: Border.all(color: Colors.grey[400]!, width: 1),
-                                  borderRadius: BorderRadius.circular(3),
                                 ),
                               ),
                             ],
