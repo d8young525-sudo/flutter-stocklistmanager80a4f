@@ -106,7 +106,7 @@ class _InventoryCardState extends State<InventoryCard> {
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                            if (ColorMapping.getColorName(widget.item.color) != null) ..[
+                            if (ColorMapping.getColorName(widget.item.color) != null) ...[
                               const SizedBox(width: 4),
                               Expanded(
                                 child: Text(
@@ -145,7 +145,7 @@ class _InventoryCardState extends State<InventoryCard> {
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                            if (ColorMapping.getTrimName(widget.item.trim) != null) ..[
+                            if (ColorMapping.getTrimName(widget.item.trim) != null) ...[
                               const SizedBox(width: 4),
                               Expanded(
                                 child: Text(
