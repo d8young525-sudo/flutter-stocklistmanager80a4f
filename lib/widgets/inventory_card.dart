@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/inventory_item.dart';
+import '../models/color_mapping.dart';
 import 'shipment_detail_dialog.dart';
 
 class InventoryCard extends StatefulWidget {
@@ -76,14 +77,88 @@ class _InventoryCardState extends State<InventoryCard> {
                               ),
                           ],
                         ),
+                        const SizedBox(height: 8),
+                        // 연식
+                        Row(
+                          children: [
+                            const Icon(Icons.calendar_today, size: 14, color: Colors.grey),
+                            const SizedBox(width: 6),
+                            Text(
+                              '연식: ${widget.item.my}',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.grey[700],
+                              ),
+                            ),
+                          ],
+                        ),
                         const SizedBox(height: 6),
-                        // 연식, 외장색상, 시트색상
-                        Text(
-                          '${widget.item.my} / ${widget.item.color} / ${widget.item.trim}',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[700],
-                          ),
+                        // 외장색상 (코드 + 색상명 + 색상칩)
+                        Row(
+                          children: [
+                            const Icon(Icons.palette, size: 14, color: Colors.grey),
+                            const SizedBox(width: 6),
+                            Text(
+                              '외장: ${widget.item.color}',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.grey[700],
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            if (ColorMapping.getColorName(widget.item.color) != null) ..[
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: Text(
+                                  '(${ColorMapping.getColorName(widget.item.color)})',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey[600],
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              Container(
+                                width: 20,
+                                height: 20,
+                                decoration: BoxDecoration(
+                                  color: _parseColor(ColorMapping.getColorHex(widget.item.color) ?? '#808080'),
+                                  border: Border.all(color: Colors.grey[400]!, width: 1),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                        const SizedBox(height: 6),
+                        // 시트색상 (코드 + 트림명)
+                        Row(
+                          children: [
+                            const Icon(Icons.event_seat, size: 14, color: Colors.grey),
+                            const SizedBox(width: 6),
+                            Text(
+                              '트림: ${widget.item.trim}',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.grey[700],
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            if (ColorMapping.getTrimName(widget.item.trim) != null) ..[
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: Text(
+                                  '(${ColorMapping.getTrimName(widget.item.trim)})',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey[600],
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                            ],
+                          ],
                         ),
                       ],
                     ),
@@ -337,5 +412,15 @@ class _InventoryCardState extends State<InventoryCard> {
       color: Colors.grey[300],
       margin: const EdgeInsets.symmetric(horizontal: 6),
     );
+  }
+
+  // HEX 색상 코드를 Color 객체로 변환
+  Color _parseColor(String hexCode) {
+    try {
+      final hex = hexCode.replaceAll('#', '');
+      return Color(int.parse('FF$hex', radix: 16));
+    } catch (e) {
+      return Colors.grey;
+    }
   }
 }
