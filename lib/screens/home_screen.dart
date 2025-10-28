@@ -7,6 +7,7 @@ import '../providers/inventory_provider.dart';
 import '../services/auth_service.dart';
 import '../services/session_service.dart';
 import '../widgets/inventory_card.dart';
+import '../models/color_mapping.dart';
 import 'login_screen.dart';
 // Web용 import (조건부)
 import 'dart:html' as html show window;
@@ -332,6 +333,230 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  // 색상/트림 필터 UI
+  Widget _buildColorTrimFilters(InventoryProvider provider) {
+    final colorCounts = provider.getAvailableColorCodes();
+    final trimCounts = provider.getAvailableTrimCodes();
+    
+    // 색상 코드를 정렬
+    final sortedColorCodes = colorCounts.keys.toList()..sort();
+    final sortedTrimCodes = trimCounts.keys.toList()..sort();
+    
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.15),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // 헤더
+          Row(
+            children: [
+              const Icon(Icons.filter_list, size: 16, color: Colors.white),
+              const SizedBox(width: 6),
+              const Text(
+                '색상/트림 필터',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                ),
+              ),
+              const Spacer(),
+              if (provider.selectedColorCodes.isNotEmpty || 
+                  provider.selectedTrimCodes.isNotEmpty)
+                TextButton(
+                  onPressed: () {
+                    provider.clearFilters();
+                  },
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  child: const Text(
+                    '초기화',
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 12,
+                    ),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          
+          // 외장 색상 필터
+          const Text(
+            '외장 색상',
+            style: TextStyle(
+              color: Colors.white70,
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: sortedColorCodes.map((colorCode) {
+              final isSelected = provider.selectedColorCodes.contains(colorCode);
+              final count = colorCounts[colorCode] ?? 0;
+              final colorName = ColorMapping.getColorName(colorCode);
+              
+              return InkWell(
+                onTap: () {
+                  provider.toggleColorFilter(colorCode);
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: isSelected 
+                        ? Colors.white 
+                        : Colors.white.withValues(alpha: 0.2),
+                    borderRadius: BorderRadius.circular(6),
+                    border: Border.all(
+                      color: isSelected ? Colors.white : Colors.white.withValues(alpha: 0.3),
+                      width: 1,
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // 색상 칩
+                      Container(
+                        width: 14,
+                        height: 14,
+                        decoration: BoxDecoration(
+                          color: _parseColor(ColorMapping.getColorHex(colorCode) ?? '#808080'),
+                          border: Border.all(
+                            color: isSelected ? Colors.grey[700]! : Colors.white.withValues(alpha: 0.5),
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        colorCode,
+                        style: TextStyle(
+                          color: isSelected ? Colors.blue[700] : Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      if (colorName != null) ...[
+                        const SizedBox(width: 3),
+                        Text(
+                          '($count)',
+                          style: TextStyle(
+                            color: isSelected ? Colors.grey[600] : Colors.white70,
+                            fontSize: 11,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+          
+          // 트림 필터 (색상 선택 시에만 표시)
+          if (provider.selectedColorCodes.isNotEmpty && trimCounts.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            const Text(
+              '트림',
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: sortedTrimCodes.map((trimCode) {
+                final isSelected = provider.selectedTrimCodes.contains(trimCode);
+                final count = trimCounts[trimCode] ?? 0;
+                final trimName = ColorMapping.getTrimName(trimCode);
+                
+                return InkWell(
+                  onTap: () {
+                    provider.toggleTrimFilter(trimCode);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: isSelected 
+                          ? Colors.white 
+                          : Colors.white.withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: isSelected ? Colors.white : Colors.white.withValues(alpha: 0.3),
+                        width: 1,
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        // 트림 색상 칩
+                        Container(
+                          width: 14,
+                          height: 14,
+                          decoration: BoxDecoration(
+                            color: _parseColor(ColorMapping.getTrimHex(trimCode) ?? '#808080'),
+                            border: Border.all(
+                              color: isSelected ? Colors.grey[700]! : Colors.white.withValues(alpha: 0.5),
+                              width: 1,
+                            ),
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          trimCode,
+                          style: TextStyle(
+                            color: isSelected ? Colors.blue[700] : Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        if (trimName != null) ...[
+                          const SizedBox(width: 3),
+                          Text(
+                            '($count)',
+                            style: TextStyle(
+                              color: isSelected ? Colors.grey[600] : Colors.white70,
+                              fontSize: 11,
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                );
+              }).toList(),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  // HEX 색상 코드를 Color 객체로 변환
+  Color _parseColor(String hexCode) {
+    try {
+      final hex = hexCode.replaceAll('#', '');
+      return Color(int.parse('FF$hex', radix: 16));
+    } catch (e) {
+      return Colors.grey;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -629,7 +854,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const SizedBox(height: 12),
 
-                      // 필터 토글
+                      // 필터 토글 - 현재미계약 재고
                       Row(
                         children: [
                           Expanded(
@@ -678,6 +903,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
+                      
+                      // 색상/트림 필터 (검색 결과가 있을 때만 표시)
+                      if (provider.searchQuery.isNotEmpty && provider.items.isNotEmpty) ...[
+                        const SizedBox(height: 12),
+                        _buildColorTrimFilters(provider),
+                      ],
                     ],
                   ),
                 );

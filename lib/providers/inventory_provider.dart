@@ -16,6 +16,10 @@ class InventoryProvider with ChangeNotifier {
   bool _showOnlyAvailable = false;
   String _searchQuery = '';
   bool _isLoaded = false;
+  
+  // 색상/트림 필터
+  Set<String> _selectedColorCodes = {};
+  Set<String> _selectedTrimCodes = {};
 
   // Getters
   Map<String, InventoryItem> get items => _items;
@@ -25,7 +29,9 @@ class InventoryProvider with ChangeNotifier {
   String? get priceFileName => _priceFileName;
   bool get showOnlyAvailable => _showOnlyAvailable;
   String get searchQuery => _searchQuery;
-  // 필터링된 아이템 목록 (모델명 검색만)
+  Set<String> get selectedColorCodes => _selectedColorCodes;
+  Set<String> get selectedTrimCodes => _selectedTrimCodes;
+  // 필터링된 아이템 목록 (모델명 검색 + 색상/트림 필터)
   List<InventoryItem> get filteredItems {
     List<InventoryItem> filtered = _items.values.toList();
 
@@ -35,6 +41,20 @@ class InventoryProvider with ChangeNotifier {
       
       filtered = filtered.where((item) {
         return item.model.toLowerCase().contains(query);
+      }).toList();
+    }
+
+    // 색상 코드 필터
+    if (_selectedColorCodes.isNotEmpty) {
+      filtered = filtered.where((item) {
+        return _selectedColorCodes.contains(item.color);
+      }).toList();
+    }
+
+    // 트림 코드 필터
+    if (_selectedTrimCodes.isNotEmpty) {
+      filtered = filtered.where((item) {
+        return _selectedTrimCodes.contains(item.trim);
       }).toList();
     }
 
@@ -59,6 +79,54 @@ class InventoryProvider with ChangeNotifier {
       models.add(item.model);
     }
     return models.toList()..sort();
+  }
+
+  // 현재 검색 결과에서 사용 가능한 색상 코드 목록 (개수 포함)
+  Map<String, int> getAvailableColorCodes() {
+    // 검색어만 적용한 아이템 목록
+    List<InventoryItem> searchFiltered = _items.values.toList();
+    
+    if (_searchQuery.isNotEmpty) {
+      final query = _searchQuery.trim().toLowerCase();
+      searchFiltered = searchFiltered.where((item) {
+        return item.model.toLowerCase().contains(query);
+      }).toList();
+    }
+    
+    // 색상 코드별 개수 집계
+    Map<String, int> colorCounts = {};
+    for (var item in searchFiltered) {
+      colorCounts[item.color] = (colorCounts[item.color] ?? 0) + 1;
+    }
+    
+    return colorCounts;
+  }
+
+  // 현재 검색 결과에서 사용 가능한 트림 코드 목록 (개수 포함)
+  Map<String, int> getAvailableTrimCodes() {
+    // 검색어와 색상 필터만 적용한 아이템 목록
+    List<InventoryItem> searchFiltered = _items.values.toList();
+    
+    if (_searchQuery.isNotEmpty) {
+      final query = _searchQuery.trim().toLowerCase();
+      searchFiltered = searchFiltered.where((item) {
+        return item.model.toLowerCase().contains(query);
+      }).toList();
+    }
+    
+    if (_selectedColorCodes.isNotEmpty) {
+      searchFiltered = searchFiltered.where((item) {
+        return _selectedColorCodes.contains(item.color);
+      }).toList();
+    }
+    
+    // 트림 코드별 개수 집계
+    Map<String, int> trimCounts = {};
+    for (var item in searchFiltered) {
+      trimCounts[item.trim] = (trimCounts[item.trim] ?? 0) + 1;
+    }
+    
+    return trimCounts;
   }
 
   // 🔄 앱 시작 시 저장된 데이터 불러오기
@@ -160,9 +228,13 @@ class InventoryProvider with ChangeNotifier {
     }
   }
 
-  // 검색어 설정 (디버깅 로그 추가)
+  // 검색어 설정
   void setSearchQuery(String query) {
     _searchQuery = query;
+    // 검색어가 변경되면 색상/트림 필터 초기화
+    _selectedColorCodes.clear();
+    _selectedTrimCodes.clear();
+    
     if (kDebugMode) {
       print('🔍 검색어 설정: "$query"');
       print('📊 전체 아이템: ${_items.length}개');
@@ -173,9 +245,39 @@ class InventoryProvider with ChangeNotifier {
     }
   }
 
-  // 현재미계약 필터 토글
+  // 현재미계약 재고 필터 토글
   void toggleAvailableFilter() {
     _showOnlyAvailable = !_showOnlyAvailable;
+    notifyListeners();
+  }
+
+  // 색상 코드 필터 토글
+  void toggleColorFilter(String colorCode) {
+    if (_selectedColorCodes.contains(colorCode)) {
+      _selectedColorCodes.remove(colorCode);
+    } else {
+      _selectedColorCodes.add(colorCode);
+    }
+    // 색상 필터 변경 시 트림 필터 초기화
+    _selectedTrimCodes.clear();
+    notifyListeners();
+  }
+
+  // 트림 코드 필터 토글
+  void toggleTrimFilter(String trimCode) {
+    if (_selectedTrimCodes.contains(trimCode)) {
+      _selectedTrimCodes.remove(trimCode);
+    } else {
+      _selectedTrimCodes.add(trimCode);
+    }
+    notifyListeners();
+  }
+
+  // 모든 필터 초기화
+  void clearFilters() {
+    _selectedColorCodes.clear();
+    _selectedTrimCodes.clear();
+    _showOnlyAvailable = false;
     notifyListeners();
   }
 
@@ -188,6 +290,8 @@ class InventoryProvider with ChangeNotifier {
     _priceFileName = null;
     _searchQuery = '';
     _showOnlyAvailable = false;
+    _selectedColorCodes.clear();
+    _selectedTrimCodes.clear();
     
     // SharedPreferences에서도 삭제
     final prefs = await SharedPreferences.getInstance();

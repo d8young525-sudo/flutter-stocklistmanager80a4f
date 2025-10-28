@@ -78,28 +78,23 @@ class _InventoryCardState extends State<InventoryCard> {
                           ],
                         ),
                         const SizedBox(height: 8),
-                        // 연식
+
+                        // 외장/트림 색상 한 줄에 표시
                         Row(
                           children: [
-                            const Icon(Icons.calendar_today, size: 14, color: Colors.grey),
-                            const SizedBox(width: 6),
+                            // 연식
                             Text(
-                              '연식: ${widget.item.my}',
+                              '${widget.item.my}/',
                               style: TextStyle(
                                 fontSize: 13,
-                                color: Colors.grey[700],
+                                color: Colors.grey[800],
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
-                          ],
-                        ),
-                        const SizedBox(height: 6),
-                        // 외장색상 (코드 + 색상명 + 색상칩)
-                        Row(
-                          children: [
-                            const Icon(Icons.palette, size: 14, color: Colors.grey),
                             const SizedBox(width: 6),
+                            // 외장 색상 코드
                             Text(
-                              '외장: ${widget.item.color}',
+                              '${widget.item.color}',
                               style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.grey[700],
@@ -107,38 +102,37 @@ class _InventoryCardState extends State<InventoryCard> {
                               ),
                             ),
                             if (ColorMapping.getColorName(widget.item.color) != null) ...[
-                              const SizedBox(width: 4),
-                              Expanded(
-                                child: Text(
-                                  '(${ColorMapping.getColorName(widget.item.color)})',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.grey[600],
-                                  ),
-                                  overflow: TextOverflow.ellipsis,
+                              const SizedBox(width: 3),
+                              Text(
+                                '(${ColorMapping.getColorName(widget.item.color)})',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  color: Colors.grey[600],
                                 ),
                               ),
-                              const SizedBox(width: 6),
+                              const SizedBox(width: 4),
                               Container(
-                                width: 20,
-                                height: 20,
+                                width: 16,
+                                height: 16,
                                 decoration: BoxDecoration(
                                   color: _parseColor(ColorMapping.getColorHex(widget.item.color) ?? '#808080'),
                                   border: Border.all(color: Colors.grey[400]!, width: 1),
-                                  borderRadius: BorderRadius.circular(4),
+                                  borderRadius: BorderRadius.circular(3),
                                 ),
                               ),
                             ],
-                          ],
-                        ),
-                        const SizedBox(height: 6),
-                        // 시트색상 (코드 + 트림명)
-                        Row(
-                          children: [
-                            const Icon(Icons.event_seat, size: 14, color: Colors.grey),
                             const SizedBox(width: 6),
                             Text(
-                              '트림: ${widget.item.trim}',
+                              '/',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.grey[500],
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            // 트림 코드
+                            Text(
+                              '${widget.item.trim}',
                               style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.grey[700],
@@ -146,15 +140,25 @@ class _InventoryCardState extends State<InventoryCard> {
                               ),
                             ),
                             if (ColorMapping.getTrimName(widget.item.trim) != null) ...[
-                              const SizedBox(width: 4),
+                              const SizedBox(width: 3),
                               Expanded(
                                 child: Text(
                                   '(${ColorMapping.getTrimName(widget.item.trim)})',
                                   style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 11,
                                     color: Colors.grey[600],
                                   ),
                                   overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: _parseColor(ColorMapping.getTrimHex(widget.item.trim) ?? '#808080'),
+                                  border: Border.all(color: Colors.grey[400]!, width: 1),
+                                  borderRadius: BorderRadius.circular(3),
                                 ),
                               ),
                             ],
