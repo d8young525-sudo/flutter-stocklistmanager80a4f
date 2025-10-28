@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.2 업데이트',
+                '버전 3.3 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,14 +237,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
-              _buildPatchItem('📚', 'FAB 메뉴 추가', 
-                '우측 하단 + 버튼으로 공지사항, 카탈로그, 파일업로드 기능에 빠르게 접근할 수 있습니다.'),
-              _buildPatchItem('💾', '데이터 안정성 향상', 
-                '앱을 종료하고 다시 열어도 업로드한 파일이 자동으로 유지됩니다.'),
-              _buildPatchItem('✅', '재고 중복 업로드 버그 수정', 
-                '같은 파일을 여러 번 업로드해도 재고 수량이 정확하게 표시됩니다.'),
-              _buildPatchItem('🌐', 'Mercedes-Benz 카탈로그 메뉴', 
-                'FAB 메뉴에서 공식 카탈로그로 빠르게 이동할 수 있습니다.'),
+              _buildPatchItem('🎨', '색상/트림 필터 기능 추가', 
+                '재고 카드에 외장색상과 트림 정보가 색상칩과 함께 표시됩니다. 외장색상/트림 코드로 원하는 재고를 빠르게 필터링할 수 있습니다.'),
+              _buildPatchItem('🔍', '필터 항상 사용 가능', 
+                '모델명 검색 없이도 전체 재고에서 색상/트림 필터를 사용할 수 있습니다. 재고 업로드 직후부터 필터 기능이 활성화됩니다.'),
+              _buildPatchItem('📱', '한 줄 통합 필터 UI', 
+                '미계약 재고, 외장색상, 트림 필터가 한 줄에 깔끔하게 배치되어 공간 효율성이 향상되었습니다. 드롭다운 형태로 편리하게 사용하세요.'),
+              _buildPatchItem('🎯', '재고 카드 레이아웃 개선', 
+                '연식/외장색상/트림 정보가 한 눈에 보이도록 한 줄로 정리되었습니다. 색상칩으로 실제 색상을 직관적으로 확인할 수 있습니다.'),
               const SizedBox(height: 20),
               Container(
                 padding: const EdgeInsets.all(12),
