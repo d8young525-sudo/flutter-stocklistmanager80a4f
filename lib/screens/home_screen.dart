@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.3 업데이트',
+                '버전 3.4 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,14 +237,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
-              _buildPatchItem('🎨', '색상/트림 필터 기능 추가', 
-                '재고 카드에 외장색상과 트림 정보가 색상칩과 함께 표시됩니다. 외장색상/트림 코드로 원하는 재고를 빠르게 필터링할 수 있습니다.'),
-              _buildPatchItem('🔍', '필터 항상 사용 가능', 
-                '모델명 검색 없이도 전체 재고에서 색상/트림 필터를 사용할 수 있습니다. 재고 업로드 직후부터 필터 기능이 활성화됩니다.'),
-              _buildPatchItem('📱', '한 줄 통합 필터 UI', 
-                '미계약 재고, 외장색상, 트림 필터가 한 줄에 깔끔하게 배치되어 공간 효율성이 향상되었습니다. 드롭다운 형태로 편리하게 사용하세요.'),
-              _buildPatchItem('🎯', '재고 카드 레이아웃 개선', 
-                '연식/외장색상/트림 정보가 한 눈에 보이도록 한 줄로 정리되었습니다. 색상칩으로 실제 색상을 직관적으로 확인할 수 있습니다.'),
+              _buildPatchItem('💰', '가격표 기본 내장', 
+                '2025/2026 MY 가격표가 앱에 기본 탑재되어 더 이상 가격표 파일을 업로드할 필요가 없습니다! 재고 파일만 업로드하면 자동으로 가격이 표시됩니다.'),
+              _buildPatchItem('🏷️', '항목명 개선', 
+                '더 직관적인 용어로 변경: "현재계약" → "배정", "현재미계약" → "배정가능"'),
+              _buildPatchItem('🌐', '색상/트림명 한글 적용', 
+                '외장색상과 트림명이 한글로 표시되어 이해하기 쉬워졌습니다. (예: designo mocha black → 폴라 화이트)'),
+              _buildPatchItem('📊', '정렬 기능 개선', 
+                '1차: 모델명 정렬, 2차: 외장색상 코드 오름차순 정렬로 더욱 체계적으로 재고를 확인할 수 있습니다.'),
+              _buildPatchItem('🎨', 'UI 간소화', 
+                '컬러칩을 제거하여 화면이 깔끔해졌습니다. 텍스트 정보만으로도 충분히 확인 가능합니다.'),
               const SizedBox(height: 20),
               Container(
                 padding: const EdgeInsets.all(12),
@@ -404,16 +406,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: isSelected ? Colors.blue[700] : Colors.grey[400],
                 ),
                 const SizedBox(width: 8),
-                Container(
-                  width: 16,
-                  height: 16,
-                  decoration: BoxDecoration(
-                    color: _parseColor(ColorMapping.getColorHex(colorCode) ?? '#808080'),
-                    border: Border.all(color: Colors.grey[400]!, width: 1),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                ),
-                const SizedBox(width: 8),
                 Text(
                   colorCode,
                   style: const TextStyle(
@@ -519,16 +511,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   isSelected ? Icons.check_box : Icons.check_box_outline_blank,
                   size: 18,
                   color: isSelected ? Colors.blue[700] : Colors.grey[400],
-                ),
-                const SizedBox(width: 8),
-                Container(
-                  width: 16,
-                  height: 16,
-                  decoration: BoxDecoration(
-                    color: _parseColor(ColorMapping.getTrimHex(trimCode) ?? '#808080'),
-                    border: Border.all(color: Colors.grey[400]!, width: 1),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
                 ),
                 const SizedBox(width: 8),
                 Text(
@@ -897,7 +879,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                   const SizedBox(width: 6),
                                   Text(
-                                    '미계약',
+                                    '배정가능',
                                     style: TextStyle(
                                       color: provider.showOnlyAvailable
                                           ? Colors.blue[700]
@@ -907,6 +889,32 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                 ],
+                              ),
+                            ),
+                          ),
+                          
+                          const SizedBox(width: 8),
+                          
+                          // 카드 레이아웃 토글 버튼
+                          InkWell(
+                            onTap: () {
+                              provider.toggleCardLayout();
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 10,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Icon(
+                                provider.isVerticalLayout
+                                    ? Icons.view_stream
+                                    : Icons.view_agenda,
+                                size: 20,
+                                color: Colors.white,
                               ),
                             ),
                           ),
@@ -1050,9 +1058,6 @@ class _FileUploadDialogState extends State<FileUploadDialog> {
           case 'shipment':
             await provider.uploadShipmentFile(bytes, fileName);
             break;
-          case 'price':
-            await provider.uploadPriceFile(bytes, fileName);
-            break;
         }
 
         if (!mounted) return;
@@ -1114,15 +1119,6 @@ class _FileUploadDialogState extends State<FileUploadDialog> {
                   onPressed: () => _uploadFile('shipment'),
                   icon: const Icon(Icons.local_shipping, size: 24),
                   label: const Text('입항일정표 업로드', style: TextStyle(fontSize: 16)),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton.icon(
-                  onPressed: () => _uploadFile('price'),
-                  icon: const Icon(Icons.attach_money, size: 24),
-                  label: const Text('가격표 업로드', style: TextStyle(fontSize: 16)),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 18),
                   ),

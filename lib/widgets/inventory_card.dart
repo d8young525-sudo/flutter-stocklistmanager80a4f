@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../models/inventory_item.dart';
 import '../models/color_mapping.dart';
+import '../providers/inventory_provider.dart';
 import 'shipment_detail_dialog.dart';
 
 class InventoryCard extends StatefulWidget {
@@ -43,126 +45,190 @@ class _InventoryCardState extends State<InventoryCard> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // 모델명과 가격
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Text(
-                                widget.item.model,
-                                style: const TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            if (widget.item.price != null)
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 4,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Colors.green[50],
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(color: Colors.green[200]!),
-                                ),
-                                child: Text(
-                                  widget.item.formattedPrice,
-                                  style: TextStyle(
-                                    color: Colors.green[700],
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14,
+                        // 레이아웃에 따라 연식 위치 변경
+                        Consumer<InventoryProvider>(
+                          builder: (context, provider, child) {
+                            if (provider.isVerticalLayout) {
+                              // 세로형: 연식을 맨 위에
+                              return Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    '${widget.item.my}',
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey[800],
+                                      fontWeight: FontWeight.w600,
+                                    ),
                                   ),
-                                ),
+                                  const SizedBox(height: 4),
+                                  child!,
+                                ],
+                              );
+                            } else {
+                              // 가로형: 모델명부터 시작
+                              return child!;
+                            }
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // 모델명과 가격
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      widget.item.model,
+                                      style: const TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                  if (widget.item.price != null)
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 10,
+                                        vertical: 4,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[50],
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(color: Colors.green[200]!),
+                                      ),
+                                      child: Text(
+                                        widget.item.formattedPrice,
+                                        style: TextStyle(
+                                          color: Colors.green[700],
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ),
+                                ],
                               ),
-                          ],
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 8),
 
-                        // 외장/트림 색상 한 줄에 표시
-                        Row(
-                          children: [
-                            // 연식
-                            Text(
-                              '${widget.item.my}/',
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: Colors.grey[800],
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            const SizedBox(width: 6),
-                            // 외장 색상 코드
-                            Text(
-                              '${widget.item.color}',
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: Colors.grey[700],
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                            if (ColorMapping.getColorName(widget.item.color) != null) ...[
-                              const SizedBox(width: 3),
-                              Text(
-                                '(${ColorMapping.getColorName(widget.item.color)})',
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  color: Colors.grey[600],
-                                ),
-                              ),
-                              const SizedBox(width: 4),
-                              Container(
-                                width: 16,
-                                height: 16,
-                                decoration: BoxDecoration(
-                                  color: _parseColor(ColorMapping.getColorHex(widget.item.color) ?? '#808080'),
-                                  border: Border.all(color: Colors.grey[400]!, width: 1),
-                                  borderRadius: BorderRadius.circular(3),
-                                ),
-                              ),
-                            ],
-                            const SizedBox(width: 6),
-                            Text(
-                              '/',
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: Colors.grey[500],
-                              ),
-                            ),
-                            const SizedBox(width: 6),
-                            // 트림 코드
-                            Text(
-                              '${widget.item.trim}',
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: Colors.grey[700],
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                            if (ColorMapping.getTrimName(widget.item.trim) != null) ...[
-                              const SizedBox(width: 3),
-                              Expanded(
-                                child: Text(
-                                  '(${ColorMapping.getTrimName(widget.item.trim)})',
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    color: Colors.grey[600],
+                        // 레이아웃 분기
+                        Consumer<InventoryProvider>(
+                          builder: (context, provider, child) {
+                            if (provider.isVerticalLayout) {
+                              // 세로형 레이아웃
+                              return Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  // 외장 색상
+                                  Row(
+                                    children: [
+                                      Text(
+                                        '${widget.item.color}',
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.grey[700],
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      if (ColorMapping.getColorName(widget.item.color) != null) ...[
+                                        const SizedBox(width: 6),
+                                        Text(
+                                          '(${ColorMapping.getColorName(widget.item.color)})',
+                                          style: TextStyle(
+                                            fontSize: 11,
+                                            color: Colors.grey[600],
+                                          ),
+                                        ),
+                                      ],
+                                    ],
                                   ),
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ),
-                              const SizedBox(width: 4),
-                              Container(
-                                width: 16,
-                                height: 16,
-                                decoration: BoxDecoration(
-                                  color: _parseColor(ColorMapping.getTrimHex(widget.item.trim) ?? '#808080'),
-                                  border: Border.all(color: Colors.grey[400]!, width: 1),
-                                  borderRadius: BorderRadius.circular(3),
-                                ),
-                              ),
-                            ],
-                          ],
+                                  const SizedBox(height: 4),
+                                  // 트림
+                                  Row(
+                                    children: [
+                                      Text(
+                                        '${widget.item.trim}',
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.grey[700],
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      if (ColorMapping.getTrimName(widget.item.trim) != null) ...[
+                                        const SizedBox(width: 6),
+                                        Text(
+                                          '(${ColorMapping.getTrimName(widget.item.trim)})',
+                                          style: TextStyle(
+                                            fontSize: 11,
+                                            color: Colors.grey[600],
+                                          ),
+                                        ),
+                                      ],
+                                    ],
+                                  ),
+                                ],
+                              );
+                            } else {
+                              // 가로형 레이아웃 (기본)
+                              return Wrap(
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                spacing: 6,
+                                children: [
+                                  // 연식
+                                  Text(
+                                    '${widget.item.my}/',
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey[800],
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  // 외장 색상 코드
+                                  Text(
+                                    '${widget.item.color}',
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey[700],
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  if (ColorMapping.getColorName(widget.item.color) != null)
+                                    Text(
+                                      '(${ColorMapping.getColorName(widget.item.color)})',
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        color: Colors.grey[600],
+                                      ),
+                                    ),
+                                  Text(
+                                    '/',
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey[500],
+                                    ),
+                                  ),
+                                  // 트림 코드
+                                  Text(
+                                    '${widget.item.trim}',
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey[700],
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  if (ColorMapping.getTrimName(widget.item.trim) != null)
+                                    Text(
+                                      '(${ColorMapping.getTrimName(widget.item.trim)})',
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        color: Colors.grey[600],
+                                      ),
+                                    ),
+                                ],
+                              );
+                            }
+                          },
                         ),
                       ],
                     ),
@@ -331,11 +397,11 @@ class _InventoryCardState extends State<InventoryCard> {
               ),
               _buildDivider(),
               Expanded(
-                child: _buildInventoryColumn('현재계약', contract, Colors.orange),
+                child: _buildInventoryColumn('배정', contract, Colors.orange),
               ),
               _buildDivider(),
               Expanded(
-                child: _buildInventoryColumn('현재미계약', available, Colors.green),
+                child: _buildInventoryColumn('배정가능', available, Colors.green),
               ),
               _buildDivider(),
               Expanded(

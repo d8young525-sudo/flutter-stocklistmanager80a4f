@@ -2,6 +2,7 @@ import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:spreadsheet_decoder/spreadsheet_decoder.dart';
 import '../models/inventory_item.dart';
+import '../models/price_data.dart';
 
 class ExcelService {
   // 재고현황표 파일명에서 날짜 추출
@@ -232,9 +233,16 @@ class ExcelService {
 
           String key = '$model|$my|$color|$trim';
 
+          // 가격표에서 가격 자동 매칭
+          String? priceStr;
+          int? priceValue = PriceData.getPrice(my, model);
+          if (priceValue != null) {
+            priceStr = priceValue.toString();
+          }
+
           InventoryItem item = items.putIfAbsent(
             key,
-            () => InventoryItem(model: model, my: my, color: color, trim: trim),
+            () => InventoryItem(model: model, my: my, color: color, trim: trim, price: priceStr),
           );
 
           bool hasCommNo = commNo.isNotEmpty;

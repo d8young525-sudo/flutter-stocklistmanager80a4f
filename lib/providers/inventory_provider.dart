@@ -22,6 +22,9 @@ class InventoryProvider with ChangeNotifier {
   // 색상/트림 필터
   Set<String> _selectedColorCodes = {};
   Set<String> _selectedTrimCodes = {};
+  
+  // 카드 레이아웃 (true: 세로형, false: 가로형)
+  bool _isVerticalLayout = false;
 
   // Getters
   Map<String, InventoryItem> get items => _items;
@@ -33,6 +36,7 @@ class InventoryProvider with ChangeNotifier {
   String get searchQuery => _searchQuery;
   Set<String> get selectedColorCodes => _selectedColorCodes;
   Set<String> get selectedTrimCodes => _selectedTrimCodes;
+  bool get isVerticalLayout => _isVerticalLayout;
   // 필터링된 아이템 목록 (모델명 검색 + 색상/트림 필터)
   List<InventoryItem> get filteredItems {
     List<InventoryItem> filtered = _items.values.toList();
@@ -67,8 +71,17 @@ class InventoryProvider with ChangeNotifier {
       }).toList();
     }
 
-    // 모델명으로 정렬
-    filtered.sort((a, b) => a.model.compareTo(b.model));
+    // 1차 정렬: 모델명, 2차 정렬: 외장색상 코드 오름차순
+    filtered.sort((a, b) {
+      // 1차: 모델명으로 정렬
+      int modelCompare = a.model.compareTo(b.model);
+      if (modelCompare != 0) return modelCompare;
+      
+      // 2차: 외장색상 코드를 숫자로 변환해서 정렬
+      int colorA = int.tryParse(a.color) ?? 0;
+      int colorB = int.tryParse(b.color) ?? 0;
+      return colorA.compareTo(colorB);
+    });
 
     return filtered;
   }
@@ -259,6 +272,12 @@ class InventoryProvider with ChangeNotifier {
   // 현재미계약 재고 필터 토글
   void toggleAvailableFilter() {
     _showOnlyAvailable = !_showOnlyAvailable;
+    notifyListeners();
+  }
+
+  // 카드 레이아웃 토글
+  void toggleCardLayout() {
+    _isVerticalLayout = !_isVerticalLayout;
     notifyListeners();
   }
 

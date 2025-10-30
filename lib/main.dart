@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => InventoryProvider()),
       ],
       child: MaterialApp(
-        title: '🚀 Autocomplete 버전 v3.0',
+        title: '🚀 Autocomplete 버전 v3.4',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
