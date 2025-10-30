@@ -405,7 +405,7 @@ class _InventoryCardState extends State<InventoryCard> {
               ),
               _buildDivider(),
               Expanded(
-                child: _buildInventoryColumn('선출고불가', blocked, Colors.red),
+                child: _buildInventoryColumn('출고불가', blocked, Colors.red),
               ),
               _buildDivider(),
               Expanded(
