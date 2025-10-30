@@ -375,44 +375,64 @@ class ExcelService {
 
           String key = '$modelDesc|$modelYr|$colour|$trim';
 
+          // 기존 항목이 있으면 매칭, 없으면 새로 생성
+          InventoryItem item;
           if (items.containsKey(key)) {
             matchedCount++;
-            InventoryItem item = items[key]!;
-            
+            item = items[key]!;
             if (kDebugMode && matchedCount <= 3) {
               debugPrint('✅ 매칭 성공: $modelDesc | ProdDate: $prodDate | PlanDelivDate: $planDelivDate');
-            };
-            
-            item.shipmentDetails.add(ShipmentDetail(
-              model: modelDesc,
-              modelYear: modelYr,
-              colour: colour,
-              trim: trim,
-              prodDate: prodDate,
-              planDelivDate: planDelivDate,
-            ));
-
-            if (prodDate.isNotEmpty) {
-              if (item.earliestProdDate == null || _compareDates(prodDate, item.earliestProdDate!) < 0) {
-                item.earliestProdDate = prodDate;
-              }
-              if (item.latestProdDate == null || _compareDates(prodDate, item.latestProdDate!) > 0) {
-                item.latestProdDate = prodDate;
-              }
-            }
-
-            if (planDelivDate.isNotEmpty) {
-              if (item.earliestDelivDate == null || _compareDates(planDelivDate, item.earliestDelivDate!) < 0) {
-                item.earliestDelivDate = planDelivDate;
-              }
-              if (item.latestDelivDate == null || _compareDates(planDelivDate, item.latestDelivDate!) > 0) {
-                item.latestDelivDate = planDelivDate;
-              }
             }
           } else {
             unmatchedCount++;
+            // 입항일정표만 업로드된 경우: 새로운 아이템 생성
+            // 가격표에서 가격 자동 매칭
+            String? priceStr;
+            int? priceValue = PriceData.getPrice(modelYr, modelDesc);
+            if (priceValue != null) {
+              priceStr = priceValue.toString();
+            }
+            
+            item = InventoryItem(
+              model: modelDesc, 
+              my: modelYr, 
+              color: colour, 
+              trim: trim,
+              price: priceStr,
+            );
+            items[key] = item;
             if (kDebugMode && unmatchedCount <= 3) {
-              debugPrint('⚠️ 매칭 실패: $key (재고현황표에 없음)');
+              debugPrint('🆕 새 항목 생성: $key');
+            }
+          }
+          
+          // 입항일정 상세 정보 추가
+          item.shipmentDetails.add(ShipmentDetail(
+            model: modelDesc,
+            modelYear: modelYr,
+            colour: colour,
+            trim: trim,
+            prodDate: prodDate,
+            planDelivDate: planDelivDate,
+          ));
+
+          // 생산일자 업데이트
+          if (prodDate.isNotEmpty) {
+            if (item.earliestProdDate == null || _compareDates(prodDate, item.earliestProdDate!) < 0) {
+              item.earliestProdDate = prodDate;
+            }
+            if (item.latestProdDate == null || _compareDates(prodDate, item.latestProdDate!) > 0) {
+              item.latestProdDate = prodDate;
+            }
+          }
+
+          // 도착예정일 업데이트
+          if (planDelivDate.isNotEmpty) {
+            if (item.earliestDelivDate == null || _compareDates(planDelivDate, item.earliestDelivDate!) < 0) {
+              item.earliestDelivDate = planDelivDate;
+            }
+            if (item.latestDelivDate == null || _compareDates(planDelivDate, item.latestDelivDate!) > 0) {
+              item.latestDelivDate = planDelivDate;
             }
           }
         } catch (e) {
@@ -421,7 +441,7 @@ class ExcelService {
       }
 
       if (kDebugMode) {
-        debugPrint('🎯 입항일정표 파싱 완료: 매칭 성공 $matchedCount건, 매칭 실패 $unmatchedCount건');
+        debugPrint('🎯 입항일정표 파싱 완료: 기존 항목 매칭 $matchedCount건, 신규 항목 생성 $unmatchedCount건');
       }
 
       return items;
