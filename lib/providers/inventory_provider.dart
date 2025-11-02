@@ -219,8 +219,16 @@ class InventoryProvider with ChangeNotifier {
   Future<void> uploadInventoryFile(Uint8List bytes, String fileName) async {
     try {
       _items = await _excelService.parseInventoryFile(bytes, _items);
+      
+      // 재고현황표 업로드 후 자동으로 내장 입항일정 데이터 적용
+      _items = _excelService.applyEmbeddedShipmentData(_items);
+      
       _inventoryFileName = fileName;
       _inventoryFileDate = _excelService.extractDateFromFilename(fileName);
+      
+      // 입항일정 내장 데이터 사용 (파일명 설정)
+      _shipmentFileName = '내장 데이터 (331개 조합)';
+      
       await _saveData(); // 데이터 저장
       notifyListeners();
     } catch (e) {

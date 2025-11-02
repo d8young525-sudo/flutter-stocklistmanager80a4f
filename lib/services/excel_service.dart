@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:spreadsheet_decoder/spreadsheet_decoder.dart';
 import '../models/inventory_item.dart';
 import '../models/price_data.dart';
+import '../models/shipment_data.dart';
 
 class ExcelService {
   // 재고현황표 파일명에서 날짜 추출
@@ -450,6 +451,85 @@ class ExcelService {
         debugPrint('❌ 입항일정표 파싱 오류: ${e.toString()}');
       }
       throw Exception('입항일정표를 읽을 수 없습니다: ${e.toString()}');
+    }
+  }
+
+  // 내장된 입항일정 데이터를 items에 적용
+  Map<String, InventoryItem> applyEmbeddedShipmentData(
+    Map<String, InventoryItem> items,
+  ) {
+    try {
+      int matchedCount = 0;
+      int unmatchedCount = 0;
+      
+      // 기존 items를 순회하면서 내장 데이터에서 입항일정 찾기
+      for (var entry in items.entries) {
+        String key = entry.key;
+        InventoryItem item = entry.value;
+        
+        // ShipmentData에서 입항일정 조회
+        ShipmentInfo? shipmentInfo = ShipmentData.getShipment(
+          item.my,
+          item.model,
+          item.color,
+          item.trim,
+        );
+        
+        if (shipmentInfo != null) {
+          matchedCount++;
+          
+          // 입항일정 상세 정보 추가 (모든 생산일/입항일 조합)
+          for (int i = 0; i < shipmentInfo.prodDates.length; i++) {
+            String prodDate = shipmentInfo.prodDates[i];
+            String delivDate = i < shipmentInfo.delivDates.length 
+                ? shipmentInfo.delivDates[i] 
+                : '';
+            
+            item.shipmentDetails.add(ShipmentDetail(
+              model: item.model,
+              modelYear: item.my,
+              colour: item.color,
+              trim: item.trim,
+              prodDate: prodDate,
+              planDelivDate: delivDate,
+            ));
+          }
+          
+          // 최소/최대 날짜 업데이트
+          item.earliestProdDate = shipmentInfo.earliestProdDate.isNotEmpty 
+              ? shipmentInfo.earliestProdDate 
+              : null;
+          item.latestProdDate = shipmentInfo.latestProdDate.isNotEmpty 
+              ? shipmentInfo.latestProdDate 
+              : null;
+          item.earliestDelivDate = shipmentInfo.earliestDelivDate.isNotEmpty 
+              ? shipmentInfo.earliestDelivDate 
+              : null;
+          item.latestDelivDate = shipmentInfo.latestDelivDate.isNotEmpty 
+              ? shipmentInfo.latestDelivDate 
+              : null;
+          
+          if (kDebugMode && matchedCount <= 5) {
+            debugPrint('✅ 입항일정 매칭: ${item.model} (${item.my}) - Prod: ${item.earliestProdDate} ~ ${item.latestProdDate}');
+          }
+        } else {
+          unmatchedCount++;
+          if (kDebugMode && unmatchedCount <= 3) {
+            debugPrint('⚠️ 입항일정 없음: ${item.model} | ${item.my} | ${item.color} | ${item.trim}');
+          }
+        }
+      }
+      
+      if (kDebugMode) {
+        debugPrint('🎯 내장 입항일정 적용 완료: 매칭 $matchedCount건, 미매칭 $unmatchedCount건');
+      }
+      
+      return items;
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('❌ 입항일정 적용 오류: ${e.toString()}');
+      }
+      return items;
     }
   }
 

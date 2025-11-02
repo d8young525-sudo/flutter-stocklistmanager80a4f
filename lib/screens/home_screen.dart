@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.4 업데이트',
+                '버전 3.5 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,8 +237,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
+              _buildPatchItem('🚢', '입항일정표 내장 적용 (NEW!)', 
+                '재고현황표만 업로드하면 입항일정이 자동으로 표시됩니다! 2024년 4월 ~ 2026년 1월 생산분 입항일정 총 331개 조합이 앱에 내장되어 있습니다.'),
               _buildPatchItem('💰', '가격표 기본 내장 (2025.11.02 업데이트)', 
-                '2024/2025/2026 MY 가격표가 앱에 기본 탑재되어 더 이상 가격표 파일을 업로드할 필요가 없습니다! 총 180개 모델의 가격이 자동으로 표시됩니다. (최신 가격표 반영)'),
+                '2024/2025/2026 MY 가격표가 앱에 기본 탑재되어 더 이상 가격표 파일을 업로드할 필요가 없습니다! 총 180개 모델의 가격이 자동으로 표시됩니다.'),
               _buildPatchItem('🏷️', '항목명 개선', 
                 '더 직관적인 용어로 변경: "현재계약" → "배정", "현재미계약" → "배정가능"'),
               _buildPatchItem('🌐', '색상/트림명 한글 적용', 
@@ -1114,13 +1116,30 @@ class _FileUploadDialogState extends State<FileUploadDialog> {
                     padding: const EdgeInsets.symmetric(vertical: 18),
                   ),
                 ),
-                const SizedBox(height: 16),
-                ElevatedButton.icon(
-                  onPressed: () => _uploadFile('shipment'),
-                  icon: const Icon(Icons.local_shipping, size: 24),
-                  label: const Text('입항일정표 업로드', style: TextStyle(fontSize: 16)),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 18),
+                const SizedBox(height: 12),
+                // 입항일정표는 내장 데이터로 자동 적용됨
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[50],
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.blue[200]!),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.info_outline, color: Colors.blue[700], size: 20),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          '입항일정표는 앱에 내장되어 있어\n재고현황표만 업로드하면 자동으로 적용됩니다',
+                          style: TextStyle(
+                            color: Colors.blue[700],
+                            fontSize: 13,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
