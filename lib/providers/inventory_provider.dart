@@ -175,6 +175,31 @@ class InventoryProvider with ChangeNotifier {
         
         final uid = _authService.currentUser?.uid ?? 'unknown';
         debugPrint('✅ 사용자($uid) 저장된 데이터 로드 완료: ${_items.length}개 아이템');
+        
+        // 🔄 기존 데이터에 내장 입항일정 자동 적용
+        if (_items.isNotEmpty) {
+          debugPrint('🔄 내장 입항일정 데이터 자동 적용 시작...');
+          
+          // 기존 입항일정 데이터 초기화 (shipmentDetails 클리어)
+          for (var item in _items.values) {
+            item.shipmentDetails.clear();
+            item.earliestProdDate = null;
+            item.latestProdDate = null;
+            item.earliestDelivDate = null;
+            item.latestDelivDate = null;
+          }
+          
+          // 내장 입항일정 적용
+          _items = _excelService.applyEmbeddedShipmentData(_items);
+          
+          // 입항일정 파일명을 내장 데이터로 업데이트
+          _shipmentFileName = '내장 데이터 (331개 조합)';
+          
+          // 변경사항 저장
+          await _saveData();
+          
+          debugPrint('✅ 내장 입항일정 데이터 적용 완료!');
+        }
       }
       
       _isLoaded = true;
