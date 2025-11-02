@@ -478,20 +478,15 @@ class ExcelService {
         if (shipmentInfo != null) {
           matchedCount++;
           
-          // 입항일정 상세 정보 추가 (모든 생산일/입항일 조합)
-          for (int i = 0; i < shipmentInfo.prodDates.length; i++) {
-            String prodDate = shipmentInfo.prodDates[i];
-            String delivDate = i < shipmentInfo.delivDates.length 
-                ? shipmentInfo.delivDates[i] 
-                : '';
-            
+          // 입항일정 상세 정보 추가 (각 생산일-입항일 쌍)
+          for (var detailPair in shipmentInfo.details) {
             item.shipmentDetails.add(ShipmentDetail(
               model: item.model,
               modelYear: item.my,
               colour: item.color,
               trim: item.trim,
-              prodDate: prodDate,
-              planDelivDate: delivDate,
+              prodDate: detailPair.prodDate,
+              planDelivDate: detailPair.delivDate,
             ));
           }
           
