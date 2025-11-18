@@ -1,11224 +1,19 @@
-// 입항일정표 내장 데이터
-// 생성 날짜: 2025-01-29
-// 원본 파일: Enquiries_20251029_24.04월~26.01월_생산분.xlsx
+// Auto-generated shipment data
+// 생성일: 2024-11-18
+// 데이터 소스: (수정)Enquiries_20251112_24.04월~26.01월_생산분.xlsx
+// 총 조합 수: 298
+// 총 일정 수: 1352
 
-class ShipmentData {
-  // MY|Model|Colour|Trim을 키로 하는 입항일정 데이터
-  static const Map<String, ShipmentInfo> shipments = {
-    '2024|AMG EQE 53 SUV|149|851': ShipmentInfo(
-      my: '2024',
-      model: 'AMG EQE 53 SUV',
-      colour: '149',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2024-04-19',
-          delivDate: '2024-06-24',
-        ),
-      ],
-      earliestProdDate: '2024-04-19',
-      latestProdDate: '2024-04-19',
-      earliestDelivDate: '2024-06-24',
-      latestDelivDate: '2024-06-24',
-    ),
-    '2024|AMG EQE 53 SUV|197|859': ShipmentInfo(
-      my: '2024',
-      model: 'AMG EQE 53 SUV',
-      colour: '197',
-      trim: '859',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2024-04-19',
-          delivDate: '2024-06-24',
-        ),
-      ],
-      earliestProdDate: '2024-04-19',
-      latestProdDate: '2024-04-19',
-      earliestDelivDate: '2024-06-24',
-      latestDelivDate: '2024-06-24',
-    ),
-    '2024|GLE 400 e 4M Coupe|149|801': ShipmentInfo(
-      my: '2024',
-      model: 'GLE 400 e 4M Coupe',
-      colour: '149',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2024-06-25',
-          delivDate: '2024-09-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2024-06-27',
-          delivDate: '2024-09-03',
-        ),
-      ],
-      earliestProdDate: '2024-06-25',
-      latestProdDate: '2024-06-27',
-      earliestDelivDate: '2024-09-03',
-      latestDelivDate: '2024-09-03',
-    ),
-    '2025|AMG G 63|149|927': ShipmentInfo(
-      my: '2025',
-      model: 'AMG G 63',
-      colour: '149',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-08-28',
-      latestProdDate: '2025-08-28',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2025|AMG G 63|197|927': ShipmentInfo(
-      my: '2025',
-      model: 'AMG G 63',
-      colour: '197',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-08-29',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2025|AMG S 63 e Performance|197|551': ShipmentInfo(
-      my: '2025',
-      model: 'AMG S 63 e Performance',
-      colour: '197',
-      trim: '551',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-03-24',
-          delivDate: '2025-07-28',
-        ),
-      ],
-      earliestProdDate: '2025-03-24',
-      latestProdDate: '2025-03-24',
-      earliestDelivDate: '2025-07-28',
-      latestDelivDate: '2025-07-28',
-    ),
-    '2025|Maybach GLS 600 4M Manufak|C21(197/660)|514': ShipmentInfo(
-      my: '2025',
-      model: 'Maybach GLS 600 4M Manufak',
-      colour: 'C21(197/660)',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-09',
-          delivDate: '2025-11-16',
-        ),
-      ],
-      earliestProdDate: '2025-08-09',
-      latestProdDate: '2025-08-09',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-11-16',
-    ),
-    '2026|A 220|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'A 220',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-01',
-      latestProdDate: '2025-11-14',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|A 220|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'A 220',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-17',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|A 220|696|101': ShipmentInfo(
-      my: '2026',
-      model: 'A 220',
-      colour: '696',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-30',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-30',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG A 45 S 4MATIC+|149|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG A 45 S 4MATIC+',
-      colour: '149',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-07-30',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|AMG A 45 S 4MATIC+|696|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG A 45 S 4MATIC+',
-      colour: '696',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-08-12',
-      latestProdDate: '2025-10-14',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG A 45 S 4MATIC+|696|651': ShipmentInfo(
-      my: '2026',
-      model: 'AMG A 45 S 4MATIC+',
-      colour: '696',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-01',
-      latestProdDate: '2025-08-01',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG CLA 45 S 4MATIC+|149|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLA 45 S 4MATIC+',
-      colour: '149',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-08',
-      latestProdDate: '2025-09-08',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|AMG CLA 45 S 4MATIC+|149|654': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLA 45 S 4MATIC+',
-      colour: '149',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-18',
-          delivDate: '2025-08-04',
-        ),
-      ],
-      earliestProdDate: '2025-06-18',
-      latestProdDate: '2025-06-18',
-      earliestDelivDate: '2025-08-04',
-      latestDelivDate: '2025-08-04',
-    ),
-    '2026|AMG CLA 45 S 4MATIC+|662|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLA 45 S 4MATIC+',
-      colour: '662',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-09-02',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|197|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '197',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-14',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2026-01-02',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|197|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '197',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-03',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|818|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '818',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-26',
-        ),
-      ],
-      earliestProdDate: '2025-10-14',
-      latestProdDate: '2025-10-14',
-      earliestDelivDate: '2025-12-26',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|818|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '818',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-03',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|885|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '885',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-13',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|885|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '885',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-13',
-      latestProdDate: '2025-09-09',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-04',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|956|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '956',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-09-10',
-      latestProdDate: '2025-09-10',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG CLE 53 4M Cabriolet|993|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Cabriolet',
-      colour: '993',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-09-15',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG CLE 53 4M Coupe|197|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Coupe',
-      colour: '197',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-20',
-      latestProdDate: '2025-11-20',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-10-30',
-    ),
-    '2026|AMG CLE 53 4M Coupe|197|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Coupe',
-      colour: '197',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|AMG CLE 53 4M Coupe|818|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Coupe',
-      colour: '818',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-21',
-      latestProdDate: '2025-08-21',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG CLE 53 4M Coupe|818|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Coupe',
-      colour: '818',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-10',
-      latestProdDate: '2025-09-15',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG CLE 53 4M Coupe|885|887': ShipmentInfo(
-      my: '2026',
-      model: 'AMG CLE 53 4M Coupe',
-      colour: '885',
-      trim: '887',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-09-25',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|AMG E 53 Hybrid 4MATIC+|149|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG E 53 Hybrid 4MATIC+',
-      colour: '149',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-09',
-      latestProdDate: '2025-09-09',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|AMG E 53 Hybrid 4MATIC+|149|854': ShipmentInfo(
-      my: '2026',
-      model: 'AMG E 53 Hybrid 4MATIC+',
-      colour: '149',
-      trim: '854',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-07',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2025-11-20',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG E 53 Hybrid 4MATIC+|831|854': ShipmentInfo(
-      my: '2026',
-      model: 'AMG E 53 Hybrid 4MATIC+',
-      colour: '831',
-      trim: '854',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-07-31',
-      latestProdDate: '2025-07-31',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-10-31',
-    ),
-    '2026|AMG E 53 Hybrid 4MATIC+|956|854': ShipmentInfo(
-      my: '2026',
-      model: 'AMG E 53 Hybrid 4MATIC+',
-      colour: '956',
-      trim: '854',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-09',
-      latestProdDate: '2025-09-09',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|AMG G 63|149|545': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '149',
-      trim: '545',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|AMG G 63|149|927': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '149',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-17',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|AMG G 63|183|927': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '183',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-29',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|AMG G 63|197|501': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '197',
-      trim: '501',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-10-09',
-      latestProdDate: '2025-10-09',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2025-11-24',
-    ),
-    '2026|AMG G 63|197|545': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '197',
-      trim: '545',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-09-22',
-      latestProdDate: '2025-10-17',
-      earliestDelivDate: '2025-12-01',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|AMG G 63|197|575': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '197',
-      trim: '575',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-21',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG G 63|197|927': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '197',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-13',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-04',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-04',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-18',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-09-13',
-      latestProdDate: '2025-10-18',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|AMG G 63|859|501': ShipmentInfo(
-      my: '2026',
-      model: 'AMG G 63',
-      colour: '859',
-      trim: '501',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-10-06',
-      latestProdDate: '2025-10-06',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|AMG GLB 35 4MATIC|149|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLB 35 4MATIC',
-      colour: '149',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-10-10',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2025-11-24',
-    ),
-    '2026|AMG GLB 35 4MATIC|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLB 35 4MATIC',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-13',
-      latestProdDate: '2025-10-31',
-      earliestDelivDate: '2025-11-27',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLB 35 4MATIC|149|654': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLB 35 4MATIC',
-      colour: '149',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-23',
-      latestProdDate: '2025-10-14',
-      earliestDelivDate: '2025-11-07',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG GLB 35 4MATIC|696|277': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLB 35 4MATIC',
-      colour: '696',
-      trim: '277',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-10-10',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-10-10',
-    ),
-    '2026|AMG GLB 35 4MATIC|696|654': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLB 35 4MATIC',
-      colour: '696',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-14',
-      latestProdDate: '2025-11-14',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLC 43 4M Coupe|149|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M Coupe',
-      colour: '149',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-06',
-      latestProdDate: '2025-11-06',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLC 43 4M Coupe|197|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M Coupe',
-      colour: '197',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-21',
-      latestProdDate: '2025-11-05',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLC 43 4M Coupe|956|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M Coupe',
-      colour: '956',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-24',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|AMG GLC 43 4M|149|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M',
-      colour: '149',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-01',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLC 43 4M|197|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M',
-      colour: '197',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-08',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLC 43 4M|956|251': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLC 43 4M',
-      colour: '956',
-      trim: '251',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-      ],
-      earliestProdDate: '2025-09-24',
-      latestProdDate: '2025-09-24',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-04',
-    ),
-    '2026|AMG GLE 53 4M Coupe|149|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4M Coupe',
-      colour: '149',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|AMG GLE 53 4M Coupe|149|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4M Coupe',
-      colour: '149',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-      ],
-      earliestProdDate: '2025-07-22',
-      latestProdDate: '2025-07-24',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-09-29',
-    ),
-    '2026|AMG GLE 53 4M Coupe|197|851': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4M Coupe',
-      colour: '197',
-      trim: '851',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-16',
-        ),
-      ],
-      earliestProdDate: '2025-09-04',
-      latestProdDate: '2025-09-04',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-11-16',
-    ),
-    '2026|AMG GLE 53 4M Coupe|197|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4M Coupe',
-      colour: '197',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-03',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-      ],
-      earliestProdDate: '2025-07-24',
-      latestProdDate: '2025-08-04',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-10-10',
-    ),
-    '2026|AMG GLE 53 4M Coupe|956|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4M Coupe',
-      colour: '956',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-10-09',
-      latestProdDate: '2025-10-09',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2025-11-24',
-    ),
-    '2026|AMG GLE 53 4MATIC+|149|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4MATIC+',
-      colour: '149',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-31',
-      latestProdDate: '2025-11-14',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLE 53 4MATIC+|197|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4MATIC+',
-      colour: '197',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-20',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-29',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG GLE 53 4MATIC+|956|857': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLE 53 4MATIC+',
-      colour: '956',
-      trim: '857',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-11-20',
-        ),
-      ],
-      earliestProdDate: '2025-10-06',
-      latestProdDate: '2025-10-06',
-      earliestDelivDate: '2025-11-20',
-      latestDelivDate: '2025-11-20',
-    ),
-    '2026|AMG GLS 63 4MATIC+|149|551': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GLS 63 4MATIC+',
-      colour: '149',
-      trim: '551',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-10-27',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-09-12',
-      earliestDelivDate: '2025-10-27',
-      latestDelivDate: '2025-10-27',
-    ),
-    '2026|AMG GT 43 4MATIC+|149|507': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '149',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-08',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG GT 43 4MATIC+|149|565': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '149',
-      trim: '565',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-24',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|AMG GT 43 4MATIC+|149|801': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '149',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-20',
-      latestProdDate: '2025-11-20',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG GT 43 4MATIC+|197|507': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '197',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-29',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-13',
-      latestProdDate: '2025-10-29',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG GT 43 4MATIC+|197|554': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '197',
-      trim: '554',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-29',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-28',
-      latestProdDate: '2025-10-29',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG GT 43 4MATIC+|197|801': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '197',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-22',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG GT 43 4MATIC+|297|507': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '297',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-22',
-      latestProdDate: '2025-08-22',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG GT 43 4MATIC+|818|507': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 43 4MATIC+',
-      colour: '818',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-08-26',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG GT 55 4M Coupe|197|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 55 4M Coupe',
-      colour: '197',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-09-01',
-      latestProdDate: '2025-09-01',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG GT 55 4M Coupe|56|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 55 4M Coupe',
-      colour: '56',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-09-03',
-      latestProdDate: '2025-09-03',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG GT 63 S e Performance|190|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 63 S e Performance',
-      colour: '190',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-10-02',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|AMG GT 63 S e Performance|56|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 63 S e Performance',
-      colour: '56',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-07',
-      latestProdDate: '2025-11-07',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-10-30',
-    ),
-    '2026|AMG GT 63 S e Performance|659|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 63 S e Performance',
-      colour: '659',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-14',
-      latestProdDate: '2025-08-14',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG GT 63 S e Performance|818|967': ShipmentInfo(
-      my: '2026',
-      model: 'AMG GT 63 S e Performance',
-      colour: '818',
-      trim: '967',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-12',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|AMG S 63 e Performance|56|557': ShipmentInfo(
-      my: '2026',
-      model: 'AMG S 63 e Performance',
-      colour: '56',
-      trim: '557',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-12',
-      latestProdDate: '2025-08-12',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG S 63 e Performance|659|557': ShipmentInfo(
-      my: '2026',
-      model: 'AMG S 63 e Performance',
-      colour: '659',
-      trim: '557',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-08-29',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG S 63 e Performance|885|551': ShipmentInfo(
-      my: '2026',
-      model: 'AMG S 63 e Performance',
-      colour: '885',
-      trim: '551',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-13',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-06-13',
-      latestProdDate: '2025-06-13',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|AMG S 63 e Performance|885|555': ShipmentInfo(
-      my: '2026',
-      model: 'AMG S 63 e Performance',
-      colour: '885',
-      trim: '555',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-05',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-07-05',
-      latestProdDate: '2025-07-05',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|AMG S 63 e Performance|885|557': ShipmentInfo(
-      my: '2026',
-      model: 'AMG S 63 e Performance',
-      colour: '885',
-      trim: '557',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-25',
-      latestProdDate: '2025-09-25',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|AMG SL 43|197|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG SL 43',
-      colour: '197',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-10',
-      latestProdDate: '2025-09-10',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|AMG SL 43|885|801': ShipmentInfo(
-      my: '2026',
-      model: 'AMG SL 43',
-      colour: '885',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-06',
-      latestProdDate: '2025-11-06',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|AMG SL 43|885|804': ShipmentInfo(
-      my: '2026',
-      model: 'AMG SL 43',
-      colour: '885',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-02',
-          delivDate: '2026-03-02',
-        ),
-      ],
-      earliestProdDate: '2025-12-02',
-      latestProdDate: '2025-12-02',
-      earliestDelivDate: '2026-03-02',
-      latestDelivDate: '2026-03-02',
-    ),
-    '2026|AMG SL 43|885|807': ShipmentInfo(
-      my: '2026',
-      model: 'AMG SL 43',
-      colour: '885',
-      trim: '807',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-03',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-12-03',
-      latestProdDate: '2025-12-03',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 AMG Line|149|118': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 AMG Line',
-      colour: '149',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-05',
-      latestProdDate: '2025-11-10',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 AMG Line|149|194': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 AMG Line',
-      colour: '149',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-04',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 AMG Line|197|118': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 AMG Line',
-      colour: '197',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-19',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 AMG Line|197|194': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 AMG Line',
-      colour: '197',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-05',
-      latestProdDate: '2025-11-05',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 Avantgarde|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 Avantgarde',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-07',
-      latestProdDate: '2025-11-07',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 Avantgarde|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 Avantgarde',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-03',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 Avantgarde|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 Avantgarde',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-17',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 Avantgarde|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 Avantgarde',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-04',
-      latestProdDate: '2025-11-18',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|C 200 Avantgarde|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'C 200 Avantgarde',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-04',
-      latestProdDate: '2025-11-05',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLA 250 4M AMG Line|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'CLA 250 4M AMG Line',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-11-04',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|CLA 250 4M AMG Line|149|654': ShipmentInfo(
-      my: '2026',
-      model: 'CLA 250 4M AMG Line',
-      colour: '149',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-11-04',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|CLA 250 4M AMG Line|696|651': ShipmentInfo(
-      my: '2026',
-      model: 'CLA 250 4M AMG Line',
-      colour: '696',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-11-05',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|CLA 250 4M AMG Line|696|654': ShipmentInfo(
-      my: '2026',
-      model: 'CLA 250 4M AMG Line',
-      colour: '696',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-03',
-      latestProdDate: '2025-09-30',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|CLE 200 Cabriolet|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-08-12',
-      latestProdDate: '2025-10-09',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|CLE 200 Cabriolet|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Cabriolet|149|205': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '149',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-      ],
-      earliestProdDate: '2025-10-21',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2026-01-02',
-      latestDelivDate: '2026-01-02',
-    ),
-    '2026|CLE 200 Cabriolet|149|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '149',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-25',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Cabriolet|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-27',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-12-10',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Cabriolet|197|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '197',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-25',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Cabriolet|818|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '818',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-17',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Cabriolet|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-09-11',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|CLE 200 Cabriolet|831|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '831',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-10-07',
-      latestProdDate: '2025-10-07',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|CLE 200 Cabriolet|831|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '831',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-04',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-12-04',
-    ),
-    '2026|CLE 200 Cabriolet|956|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Cabriolet',
-      colour: '956',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-11-03',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|CLE 200 Coupe|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-07',
-      latestProdDate: '2025-11-07',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-22',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-01',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|149|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '149',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-14',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|CLE 200 Coupe|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-09',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|197|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '197',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-17',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|CLE 200 Coupe|956|104': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 200 Coupe',
-      colour: '956',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-09-16',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|CLE 450 4M Cabriolet|149|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 450 4M Cabriolet',
-      colour: '149',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-06',
-      latestProdDate: '2025-11-06',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-10-30',
-    ),
-    '2026|CLE 450 4M Coupe|149|204': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 450 4M Coupe',
-      colour: '149',
-      trim: '204',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-05-23',
-          delivDate: '2025-08-25',
-        ),
-      ],
-      earliestProdDate: '2025-05-23',
-      latestProdDate: '2025-05-23',
-      earliestDelivDate: '2025-08-25',
-      latestDelivDate: '2025-08-25',
-    ),
-    '2026|CLE 450 4M Coupe|197|207': ShipmentInfo(
-      my: '2026',
-      model: 'CLE 450 4M Coupe',
-      colour: '197',
-      trim: '207',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-13',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-10-30',
-    ),
-    '2026|E 200 AMG Line|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 AMG Line',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-16',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-27',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 AMG Line|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 AMG Line',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-25',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 AMG Line|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 AMG Line',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-08',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-08',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 AMG Line|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 AMG Line',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-07',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 AMG Line|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 AMG Line',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 Avantgarde|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-22',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|E 200 Avantgarde|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-11',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-16',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-27',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-27',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-28',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-23',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-11',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 Avantgarde|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-16',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-16',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 Avantgarde|188|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '188',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-29',
-          delivDate: '2025-12-29',
-        ),
-      ],
-      earliestProdDate: '2025-07-07',
-      latestProdDate: '2025-10-29',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-12-29',
-    ),
-    '2026|E 200 Avantgarde|197|101': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '197',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-23',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|E 200 Avantgarde|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-27',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-21',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|E 200 Avantgarde|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 Avantgarde|595|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '595',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-29',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|E 200 Avantgarde|771|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '771',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-07-19',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|E 200 Avantgarde|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-11',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-11',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 200 Avantgarde|831|105': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '831',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-13',
-          delivDate: '2025-10-17',
-        ),
-      ],
-      earliestProdDate: '2025-06-13',
-      latestProdDate: '2025-06-13',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-10-17',
-    ),
-    '2026|E 200 Avantgarde|922|104': ShipmentInfo(
-      my: '2026',
-      model: 'E 200 Avantgarde',
-      colour: '922',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2025-10-30',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-12',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|149|114': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '149',
-      trim: '114',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-27',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-25',
-      latestProdDate: '2025-11-20',
-      earliestDelivDate: '2025-11-09',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|149|115': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '149',
-      trim: '115',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|197|114': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '197',
-      trim: '114',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-      ],
-      earliestProdDate: '2025-08-13',
-      latestProdDate: '2025-10-28',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-11',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|197|115': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '197',
-      trim: '115',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 220 d 4MATIC Exclusive|831|114': ShipmentInfo(
-      my: '2026',
-      model: 'E 220 d 4MATIC Exclusive',
-      colour: '831',
-      trim: '114',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-09-11',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|E 300 4M AMG Line|149|205': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '149',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-05',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-23',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-05',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|149|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '149',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-27',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-05',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-06-27',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|149|221': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '149',
-      trim: '221',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-25',
-      latestProdDate: '2025-09-25',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|E 300 4M AMG Line|197|205': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '197',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-29',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-10-20',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|197|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '197',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|831|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '831',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-21',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|922|205': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '922',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-20',
-        ),
-      ],
-      earliestProdDate: '2025-08-01',
-      latestProdDate: '2025-08-01',
-      earliestDelivDate: '2025-10-20',
-      latestDelivDate: '2025-10-20',
-    ),
-    '2026|E 300 4M AMG Line|956|205': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '956',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-27',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M AMG Line|956|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '956',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-20',
-      latestProdDate: '2025-10-30',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|E 300 4M AMG Line|956|221': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M AMG Line',
-      colour: '956',
-      trim: '221',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-08-19',
-      latestProdDate: '2025-09-24',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 300 4M EX|149|201': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '149',
-      trim: '201',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-13',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|149|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '149',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-03',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-15',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-16',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-30',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-03',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|149|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '149',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-15',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|197|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '197',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-05',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-05',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|197|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '197',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|771|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '771',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-10',
-      latestProdDate: '2025-10-30',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|E 300 4M EX|831|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '831',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-19',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 300 4M EX|831|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '831',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-23',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|E 300 4M EX|922|201': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '922',
-      trim: '201',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-08',
-      latestProdDate: '2025-09-18',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|E 300 4M EX|922|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 300 4M EX',
-      colour: '922',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-10-13',
-      latestProdDate: '2025-10-16',
-      earliestDelivDate: '2025-11-26',
-      latestDelivDate: '2025-12-01',
-    ),
-    '2026|E 350 e 4MATIC|149|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 350 e 4MATIC',
-      colour: '149',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-09',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 350 e 4MATIC|149|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 350 e 4MATIC',
-      colour: '149',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-05',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 350 e 4MATIC|188|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 350 e 4MATIC',
-      colour: '188',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-09',
-      latestProdDate: '2025-09-09',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|E 350 e 4MATIC|197|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 350 e 4MATIC',
-      colour: '197',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-13',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-13',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 350 e 4MATIC|197|215': ShipmentInfo(
-      my: '2026',
-      model: 'E 350 e 4MATIC',
-      colour: '197',
-      trim: '215',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-19',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|E 450 4M AMG Line|149|205': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '149',
-      trim: '205',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-08',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-06',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-07-08',
-      latestProdDate: '2025-08-06',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-10-31',
-    ),
-    '2026|E 450 4M AMG Line|149|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '149',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-10',
-          delivDate: '2025-09-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-12',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-07-10',
-      latestProdDate: '2025-08-04',
-      earliestDelivDate: '2025-09-26',
-      latestDelivDate: '2025-10-31',
-    ),
-    '2026|E 450 4M AMG Line|197|201': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '197',
-      trim: '201',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-06',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-08-06',
-      latestProdDate: '2025-08-06',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-10-31',
-    ),
-    '2026|E 450 4M AMG Line|197|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '197',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-06',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-06',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-06',
-      latestProdDate: '2025-09-16',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|E 450 4M AMG Line|771|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '771',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-08-04',
-      latestProdDate: '2025-08-04',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-10-31',
-    ),
-    '2026|E 450 4M AMG Line|831|214': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4M AMG Line',
-      colour: '831',
-      trim: '214',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-      ],
-      earliestProdDate: '2025-07-07',
-      latestProdDate: '2025-07-07',
-      earliestDelivDate: '2025-10-17',
-      latestDelivDate: '2025-10-17',
-    ),
-    '2026|E 450 4MATIC Exclusive|149|801': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '149',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-02',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-      ],
-      earliestProdDate: '2025-07-02',
-      latestProdDate: '2025-10-08',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 450 4MATIC Exclusive|149|808': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '149',
-      trim: '808',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-07-24',
-      latestProdDate: '2025-10-07',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 450 4MATIC Exclusive|149|814': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '149',
-      trim: '814',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-03',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-08',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-10',
-          delivDate: '2025-09-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-07',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-07-03',
-      latestProdDate: '2025-10-16',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 450 4MATIC Exclusive|197|801': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '197',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-27',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-08-26',
-      latestProdDate: '2025-09-27',
-      earliestDelivDate: '2025-11-09',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|E 450 4MATIC Exclusive|197|808': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '197',
-      trim: '808',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-06',
-        ),
-      ],
-      earliestProdDate: '2025-08-19',
-      latestProdDate: '2025-09-22',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-11-06',
-    ),
-    '2026|E 450 4MATIC Exclusive|197|814': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '197',
-      trim: '814',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-01',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-07',
-          delivDate: '2025-10-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-07-01',
-      latestProdDate: '2025-10-02',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 450 4MATIC Exclusive|595|808': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '595',
-      trim: '808',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-30',
-          delivDate: '2025-09-19',
-        ),
-      ],
-      earliestProdDate: '2025-06-30',
-      latestProdDate: '2025-06-30',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-09-19',
-    ),
-    '2026|E 450 4MATIC Exclusive|771|814': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '771',
-      trim: '814',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-25',
-      latestProdDate: '2025-09-25',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|E 450 4MATIC Exclusive|831|814': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '831',
-      trim: '814',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-04',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-04',
-          delivDate: '2025-09-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-10',
-          delivDate: '2025-09-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-07-04',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-09-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|E 450 4MATIC Exclusive|922|814': ShipmentInfo(
-      my: '2026',
-      model: 'E 450 4MATIC Exclusive',
-      colour: '922',
-      trim: '814',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-29',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|EQA 250 AMG Line|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'EQA 250 AMG Line',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-10-28',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-11',
-    ),
-    '2026|EQA 250 Progressive|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'EQA 250 Progressive',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-10-07',
-      earliestDelivDate: '2025-11-20',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|EQA 250 Progressive|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'EQA 250 Progressive',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|EQB 300 4M AMG Line|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M AMG Line',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQB 300 4M AMG Line|696|651': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M AMG Line',
-      colour: '696',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-29',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2025-11-20',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQB 300 4M Progressive|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-03',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-03',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-03',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-03',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-11-18',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQB 300 4M Progressive|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-09-24',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|EQB 300 4M Progressive|696|101': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '696',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-02',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQB 300 4M Progressive|696|105': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '696',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-02',
-      latestProdDate: '2025-11-13',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQB 300 4M Progressive|787|101': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '787',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-23',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|EQB 300 4M Progressive|922|101': ShipmentInfo(
-      my: '2026',
-      model: 'EQB 300 4M Progressive',
-      colour: '922',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-      ],
-      earliestProdDate: '2025-09-22',
-      latestProdDate: '2025-10-08',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2025-11-21',
-    ),
-    '2026|EQE 350+ SUV|149|109': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '149',
-      trim: '109',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-07-24',
-      latestProdDate: '2025-10-16',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2025-12-01',
-    ),
-    '2026|EQE 350+ SUV|149|111': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '149',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|EQE 350+ SUV|149|119': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '149',
-      trim: '119',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-17',
-      latestProdDate: '2025-10-17',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQE 350+ SUV|149|121': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '149',
-      trim: '121',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-10-14',
-      latestProdDate: '2025-10-14',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|EQE 350+ SUV|197|109': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '197',
-      trim: '109',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-10-24',
-        ),
-      ],
-      earliestProdDate: '2025-08-22',
-      latestProdDate: '2025-08-22',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2025-10-24',
-    ),
-    '2026|EQE 350+ SUV|197|111': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '197',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-24',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|EQE 350+ SUV|197|121': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+ SUV',
-      colour: '197',
-      trim: '121',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-10',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-12-10',
-      latestProdDate: '2025-12-10',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|EQE 350+|149|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+',
-      colour: '149',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-11',
-        ),
-      ],
-      earliestProdDate: '2025-08-18',
-      latestProdDate: '2025-10-27',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-11',
-    ),
-    '2026|EQE 350+|831|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 350+',
-      colour: '831',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-10-07',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|EQE 500 4MATIC SUV|149|201': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '149',
-      trim: '201',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-10',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2025-07-23',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-10-10',
-    ),
-    '2026|EQE 500 4MATIC SUV|149|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '149',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2026-01-07',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2026-01-07',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQE 500 4MATIC SUV|197|201': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '197',
-      trim: '201',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|EQE 500 4MATIC SUV|197|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '197',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-10',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-01',
-      latestProdDate: '2025-12-10',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|EQE 500 4MATIC SUV|771|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '771',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-15',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-12-15',
-      latestProdDate: '2025-12-15',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|EQE 500 4MATIC SUV|956|209': ShipmentInfo(
-      my: '2026',
-      model: 'EQE 500 4MATIC SUV',
-      colour: '956',
-      trim: '209',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-10-24',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|G 450 d Manufaktur|183|825': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d Manufaktur',
-      colour: '183',
-      trim: '825',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-23',
-      latestProdDate: '2025-09-23',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|G 450 d Manufaktur|464|808': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d Manufaktur',
-      colour: '464',
-      trim: '808',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-18',
-      latestProdDate: '2025-09-18',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|G 450 d|149|501': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '149',
-      trim: '501',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-24',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|149|545': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '149',
-      trim: '545',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-17',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|149|575': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '149',
-      trim: '575',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-10',
-      latestProdDate: '2025-11-10',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|149|927': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '149',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-13',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-13',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|197|501': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '197',
-      trim: '501',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-24',
-      latestProdDate: '2025-09-24',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|G 450 d|197|545': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '197',
-      trim: '545',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-15',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-31',
-      latestProdDate: '2025-11-15',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|197|575': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '197',
-      trim: '575',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-04',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|G 450 d|197|927': ShipmentInfo(
-      my: '2026',
-      model: 'G 450 d',
-      colour: '197',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-10',
-      latestProdDate: '2025-09-30',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|G 580 w/ EQ Technology|197|927': ShipmentInfo(
-      my: '2026',
-      model: 'G 580 w/ EQ Technology',
-      colour: '197',
-      trim: '927',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-04',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-10-04',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|GLA 250 4M AMG Line|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'GLA 250 4M AMG Line',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-08',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLA 250 4M AMG Line|696|654': ShipmentInfo(
-      my: '2026',
-      model: 'GLA 250 4M AMG Line',
-      colour: '696',
-      trim: '654',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-03',
-      latestProdDate: '2025-11-03',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLB 250 4MATIC|149|651': ShipmentInfo(
-      my: '2026',
-      model: 'GLB 250 4MATIC',
-      colour: '149',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-14',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-29',
-      latestProdDate: '2025-11-04',
-      earliestDelivDate: '2025-11-13',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLB 250 4MATIC|696|651': ShipmentInfo(
-      my: '2026',
-      model: 'GLB 250 4MATIC',
-      colour: '696',
-      trim: '651',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-08',
-      latestProdDate: '2025-11-04',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 220 d 4MATIC|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-26',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|GLC 220 d 4MATIC|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-31',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-21',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-20',
-      latestProdDate: '2025-11-10',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 220 d 4MATIC|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-10-20',
-      latestProdDate: '2025-10-20',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|GLC 220 d 4MATIC|197|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '197',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-      ],
-      earliestProdDate: '2025-09-24',
-      latestProdDate: '2025-09-24',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-04',
-    ),
-    '2026|GLC 220 d 4MATIC|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-06',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-      ],
-      earliestProdDate: '2025-08-27',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2026-01-02',
-    ),
-    '2026|GLC 220 d 4MATIC|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 220 d 4MATIC',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-26',
-        ),
-      ],
-      earliestProdDate: '2025-09-30',
-      latestProdDate: '2025-09-30',
-      earliestDelivDate: '2025-12-26',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|149|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '149',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-09',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-11-10',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|197|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '197',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-11',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-10-30',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|197|118': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '197',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-26',
-        ),
-      ],
-      earliestProdDate: '2025-10-08',
-      latestProdDate: '2025-10-08',
-      earliestDelivDate: '2025-12-26',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|197|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '197',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-09-15',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-11-28',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|956|118': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '956',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4M Coupe AMG Line|956|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AMG Line',
-      colour: '956',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|GLC 300 4M Coupe AV|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-04',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2025-12-04',
-    ),
-    '2026|GLC 300 4M Coupe AV|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-05',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4M Coupe AV|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-11-10',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4M Coupe AV|197|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '197',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-12-04',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|GLC 300 4M Coupe AV|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-11-14',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4M Coupe AV|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-14',
-      latestProdDate: '2025-11-21',
-      earliestDelivDate: '2025-11-28',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4M Coupe AV|956|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4M Coupe AV',
-      colour: '956',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-19',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|149|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '149',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-26',
-        ),
-      ],
-      earliestProdDate: '2025-10-01',
-      latestProdDate: '2025-10-09',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2025-12-26',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|149|118': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '149',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-08-14',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|149|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '149',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-08-14',
-      latestProdDate: '2025-11-25',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|197|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '197',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-12',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|197|118': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '197',
-      trim: '118',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-11-12',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-12-01',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|197|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '197',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-13',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|831|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '831',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-19',
-      latestProdDate: '2025-08-28',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|GLC 300 4MATIC AMG Line|956|194': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AMG Line',
-      colour: '956',
-      trim: '194',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-08-19',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|GLC 300 4MATIC AV|149|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '149',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-13',
-      latestProdDate: '2025-10-30',
-      earliestDelivDate: '2025-12-08',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|GLC 300 4MATIC AV|149|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '149',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-26',
-          delivDate: '2025-09-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-23',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-06-26',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-09-02',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|149|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '149',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-21',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-21',
-      latestProdDate: '2025-11-20',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|188|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '188',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-25',
-        ),
-      ],
-      earliestProdDate: '2025-10-06',
-      latestProdDate: '2025-10-06',
-      earliestDelivDate: '2025-12-25',
-      latestDelivDate: '2025-12-25',
-    ),
-    '2026|GLC 300 4MATIC AV|197|101': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '197',
-      trim: '101',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-14',
-      latestProdDate: '2025-11-14',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|197|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '197',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-25',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-27',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-22',
-      latestProdDate: '2025-11-27',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|197|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '197',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-25',
-      latestProdDate: '2025-11-26',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|831|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '831',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2025-12-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-17',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-28',
-      latestProdDate: '2025-11-17',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|831|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '831',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-19',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|956|104': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '956',
-      trim: '104',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-11-24',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-11-24',
-      latestProdDate: '2025-11-24',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLC 300 4MATIC AV|956|105': ShipmentInfo(
-      my: '2026',
-      model: 'GLC 300 4MATIC AV',
-      colour: '956',
-      trim: '105',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2026-01-02',
-        ),
-      ],
-      earliestProdDate: '2025-10-21',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2026-01-02',
-      latestDelivDate: '2026-01-02',
-    ),
-    '2026|GLE 300 d 4MATIC|149|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 300 d 4MATIC',
-      colour: '149',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-24',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-30',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-03',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-08',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-29',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 300 d 4MATIC|197|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 300 d 4MATIC',
-      colour: '197',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-10',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-03-02',
-        ),
-      ],
-      earliestProdDate: '2025-08-28',
-      latestProdDate: '2025-11-11',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2026-03-02',
-    ),
-    '2026|GLE 300 d 4MATIC|922|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 300 d 4MATIC',
-      colour: '922',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-      ],
-      earliestProdDate: '2025-10-28',
-      latestProdDate: '2025-10-28',
-      earliestDelivDate: '2025-12-11',
-      latestDelivDate: '2025-12-11',
-    ),
-    '2026|GLE 350 4MATIC|149|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 350 4MATIC',
-      colour: '149',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-15',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-24',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-08-15',
-      latestProdDate: '2025-10-23',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|GLE 350 4MATIC|149|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 350 4MATIC',
-      colour: '149',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-23',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-01',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-08-05',
-      latestProdDate: '2025-11-01',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 350 4MATIC|197|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 350 4MATIC',
-      colour: '197',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-08-22',
-      latestProdDate: '2025-10-21',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLE 350 4MATIC|197|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 350 4MATIC',
-      colour: '197',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-15',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-17',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-10-22',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-08',
-    ),
-    '2026|GLE 350 4MATIC|922|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 350 4MATIC',
-      colour: '922',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-30',
-          delivDate: '2025-10-24',
-        ),
-      ],
-      earliestProdDate: '2025-08-30',
-      latestProdDate: '2025-08-30',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2025-10-24',
-    ),
-    '2026|GLE 450 4M AMG Line Night Edition|149|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M AMG Line Night Edition',
-      colour: '149',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-03',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-08',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-27',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-28',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-05',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-11',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-14',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-18',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-23',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-03',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-21',
-      latestProdDate: '2025-12-03',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4M AMG Line Night Edition|197|801': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M AMG Line Night Edition',
-      colour: '197',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-10-10',
-        ),
-      ],
-      earliestProdDate: '2025-08-13',
-      latestProdDate: '2025-08-14',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-10-24',
-    ),
-    '2026|GLE 450 4M AMG Line Night Edition|197|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M AMG Line Night Edition',
-      colour: '197',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-03',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-28',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-08',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-11',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-31',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-12',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-11-12',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4M AMG Line Night Edition|922|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M AMG Line Night Edition',
-      colour: '922',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-03',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-12-03',
-      latestProdDate: '2025-12-03',
-      earliestDelivDate: '2026-01-30',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4M AMG Line Night Edition|992|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M AMG Line Night Edition',
-      colour: '992',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-10-16',
-      latestProdDate: '2025-10-16',
-      earliestDelivDate: '2025-12-01',
-      latestDelivDate: '2025-12-01',
-    ),
-    '2026|GLE 450 4M Coupe|149|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M Coupe',
-      colour: '149',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-18',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-02',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-06',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-08',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-13',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-16',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-18',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-30',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-21',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-07-18',
-      latestProdDate: '2025-09-22',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLE 450 4M Coupe|197|801': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M Coupe',
-      colour: '197',
-      trim: '801',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-10',
-        ),
-      ],
-      earliestProdDate: '2025-08-04',
-      latestProdDate: '2025-08-04',
-      earliestDelivDate: '2025-10-10',
-      latestDelivDate: '2025-10-10',
-    ),
-    '2026|GLE 450 4M Coupe|197|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4M Coupe',
-      colour: '197',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-31',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-07',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-15',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-05',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-21',
-          delivDate: '2025-11-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-07-23',
-      latestProdDate: '2025-09-25',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLE 450 4MATIC|149|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '149',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-17',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-17',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-17',
-      latestProdDate: '2025-11-19',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4MATIC|149|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '149',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-15',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-22',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-26',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-11-14',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-22',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-04',
-          delivDate: '2026-03-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-06',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-13',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-03',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-04',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-22',
-      latestProdDate: '2025-12-04',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-03-02',
-    ),
-    '2026|GLE 450 4MATIC|149|135': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '149',
-      trim: '135',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-16',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-09-15',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-11-16',
-    ),
-    '2026|GLE 450 4MATIC|197|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '197',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-20',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-19',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-28',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-22',
-      latestProdDate: '2025-11-28',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4MATIC|197|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '197',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-19',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-23',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-06',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-09',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-20',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-21',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-25',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-11-26',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-04',
-          delivDate: '2026-01-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-05',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-07-19',
-      latestProdDate: '2025-12-05',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4MATIC|922|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '922',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-03',
-          delivDate: '2026-01-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-17',
-      latestProdDate: '2025-12-03',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2026-01-30',
-    ),
-    '2026|GLE 450 4MATIC|992|111': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '992',
-      trim: '111',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-10-10',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-11-24',
-      latestDelivDate: '2025-11-24',
-    ),
-    '2026|GLE 450 4MATIC|992|124': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 4MATIC',
-      colour: '992',
-      trim: '124',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-16',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-08-29',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-11-16',
-    ),
-    '2026|GLE 450 d 4M Coupe|149|121': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 d 4M Coupe',
-      colour: '149',
-      trim: '121',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-21',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-28',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-29',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-17',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-07-21',
-      latestProdDate: '2025-09-25',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLE 450 d 4M Coupe|197|121': ShipmentInfo(
-      my: '2026',
-      model: 'GLE 450 d 4M Coupe',
-      colour: '197',
-      trim: '121',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-24',
-          delivDate: '2025-09-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-25',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-07-30',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-02',
-          delivDate: '2025-10-10',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-16',
-          delivDate: '2025-10-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-16',
-        ),
-      ],
-      earliestProdDate: '2025-07-24',
-      latestProdDate: '2025-09-09',
-      earliestDelivDate: '2025-09-29',
-      latestDelivDate: '2025-11-16',
-    ),
-    '2026|GLS 450 4M AMG Line Premium|149|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 450 4M AMG Line Premium',
-      colour: '149',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-04',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-10-20',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLS 450 4M AMG Line Premium|197|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 450 4M AMG Line Premium',
-      colour: '197',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLS 450 d 4M AMG Line Premium|149|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 450 d 4M AMG Line Premium',
-      colour: '149',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-10-14',
-      earliestDelivDate: '2025-11-16',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLS 450 d 4M AMG Line Premium|197|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 450 d 4M AMG Line Premium',
-      colour: '197',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-13',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-09-16',
-      latestProdDate: '2025-10-15',
-      earliestDelivDate: '2025-11-27',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLS 580 4MATIC|149|951': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 580 4MATIC',
-      colour: '149',
-      trim: '951',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-12',
-      latestProdDate: '2025-09-12',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|GLS 580 4MATIC|197|224': ShipmentInfo(
-      my: '2026',
-      model: 'GLS 580 4MATIC',
-      colour: '197',
-      trim: '224',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-07-22',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-10-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-07-22',
-      latestProdDate: '2025-10-15',
-      earliestDelivDate: '2025-10-27',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|Maybach EQS 680 4M SUV|149|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach EQS 680 4M SUV',
-      colour: '149',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-26',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|Maybach EQS 680 4M SUV|197|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach EQS 680 4M SUV',
-      colour: '197',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-05',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-12-05',
-      latestDelivDate: '2025-12-05',
-    ),
-    '2026|Maybach EQS 680 4M SUV|197|531': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach EQS 680 4M SUV',
-      colour: '197',
-      trim: '531',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-12-19',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-12-19',
-      latestProdDate: '2025-12-19',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|Maybach EQS 680 4M SUV|771|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach EQS 680 4M SUV',
-      colour: '771',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-      ],
-      earliestProdDate: '2025-09-29',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-11-13',
-      latestDelivDate: '2025-11-13',
-    ),
-    '2026|Maybach GLS 600 4M Manufak|922|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach GLS 600 4M Manufak',
-      colour: '922',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-28',
-          delivDate: '2025-12-11',
-        ),
-      ],
-      earliestProdDate: '2025-10-28',
-      latestProdDate: '2025-10-28',
-      earliestDelivDate: '2025-12-11',
-      latestDelivDate: '2025-12-11',
-    ),
-    '2026|Maybach GLS 600 4MATIC|197|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach GLS 600 4MATIC',
-      colour: '197',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-11',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-14',
-          delivDate: '2025-11-16',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-19',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-05',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-04',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-14',
-          delivDate: '2025-11-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-16',
-          delivDate: '2025-12-01',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-27',
-          delivDate: '2025-12-10',
-        ),
-      ],
-      earliestProdDate: '2025-08-11',
-      latestProdDate: '2025-10-27',
-      earliestDelivDate: '2025-11-13',
-      latestDelivDate: '2025-12-10',
-    ),
-    '2026|Maybach GLS 600 4MATIC|885|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach GLS 600 4MATIC',
-      colour: '885',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-11',
-          delivDate: '2025-11-25',
-        ),
-      ],
-      earliestProdDate: '2025-09-30',
-      latestProdDate: '2025-10-11',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-11-25',
-    ),
-    '2026|Maybach S 580 4M|197|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 580 4M',
-      colour: '197',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-01',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-04',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-12',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-08-01',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|Maybach S 580 4M|831|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 580 4M',
-      colour: '831',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-18',
-      latestProdDate: '2025-09-18',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|Maybach S 580 4M|885|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 580 4M',
-      colour: '885',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-17',
-          delivDate: '2025-12-01',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-10-17',
-      earliestDelivDate: '2025-11-09',
-      latestDelivDate: '2025-12-01',
-    ),
-    '2026|Maybach S 680 4M|190|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 680 4M',
-      colour: '190',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-08-27',
-      latestProdDate: '2025-08-27',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|Maybach S 680 4M|197|511': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 680 4M',
-      colour: '197',
-      trim: '511',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|Maybach S 680 4M|197|514': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 680 4M',
-      colour: '197',
-      trim: '514',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-10-24',
-        ),
-      ],
-      earliestProdDate: '2025-09-10',
-      latestProdDate: '2025-09-10',
-      earliestDelivDate: '2025-10-24',
-      latestDelivDate: '2025-10-24',
-    ),
-    '2026|Maybach S 680 4M|197|515': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 680 4M',
-      colour: '197',
-      trim: '515',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-09-02',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|Maybach S 680 4M|992|515': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach S 680 4M',
-      colour: '992',
-      trim: '515',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-24',
-          delivDate: '2025-12-30',
-        ),
-      ],
-      earliestProdDate: '2025-10-24',
-      latestProdDate: '2025-10-24',
-      earliestDelivDate: '2025-12-30',
-      latestDelivDate: '2025-12-30',
-    ),
-    '2026|Maybach SL 680 Monogram Series|659|509': ShipmentInfo(
-      my: '2026',
-      model: 'Maybach SL 680 Monogram Series',
-      colour: '659',
-      trim: '509',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-26',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-02',
-          delivDate: '2026-03-02',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-12-05',
-          delivDate: '2026-03-02',
-        ),
-      ],
-      earliestProdDate: '2025-10-02',
-      latestProdDate: '2025-12-05',
-      earliestDelivDate: '2025-12-26',
-      latestDelivDate: '2026-03-02',
-    ),
-    '2026|S 350 d 4MATIC|197|204': ShipmentInfo(
-      my: '2026',
-      model: 'S 350 d 4MATIC',
-      colour: '197',
-      trim: '204',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-10-30',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-09-16',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 350 d 4MATIC|831|204': ShipmentInfo(
-      my: '2026',
-      model: 'S 350 d 4MATIC',
-      colour: '831',
-      trim: '204',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-09-15',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 350 d 4MATIC|885|204': ShipmentInfo(
-      my: '2026',
-      model: 'S 350 d 4MATIC',
-      colour: '885',
-      trim: '204',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-14',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-15',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-11-14',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4M SWB|197|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4M SWB',
-      colour: '197',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-05',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-10-30',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-25',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-26',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-08-05',
-      latestProdDate: '2025-09-26',
-      earliestDelivDate: '2025-10-30',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4M SWB|197|805': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4M SWB',
-      colour: '197',
-      trim: '805',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-24',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-09-24',
-      earliestDelivDate: '2025-12-07',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4M SWB|885|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4M SWB',
-      colour: '885',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-20',
-          delivDate: '2025-12-03',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-10-20',
-      earliestDelivDate: '2025-12-03',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4M SWB|885|805': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4M SWB',
-      colour: '885',
-      trim: '805',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-19',
-      latestProdDate: '2025-09-19',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4MATIC L|197|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4MATIC L',
-      colour: '197',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-11-13',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-11-14',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-15',
-          delivDate: '2025-11-28',
-        ),
-      ],
-      earliestProdDate: '2025-08-27',
-      latestProdDate: '2025-10-15',
-      earliestDelivDate: '2025-11-13',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4MATIC L|197|805': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4MATIC L',
-      colour: '197',
-      trim: '805',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-09-12',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 450 4MATIC L|831|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4MATIC L',
-      colour: '831',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-03',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-10-31',
-        ),
-      ],
-      earliestProdDate: '2025-09-03',
-      latestProdDate: '2025-09-17',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 450 4MATIC L|885|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4MATIC L',
-      colour: '885',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-12',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-17',
-          delivDate: '2025-10-31',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-02',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-11',
-      latestProdDate: '2025-10-02',
-      earliestDelivDate: '2025-10-31',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 450 4MATIC L|885|805': ShipmentInfo(
-      my: '2026',
-      model: 'S 450 4MATIC L',
-      colour: '885',
-      trim: '805',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-23',
-          delivDate: '2025-11-06',
-        ),
-      ],
-      earliestProdDate: '2025-09-23',
-      latestProdDate: '2025-09-23',
-      earliestDelivDate: '2025-11-06',
-      latestDelivDate: '2025-11-06',
-    ),
-    '2026|S 500 4MATIC L|197|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 500 4MATIC L',
-      colour: '197',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-06-13',
-          delivDate: '2025-08-29',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-09',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-10',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-16',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-30',
-          delivDate: '2025-12-18',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-08',
-          delivDate: '2025-11-21',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-10',
-          delivDate: '2025-11-24',
-        ),
-      ],
-      earliestProdDate: '2025-06-13',
-      latestProdDate: '2025-10-10',
-      earliestDelivDate: '2025-08-29',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 500 4MATIC L|197|805': ShipmentInfo(
-      my: '2026',
-      model: 'S 500 4MATIC L',
-      colour: '197',
-      trim: '805',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-01',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-08',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-01',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 500 4MATIC L|831|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 500 4MATIC L',
-      colour: '831',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-29',
-          delivDate: '2025-11-17',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-04',
-          delivDate: '2025-11-19',
-        ),
-      ],
-      earliestProdDate: '2025-08-29',
-      latestProdDate: '2025-09-04',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-19',
-    ),
-    '2026|S 500 4MATIC L|885|804': ShipmentInfo(
-      my: '2026',
-      model: 'S 500 4MATIC L',
-      colour: '885',
-      trim: '804',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-02',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-15',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-01',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-09-02',
-      latestProdDate: '2025-10-01',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 580 4MATIC L|197|501': ShipmentInfo(
-      my: '2026',
-      model: 'S 580 4MATIC L',
-      colour: '197',
-      trim: '501',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-09-18',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-19',
-          delivDate: '2025-12-07',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-10-07',
-          delivDate: '2025-11-20',
-        ),
-      ],
-      earliestProdDate: '2025-09-18',
-      latestProdDate: '2025-10-07',
-      earliestDelivDate: '2025-11-19',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 580 4MATIC L|197|504': ShipmentInfo(
-      my: '2026',
-      model: 'S 580 4MATIC L',
-      colour: '197',
-      trim: '504',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-08',
-          delivDate: '2025-10-27',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-08-28',
-          delivDate: '2025-11-09',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-11',
-          delivDate: '2025-11-19',
-        ),
-        ShipmentDetailPair(
-          prodDate: '2025-09-29',
-          delivDate: '2025-12-07',
-        ),
-      ],
-      earliestProdDate: '2025-08-08',
-      latestProdDate: '2025-09-29',
-      earliestDelivDate: '2025-10-27',
-      latestDelivDate: '2025-12-07',
-    ),
-    '2026|S 580 4MATIC L|197|507': ShipmentInfo(
-      my: '2026',
-      model: 'S 580 4MATIC L',
-      colour: '197',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-10-06',
-          delivDate: '2025-12-18',
-        ),
-      ],
-      earliestProdDate: '2025-10-06',
-      latestProdDate: '2025-10-06',
-      earliestDelivDate: '2025-12-18',
-      latestDelivDate: '2025-12-18',
-    ),
-    '2026|S 580 4MATIC L|885|505': ShipmentInfo(
-      my: '2026',
-      model: 'S 580 4MATIC L',
-      colour: '885',
-      trim: '505',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-27',
-          delivDate: '2025-11-17',
-        ),
-      ],
-      earliestProdDate: '2025-08-27',
-      latestProdDate: '2025-08-27',
-      earliestDelivDate: '2025-11-17',
-      latestDelivDate: '2025-11-17',
-    ),
-    '2026|S 580 4MATIC L|885|507': ShipmentInfo(
-      my: '2026',
-      model: 'S 580 4MATIC L',
-      colour: '885',
-      trim: '507',
-      details: [
-        ShipmentDetailPair(
-          prodDate: '2025-08-08',
-          delivDate: '2025-10-27',
-        ),
-      ],
-      earliestProdDate: '2025-08-08',
-      latestProdDate: '2025-08-08',
-      earliestDelivDate: '2025-10-27',
-      latestDelivDate: '2025-10-27',
-    ),
-  };
-
-  // 입항일정 조회 (MY|Model|Colour|Trim 키로)
-  static ShipmentInfo? getShipment(String my, String model, String colour, String trim) {
-    String key = '$my|$model|$colour|$trim';
-    return shipments[key];
-  }
+class ShipmentDetailPair {
+  final String prodDate;
+  final String delivDate;
+  
+  const ShipmentDetailPair({
+    required this.prodDate,
+    required this.delivDate,
+  });
 }
 
-// 입항일정 정보 클래스
 class ShipmentInfo {
   final String my;
   final String model;
@@ -11229,7 +24,7 @@ class ShipmentInfo {
   final String latestProdDate;
   final String earliestDelivDate;
   final String latestDelivDate;
-
+  
   const ShipmentInfo({
     required this.my,
     required this.model,
@@ -11243,13 +38,4940 @@ class ShipmentInfo {
   });
 }
 
-// 생산일-입항일 쌍
-class ShipmentDetailPair {
-  final String prodDate;
-  final String delivDate;
+class ShipmentData {
+  static const Map<String, ShipmentInfo> shipments = {
+    '2024|AMG EQE 53 SUV|149|851': ShipmentInfo(
+      my: '2024',
+      model: 'AMG EQE 53 SUV',
+      colour: '149',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2024-04-19', delivDate: '2024-06-24')
+      ],
+      earliestProdDate: '2024-04-19',
+      latestProdDate: '2024-04-19',
+      earliestDelivDate: '2024-06-24',
+      latestDelivDate: '2024-06-24',
+    ),
+    '2024|AMG EQE 53 SUV|197|859': ShipmentInfo(
+      my: '2024',
+      model: 'AMG EQE 53 SUV',
+      colour: '197',
+      trim: '859',
+      details: [
+        ShipmentDetailPair(prodDate: '2024-04-19', delivDate: '2024-06-24')
+      ],
+      earliestProdDate: '2024-04-19',
+      latestProdDate: '2024-04-19',
+      earliestDelivDate: '2024-06-24',
+      latestDelivDate: '2024-06-24',
+    ),
+    '2024|GLE 400 e 4M Coupe|149|801': ShipmentInfo(
+      my: '2024',
+      model: 'GLE 400 e 4M Coupe',
+      colour: '149',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2024-06-25', delivDate: '2024-09-03'),
+        ShipmentDetailPair(prodDate: '2024-06-27', delivDate: '2024-09-03')
+      ],
+      earliestProdDate: '2024-06-25',
+      latestProdDate: '2024-06-27',
+      earliestDelivDate: '2024-09-03',
+      latestDelivDate: '2024-09-03',
+    ),
+    '2025|AMG S 63 e Performance|197|551': ShipmentInfo(
+      my: '2025',
+      model: 'AMG S 63 e Performance',
+      colour: '197',
+      trim: '551',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-03-24', delivDate: '2025-07-28')
+      ],
+      earliestProdDate: '2025-03-24',
+      latestProdDate: '2025-03-24',
+      earliestDelivDate: '2025-07-28',
+      latestDelivDate: '2025-07-28',
+    ),
+    '2026|A 220|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'A 220',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-04', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-03',
+      latestProdDate: '2025-11-14',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|A 220|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'A 220',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-17',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|A 220|149|194': ShipmentInfo(
+      my: '2026',
+      model: 'A 220',
+      colour: '149',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-10-30',
+      latestProdDate: '2025-10-30',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|A 220|696|101': ShipmentInfo(
+      my: '2026',
+      model: 'A 220',
+      colour: '696',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-30', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-30',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG A 45 S 4MATIC+|149|277': ShipmentInfo(
+      my: '2026',
+      model: 'AMG A 45 S 4MATIC+',
+      colour: '149',
+      trim: '277',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-30', delivDate: '2025-11-03'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-07-30',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2025-11-03',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|AMG A 45 S 4MATIC+|696|277': ShipmentInfo(
+      my: '2026',
+      model: 'AMG A 45 S 4MATIC+',
+      colour: '696',
+      trim: '277',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-12', delivDate: '2025-11-03'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28')
+      ],
+      earliestProdDate: '2025-08-12',
+      latestProdDate: '2025-10-14',
+      earliestDelivDate: '2025-11-03',
+      latestDelivDate: '2025-11-28',
+    ),
+    '2026|AMG A 45 S 4MATIC+|696|651': ShipmentInfo(
+      my: '2026',
+      model: 'AMG A 45 S 4MATIC+',
+      colour: '696',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-11-18')
+      ],
+      earliestProdDate: '2025-08-01',
+      latestProdDate: '2025-08-01',
+      earliestDelivDate: '2025-11-18',
+      latestDelivDate: '2025-11-18',
+    ),
+    '2026|AMG CLA 45 S 4MATIC+|149|277': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLA 45 S 4MATIC+',
+      colour: '149',
+      trim: '277',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17')
+      ],
+      earliestProdDate: '2025-09-08',
+      latestProdDate: '2025-09-08',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-11-17',
+    ),
+    '2026|AMG CLA 45 S 4MATIC+|149|654': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLA 45 S 4MATIC+',
+      colour: '149',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-06-18', delivDate: '2025-08-04')
+      ],
+      earliestProdDate: '2025-06-18',
+      latestProdDate: '2025-06-18',
+      earliestDelivDate: '2025-08-04',
+      latestDelivDate: '2025-08-04',
+    ),
+    '2026|AMG CLA 45 S 4MATIC+|662|277': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLA 45 S 4MATIC+',
+      colour: '662',
+      trim: '277',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-11-17')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-09-02',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-11-17',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|197|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '197',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-14',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|197|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '197',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-10-17',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|818|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '818',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-14',
+      latestProdDate: '2025-10-14',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|818|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '818',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-05', delivDate: '2025-11-18'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-05',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2025-11-18',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|885|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '885',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-11-13',
+      latestProdDate: '2025-11-13',
+      earliestDelivDate: '2025-12-30',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|885|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '885',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-13', delivDate: '2025-09-29'),
+        ShipmentDetailPair(prodDate: '2025-08-18', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-01', delivDate: '2025-11-18')
+      ],
+      earliestProdDate: '2025-08-13',
+      latestProdDate: '2025-09-01',
+      earliestDelivDate: '2025-09-29',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|AMG CLE 53 4M Cabriolet|993|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Cabriolet',
+      colour: '993',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-09-15',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|AMG CLE 53 4M Coupe|197|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Coupe',
+      colour: '197',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2025-10-30')
+      ],
+      earliestProdDate: '2025-11-25',
+      latestProdDate: '2025-11-25',
+      earliestDelivDate: '2025-10-30',
+      latestDelivDate: '2025-10-30',
+    ),
+    '2026|AMG CLE 53 4M Coupe|197|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Coupe',
+      colour: '197',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2025-10-30')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-10-30',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG CLE 53 4M Coupe|818|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Coupe',
+      colour: '818',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-09-15',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|AMG CLE 53 4M Coupe|885|887': ShipmentInfo(
+      my: '2026',
+      model: 'AMG CLE 53 4M Coupe',
+      colour: '885',
+      trim: '887',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG E 53 Hybrid 4MATIC+|149|854': ShipmentInfo(
+      my: '2026',
+      model: 'AMG E 53 Hybrid 4MATIC+',
+      colour: '149',
+      trim: '854',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-11-20'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-07',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-11-20',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|AMG G 63|149|545': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '149',
+      trim: '545',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-09-19',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|AMG G 63|149|927': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '149',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-17',
+      latestProdDate: '2025-09-19',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|AMG G 63|183|927': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '183',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|AMG G 63|197|501': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '197',
+      trim: '501',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-11-24')
+      ],
+      earliestProdDate: '2025-10-09',
+      latestProdDate: '2025-10-09',
+      earliestDelivDate: '2025-11-24',
+      latestDelivDate: '2025-11-24',
+    ),
+    '2026|AMG G 63|197|545': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '197',
+      trim: '545',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-22',
+      latestProdDate: '2025-10-17',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|AMG G 63|197|575': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '197',
+      trim: '575',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-21',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG G 63|197|927': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '197',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-13', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-04', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-04', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-18', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-13',
+      latestProdDate: '2025-10-18',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|AMG G 63|859|501': ShipmentInfo(
+      my: '2026',
+      model: 'AMG G 63',
+      colour: '859',
+      trim: '501',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-06',
+      latestProdDate: '2025-10-06',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|AMG GLB 35 4MATIC|149|277': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLB 35 4MATIC',
+      colour: '149',
+      trim: '277',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-11-24')
+      ],
+      earliestProdDate: '2025-10-10',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-11-24',
+      latestDelivDate: '2025-11-24',
+    ),
+    '2026|AMG GLB 35 4MATIC|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLB 35 4MATIC',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12')
+      ],
+      earliestProdDate: '2025-10-13',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-11-27',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|AMG GLB 35 4MATIC|149|654': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLB 35 4MATIC',
+      colour: '149',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-12')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-10-14',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2025-12-12',
+    ),
+    '2026|AMG GLB 35 4MATIC|696|654': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLB 35 4MATIC',
+      colour: '696',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-14',
+      latestProdDate: '2025-11-14',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG GLC 43 4M|149|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M',
+      colour: '149',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-27',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG GLC 43 4M|197|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M',
+      colour: '197',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG GLC 43 4M|956|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M',
+      colour: '956',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-09-24',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|AMG GLC 43 4M Coupe|149|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M Coupe',
+      colour: '149',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18')
+      ],
+      earliestProdDate: '2025-11-04',
+      latestProdDate: '2025-11-04',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2025-12-18',
+    ),
+    '2026|AMG GLC 43 4M Coupe|197|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M Coupe',
+      colour: '197',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17')
+      ],
+      earliestProdDate: '2025-11-03',
+      latestProdDate: '2025-11-03',
+      earliestDelivDate: '2025-12-17',
+      latestDelivDate: '2025-12-17',
+    ),
+    '2026|AMG GLC 43 4M Coupe|956|251': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLC 43 4M Coupe',
+      colour: '956',
+      trim: '251',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-10-24',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG GLE 53 4M Coupe|149|851': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLE 53 4M Coupe',
+      colour: '149',
+      trim: '851',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|AMG GLE 53 4M Coupe|956|857': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLE 53 4M Coupe',
+      colour: '956',
+      trim: '857',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-10-09',
+      latestProdDate: '2025-10-09',
+      earliestDelivDate: '2025-12-20',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|AMG GLE 53 4MATIC+|149|857': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLE 53 4MATIC+',
+      colour: '149',
+      trim: '857',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-13',
+      latestProdDate: '2025-11-14',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG GLE 53 4MATIC+|197|857': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLE 53 4MATIC+',
+      colour: '197',
+      trim: '857',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-21', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-09-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-21',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|AMG GLE 53 4MATIC+|956|857': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLE 53 4MATIC+',
+      colour: '956',
+      trim: '857',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-10-06',
+      latestProdDate: '2025-10-06',
+      earliestDelivDate: '2025-12-20',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|AMG GLS 63 4MATIC+|149|551': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GLS 63 4MATIC+',
+      colour: '149',
+      trim: '551',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-10-27')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-09-12',
+      earliestDelivDate: '2025-10-27',
+      latestDelivDate: '2025-10-27',
+    ),
+    '2026|AMG GT 43 4MATIC+|149|507': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '149',
+      trim: '507',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-12', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-08',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|AMG GT 43 4MATIC+|149|565': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '149',
+      trim: '565',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-10-24',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG GT 43 4MATIC+|149|801': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '149',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-11-20',
+      latestProdDate: '2025-11-20',
+      earliestDelivDate: '2025-12-30',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|AMG GT 43 4MATIC+|197|507': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '197',
+      trim: '507',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-31', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-11-03',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-17',
+    ),
+    '2026|AMG GT 43 4MATIC+|197|554': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '197',
+      trim: '554',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19')
+      ],
+      earliestProdDate: '2025-10-29',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-12-12',
+      latestDelivDate: '2025-12-19',
+    ),
+    '2026|AMG GT 43 4MATIC+|197|801': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '197',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-10-22',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2025-12-30',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG GT 43 4MATIC+|818|507': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 43 4MATIC+',
+      colour: '818',
+      trim: '507',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-08-26',
+      latestProdDate: '2025-08-26',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|AMG GT 63 S e Performance|190|807': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 63 S e Performance',
+      colour: '190',
+      trim: '807',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-17', delivDate: '2025-09-29'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-07-17',
+      latestProdDate: '2025-10-02',
+      earliestDelivDate: '2025-09-29',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|AMG GT 63 S e Performance|56|807': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 63 S e Performance',
+      colour: '56',
+      trim: '807',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-08', delivDate: '2025-12-23')
+      ],
+      earliestProdDate: '2025-11-08',
+      latestProdDate: '2025-11-08',
+      earliestDelivDate: '2025-12-23',
+      latestDelivDate: '2025-12-23',
+    ),
+    '2026|AMG GT 63 S e Performance|659|807': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 63 S e Performance',
+      colour: '659',
+      trim: '807',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-14', delivDate: '2025-11-18')
+      ],
+      earliestProdDate: '2025-08-14',
+      latestProdDate: '2025-08-14',
+      earliestDelivDate: '2025-11-18',
+      latestDelivDate: '2025-11-18',
+    ),
+    '2026|AMG GT 63 S e Performance|818|967': ShipmentInfo(
+      my: '2026',
+      model: 'AMG GT 63 S e Performance',
+      colour: '818',
+      trim: '967',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24')
+      ],
+      earliestProdDate: '2025-11-10',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-24',
+      latestDelivDate: '2025-12-24',
+    ),
+    '2026|AMG S 63 e Performance|885|557': ShipmentInfo(
+      my: '2026',
+      model: 'AMG S 63 e Performance',
+      colour: '885',
+      trim: '557',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-09-25',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|AMG SL 43|197|807': ShipmentInfo(
+      my: '2026',
+      model: 'AMG SL 43',
+      colour: '197',
+      trim: '807',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-09-10',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|AMG SL 43|885|801': ShipmentInfo(
+      my: '2026',
+      model: 'AMG SL 43',
+      colour: '885',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-10-29',
+      latestProdDate: '2025-10-29',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|AMG SL 43|885|804': ShipmentInfo(
+      my: '2026',
+      model: 'AMG SL 43',
+      colour: '885',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-03-02')
+      ],
+      earliestProdDate: '2025-12-02',
+      latestProdDate: '2025-12-02',
+      earliestDelivDate: '2026-03-02',
+      latestDelivDate: '2026-03-02',
+    ),
+    '2026|AMG SL 43|885|807': ShipmentInfo(
+      my: '2026',
+      model: 'AMG SL 43',
+      colour: '885',
+      trim: '807',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-12-03',
+      latestProdDate: '2025-12-03',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|C 200 AMG Line|149|118': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 AMG Line',
+      colour: '149',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-11-03',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|C 200 AMG Line|149|194': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 AMG Line',
+      colour: '149',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24')
+      ],
+      earliestProdDate: '2025-10-30',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-24',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|C 200 AMG Line|197|118': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 AMG Line',
+      colour: '197',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-21',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|C 200 AMG Line|197|194': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 AMG Line',
+      colour: '197',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-11-07',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|C 200 Avantgarde|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 Avantgarde',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-11-05',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|C 200 Avantgarde|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 Avantgarde',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-30',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|C 200 Avantgarde|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 Avantgarde',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-17',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|C 200 Avantgarde|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 Avantgarde',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-03',
+      latestProdDate: '2025-11-18',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|C 200 Avantgarde|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'C 200 Avantgarde',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18')
+      ],
+      earliestProdDate: '2025-11-03',
+      latestProdDate: '2025-11-04',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|CLA 250 4M AMG Line|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'CLA 250 4M AMG Line',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-04', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|CLA 250 4M AMG Line|149|654': ShipmentInfo(
+      my: '2026',
+      model: 'CLA 250 4M AMG Line',
+      colour: '149',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-04', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-09', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-19'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-12-19',
+    ),
+    '2026|CLA 250 4M AMG Line|696|651': ShipmentInfo(
+      my: '2026',
+      model: 'CLA 250 4M AMG Line',
+      colour: '696',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|CLA 250 4M AMG Line|696|654': ShipmentInfo(
+      my: '2026',
+      model: 'CLA 250 4M AMG Line',
+      colour: '696',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-03',
+      latestProdDate: '2025-09-30',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|CLE 200 Cabriolet|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-12', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-08-12',
+      latestProdDate: '2025-10-09',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|CLE 200 Cabriolet|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-26',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Cabriolet|149|205': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '149',
+      trim: '205',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04')
+      ],
+      earliestProdDate: '2025-10-21',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2026-01-04',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|CLE 200 Cabriolet|149|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '149',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-25', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-25',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Cabriolet|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-28', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-27',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Cabriolet|197|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '197',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-25', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-25',
+      latestProdDate: '2025-12-02',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Cabriolet|818|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '818',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-21',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Cabriolet|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-09-11',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|CLE 200 Cabriolet|831|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '831',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-07',
+      latestProdDate: '2025-10-07',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|CLE 200 Cabriolet|831|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '831',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|CLE 200 Cabriolet|956|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Cabriolet',
+      colour: '956',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-10-30',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|CLE 200 Coupe|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19')
+      ],
+      earliestProdDate: '2025-11-05',
+      latestProdDate: '2025-11-05',
+      earliestDelivDate: '2025-12-19',
+      latestDelivDate: '2025-12-19',
+    ),
+    '2026|CLE 200 Coupe|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24')
+      ],
+      earliestProdDate: '2025-09-22',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|CLE 200 Coupe|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Coupe|149|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '149',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-20',
+      latestProdDate: '2025-12-02',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Coupe|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|CLE 200 Coupe|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-28',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2026-01-02',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Coupe|197|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '197',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-28', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-20',
+      latestProdDate: '2025-12-02',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|CLE 200 Coupe|956|104': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 200 Coupe',
+      colour: '956',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-09-16',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|CLE 450 4M Cabriolet|149|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 450 4M Cabriolet',
+      colour: '149',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-11-11',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|CLE 450 4M Coupe|149|204': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 450 4M Coupe',
+      colour: '149',
+      trim: '204',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-05-23', delivDate: '2025-08-25')
+      ],
+      earliestProdDate: '2025-05-23',
+      latestProdDate: '2025-05-23',
+      earliestDelivDate: '2025-08-25',
+      latestDelivDate: '2025-08-25',
+    ),
+    '2026|CLE 450 4M Coupe|197|207': ShipmentInfo(
+      my: '2026',
+      model: 'CLE 450 4M Coupe',
+      colour: '197',
+      trim: '207',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-10-30')
+      ],
+      earliestProdDate: '2025-11-13',
+      latestProdDate: '2025-11-13',
+      earliestDelivDate: '2025-10-30',
+      latestDelivDate: '2025-10-30',
+    ),
+    '2026|E 200 AMG Line|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 AMG Line',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-27', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-08-29', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-08-29', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-04', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-11-20'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-11-20'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-09', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-16', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-27',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 AMG Line|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 AMG Line',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-25', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-08-29', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-04', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-25',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 AMG Line|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 AMG Line',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-08', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-09-01', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-01', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-08',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-10-31',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 AMG Line|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 AMG Line',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-07',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-24',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 AMG Line|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 AMG Line',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-01', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-12', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-26',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 Avantgarde|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-22',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 200 Avantgarde|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-30', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-30', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-11-18'),
+        ShipmentDetailPair(prodDate: '2025-08-05', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-05', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-05', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-05', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-09', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-11-06'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-27', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-27', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-28', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-10'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 Avantgarde|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 Avantgarde|188|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '188',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12')
+      ],
+      earliestProdDate: '2025-07-28',
+      latestProdDate: '2025-10-29',
+      earliestDelivDate: '2025-10-20',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 200 Avantgarde|197|101': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '197',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-23',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 200 Avantgarde|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-27', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-30', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-31', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-11-06'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|E 200 Avantgarde|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 Avantgarde|595|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '595',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 200 Avantgarde|771|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '771',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-29', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2025-10-20',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 200 Avantgarde|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-07-24',
+      latestProdDate: '2025-11-25',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 200 Avantgarde|922|104': ShipmentInfo(
+      my: '2026',
+      model: 'E 200 Avantgarde',
+      colour: '922',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-17'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-10-29',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12')
+      ],
+      earliestProdDate: '2025-11-11',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2026-01-12',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|149|114': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '149',
+      trim: '114',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-25', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-27', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-25',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|149|115': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '149',
+      trim: '115',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-18',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|197|114': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '197',
+      trim: '114',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-10-28',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-11',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|197|115': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '197',
+      trim: '115',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 220 d 4MATIC Exclusive|831|114': ShipmentInfo(
+      my: '2026',
+      model: 'E 220 d 4MATIC Exclusive',
+      colour: '831',
+      trim: '114',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-09-11',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 300 4M AMG Line|149|205': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '149',
+      trim: '205',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-25',
+      earliestDelivDate: '2025-11-28',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|149|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '149',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|149|221': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '149',
+      trim: '221',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-09-25',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 300 4M AMG Line|197|205': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '197',
+      trim: '205',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-11-28',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|197|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '197',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-28',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|831|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '831',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2025-11-27',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|956|205': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '956',
+      trim: '205',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-26',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M AMG Line|956|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '956',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-11-06'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-10-30',
+      earliestDelivDate: '2025-11-06',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|E 300 4M AMG Line|956|221': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M AMG Line',
+      colour: '956',
+      trim: '221',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-11-06'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-22',
+      latestProdDate: '2025-09-24',
+      earliestDelivDate: '2025-11-06',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 300 4M EX|149|201': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '149',
+      trim: '201',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-13',
+      latestProdDate: '2025-11-13',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|149|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '149',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-10'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-27',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|149|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '149',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-10'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|197|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '197',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-12', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|197|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '197',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-28',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|771|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '771',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12')
+      ],
+      earliestProdDate: '2025-10-10',
+      latestProdDate: '2025-10-29',
+      earliestDelivDate: '2025-12-12',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|E 300 4M EX|831|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '831',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-11-25',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 300 4M EX|831|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '831',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-23',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 300 4M EX|922|201': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '922',
+      trim: '201',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-09-18',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 300 4M EX|922|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 300 4M EX',
+      colour: '922',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-10-13',
+      latestProdDate: '2025-10-16',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|E 350 e 4MATIC|149|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 350 e 4MATIC',
+      colour: '149',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-26',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 350 e 4MATIC|149|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 350 e 4MATIC',
+      colour: '149',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-05', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-05',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 350 e 4MATIC|188|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 350 e 4MATIC',
+      colour: '188',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-09', delivDate: '2025-11-17')
+      ],
+      earliestProdDate: '2025-09-09',
+      latestProdDate: '2025-09-09',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-11-17',
+    ),
+    '2026|E 350 e 4MATIC|197|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 350 e 4MATIC',
+      colour: '197',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-13', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-13',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 350 e 4MATIC|197|215': ShipmentInfo(
+      my: '2026',
+      model: 'E 350 e 4MATIC',
+      colour: '197',
+      trim: '215',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-18',
+      latestProdDate: '2025-11-18',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|E 450 4M AMG Line|149|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4M AMG Line',
+      colour: '149',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-18', delivDate: '2025-10-17')
+      ],
+      earliestProdDate: '2025-07-18',
+      latestProdDate: '2025-07-18',
+      earliestDelivDate: '2025-10-17',
+      latestDelivDate: '2025-10-17',
+    ),
+    '2026|E 450 4M AMG Line|197|214': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4M AMG Line',
+      colour: '197',
+      trim: '214',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-09-16',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 450 4MATIC Exclusive|149|801': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '149',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-10-08',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|E 450 4MATIC Exclusive|149|808': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '149',
+      trim: '808',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-07-24',
+      latestProdDate: '2025-10-07',
+      earliestDelivDate: '2025-10-31',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 450 4MATIC Exclusive|149|814': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '149',
+      trim: '814',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-25', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-28', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-07-30', delivDate: '2025-10-20'),
+        ShipmentDetailPair(prodDate: '2025-08-22', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-07-25',
+      latestProdDate: '2025-10-16',
+      earliestDelivDate: '2025-10-20',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 450 4MATIC Exclusive|197|801': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '197',
+      trim: '801',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-27', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-08-26',
+      latestProdDate: '2025-09-27',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 450 4MATIC Exclusive|197|808': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '197',
+      trim: '808',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-11-06')
+      ],
+      earliestProdDate: '2025-09-22',
+      latestProdDate: '2025-09-22',
+      earliestDelivDate: '2025-11-06',
+      latestDelivDate: '2025-11-06',
+    ),
+    '2026|E 450 4MATIC Exclusive|197|814': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '197',
+      trim: '814',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-22', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-08-22',
+      latestProdDate: '2025-10-02',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|E 450 4MATIC Exclusive|771|814': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '771',
+      trim: '814',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-09-25',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|E 450 4MATIC Exclusive|831|814': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '831',
+      trim: '814',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-22', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-07-24',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-10-31',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|E 450 4MATIC Exclusive|922|814': ShipmentInfo(
+      my: '2026',
+      model: 'E 450 4MATIC Exclusive',
+      colour: '922',
+      trim: '814',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|EQA 250 AMG Line|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'EQA 250 AMG Line',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-29', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11')
+      ],
+      earliestProdDate: '2025-08-29',
+      latestProdDate: '2025-10-28',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-12-11',
+    ),
+    '2026|EQA 250 Progressive|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'EQA 250 Progressive',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-10-07',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|EQA 250 Progressive|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'EQA 250 Progressive',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|EQB 300 4M AMG Line|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M AMG Line',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2025-11-24',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|EQB 300 4M AMG Line|696|651': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M AMG Line',
+      colour: '696',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-11-13',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|EQB 300 4M Progressive|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-03', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-03', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-03', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-03', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-11-26'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-11-26'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-28'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-12', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-18',
+      earliestDelivDate: '2025-11-26',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|EQB 300 4M Progressive|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|EQB 300 4M Progressive|696|101': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '696',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-10-02',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-17',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|EQB 300 4M Progressive|696|105': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '696',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-10-02',
+      latestProdDate: '2025-11-13',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|EQB 300 4M Progressive|787|101': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '787',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|EQB 300 4M Progressive|922|101': ShipmentInfo(
+      my: '2026',
+      model: 'EQB 300 4M Progressive',
+      colour: '922',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-22',
+      latestProdDate: '2025-10-08',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|EQE 350+|149|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+',
+      colour: '149',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-18', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-08-18',
+      latestProdDate: '2025-10-27',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|EQE 350+|831|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+',
+      colour: '831',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-10-07',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|EQE 350+ SUV|149|109': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '149',
+      trim: '109',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-24', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-08-27', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-07-24',
+      latestProdDate: '2025-10-16',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|EQE 350+ SUV|149|111': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '149',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|EQE 350+ SUV|149|119': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '149',
+      trim: '119',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-11-07',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|EQE 350+ SUV|149|121': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '149',
+      trim: '121',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-10-14',
+      latestProdDate: '2025-10-14',
+      earliestDelivDate: '2025-12-20',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|EQE 350+ SUV|197|109': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '197',
+      trim: '109',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-22', delivDate: '2025-10-24')
+      ],
+      earliestProdDate: '2025-08-22',
+      latestProdDate: '2025-08-22',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2025-10-24',
+    ),
+    '2026|EQE 350+ SUV|197|111': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '197',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-24',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|EQE 350+ SUV|197|121': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 350+ SUV',
+      colour: '197',
+      trim: '121',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-10', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-12-10',
+      latestProdDate: '2025-12-10',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|EQE 500 4MATIC SUV|149|201': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 500 4MATIC SUV',
+      colour: '149',
+      trim: '201',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-10')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-07-23',
+      earliestDelivDate: '2025-10-10',
+      latestDelivDate: '2025-10-10',
+    ),
+    '2026|EQE 500 4MATIC SUV|149|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 500 4MATIC SUV',
+      colour: '149',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-07-23', delivDate: '2025-10-10'),
+        ShipmentDetailPair(prodDate: '2025-08-21', delivDate: '2025-10-24')
+      ],
+      earliestProdDate: '2025-07-23',
+      latestProdDate: '2025-08-21',
+      earliestDelivDate: '2025-10-10',
+      latestDelivDate: '2025-10-24',
+    ),
+    '2026|EQE 500 4MATIC SUV|197|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 500 4MATIC SUV',
+      colour: '197',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|EQE 500 4MATIC SUV|771|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 500 4MATIC SUV',
+      colour: '771',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-16', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-12-16',
+      latestProdDate: '2025-12-16',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|EQE 500 4MATIC SUV|956|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQE 500 4MATIC SUV',
+      colour: '956',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-24',
+      latestProdDate: '2025-10-24',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|EQS 450 4MATIC SUV|149|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQS 450 4MATIC SUV',
+      colour: '149',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2026-01-13', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-08-28',
+      latestProdDate: '2026-01-13',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|EQS 450 4MATIC SUV|197|201': ShipmentInfo(
+      my: '2026',
+      model: 'EQS 450 4MATIC SUV',
+      colour: '197',
+      trim: '201',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|EQS 450 4MATIC SUV|197|209': ShipmentInfo(
+      my: '2026',
+      model: 'EQS 450 4MATIC SUV',
+      colour: '197',
+      trim: '209',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-10', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-12-10',
+      latestProdDate: '2025-12-10',
+      earliestDelivDate: '2025-12-30',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|G 450 d|149|501': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '149',
+      trim: '501',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-24',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|G 450 d|149|545': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '149',
+      trim: '545',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-17',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|G 450 d|149|575': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '149',
+      trim: '575',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-11-07',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|G 450 d|149|927': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '149',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-13', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-13',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|G 450 d|197|501': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '197',
+      trim: '501',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-09-24',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|G 450 d|197|545': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '197',
+      trim: '545',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-10-31', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-15', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-30',
+      latestProdDate: '2025-11-15',
+      earliestDelivDate: '2025-12-15',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|G 450 d|197|575': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '197',
+      trim: '575',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-03',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|G 450 d|197|927': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d',
+      colour: '197',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-09-30',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|G 450 d Manufaktur|183|825': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d Manufaktur',
+      colour: '183',
+      trim: '825',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-09-23',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|G 450 d Manufaktur|464|808': ShipmentInfo(
+      my: '2026',
+      model: 'G 450 d Manufaktur',
+      colour: '464',
+      trim: '808',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-09-18',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|G 580 w/ EQ Technology|197|927': ShipmentInfo(
+      my: '2026',
+      model: 'G 580 w/ EQ Technology',
+      colour: '197',
+      trim: '927',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-04', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-10-04',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|GLA 250 4M AMG Line|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'GLA 250 4M AMG Line',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-08',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLA 250 4M AMG Line|696|654': ShipmentInfo(
+      my: '2026',
+      model: 'GLA 250 4M AMG Line',
+      colour: '696',
+      trim: '654',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15')
+      ],
+      earliestProdDate: '2025-10-30',
+      latestProdDate: '2025-10-30',
+      earliestDelivDate: '2025-12-15',
+      latestDelivDate: '2025-12-15',
+    ),
+    '2026|GLB 250 4MATIC|149|651': ShipmentInfo(
+      my: '2026',
+      model: 'GLB 250 4MATIC',
+      colour: '149',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-11-14'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-11-13',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLB 250 4MATIC|696|651': ShipmentInfo(
+      my: '2026',
+      model: 'GLB 250 4MATIC',
+      colour: '696',
+      trim: '651',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-11-24'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-08',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-11-24',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 220 d 4MATIC|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|GLC 220 d 4MATIC|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-21', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-21',
+      latestProdDate: '2025-11-07',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|GLC 220 d 4MATIC|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-20',
+      latestProdDate: '2025-10-20',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 220 d 4MATIC|197|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '197',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-09-24',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|GLC 220 d 4MATIC|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|GLC 220 d 4MATIC|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 220 d 4MATIC',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-30',
+      latestProdDate: '2025-09-30',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|149|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '149',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-06',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|197|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '197',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24')
+      ],
+      earliestProdDate: '2025-11-10',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-24',
+      latestDelivDate: '2025-12-24',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|197|118': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '197',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-08',
+      latestProdDate: '2025-10-08',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|197|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '197',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-09-15',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|956|118': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '956',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4M Coupe AMG Line|956|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AMG Line',
+      colour: '956',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-28', delivDate: '2025-10-30')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-11-28',
+      earliestDelivDate: '2025-10-30',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4M Coupe AV|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|GLC 300 4M Coupe AV|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4M Coupe AV|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-11-06',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4M Coupe AV|197|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '197',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4M Coupe AV|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-11-14',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4M Coupe AV|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-14', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-14',
+      latestProdDate: '2025-11-24',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4M Coupe AV|956|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4M Coupe AV',
+      colour: '956',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-21',
+      latestProdDate: '2025-11-21',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|149|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '149',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-10-09',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|149|118': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '149',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-23', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-11-23',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|149|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '149',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|197|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '197',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-11-10',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|197|118': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '197',
+      trim: '118',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24'),
+        ShipmentDetailPair(prodDate: '2025-11-28', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-11-10',
+      latestProdDate: '2025-11-28',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-24',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|197|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '197',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AMG Line|956|194': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AMG Line',
+      colour: '956',
+      trim: '194',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4MATIC AV|149|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '149',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2026-01-02')
+      ],
+      earliestProdDate: '2025-10-13',
+      latestProdDate: '2025-10-29',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2026-01-02',
+    ),
+    '2026|GLC 300 4MATIC AV|149|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '149',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-10-24', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-12', delivDate: '2026-01-12'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-12-01', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-12-01',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|149|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '149',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-17',
+      latestProdDate: '2025-11-20',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|188|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '188',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-26')
+      ],
+      earliestProdDate: '2025-10-06',
+      latestProdDate: '2025-10-06',
+      earliestDelivDate: '2025-12-26',
+      latestDelivDate: '2025-12-26',
+    ),
+    '2026|GLC 300 4MATIC AV|197|101': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '197',
+      trim: '101',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-14',
+      latestProdDate: '2025-11-14',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|197|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '197',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2026-01-02'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-14', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-11-26',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|197|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '197',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-28', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-28',
+      latestProdDate: '2025-11-28',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|831|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '831',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2025-12-30'),
+        ShipmentDetailPair(prodDate: '2025-11-17', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-10-02',
+      latestProdDate: '2025-11-17',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|831|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '831',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-19',
+      latestProdDate: '2025-11-19',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|956|104': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '956',
+      trim: '104',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-27', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-11-27',
+      latestProdDate: '2025-11-27',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLC 300 4MATIC AV|956|105': ShipmentInfo(
+      my: '2026',
+      model: 'GLC 300 4MATIC AV',
+      colour: '956',
+      trim: '105',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2026-01-04')
+      ],
+      earliestProdDate: '2025-10-21',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2026-01-04',
+      latestDelivDate: '2026-01-04',
+    ),
+    '2026|GLE 300 d 4MATIC|149|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 300 d 4MATIC',
+      colour: '149',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-12'),
+        ShipmentDetailPair(prodDate: '2025-10-31', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-06', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|GLE 300 d 4MATIC|197|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 300 d 4MATIC',
+      colour: '197',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-07', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-11-10',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-24',
+    ),
+    '2026|GLE 300 d 4MATIC|922|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 300 d 4MATIC',
+      colour: '922',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11')
+      ],
+      earliestProdDate: '2025-10-28',
+      latestProdDate: '2025-10-28',
+      earliestDelivDate: '2025-12-11',
+      latestDelivDate: '2025-12-11',
+    ),
+    '2026|GLE 350 4MATIC|149|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 350 4MATIC',
+      colour: '149',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-23',
+      latestProdDate: '2025-10-23',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|GLE 350 4MATIC|149|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 350 4MATIC',
+      colour: '149',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-23', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-29', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15')
+      ],
+      earliestProdDate: '2025-10-23',
+      latestProdDate: '2025-10-30',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-15',
+    ),
+    '2026|GLE 350 4MATIC|197|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 350 4MATIC',
+      colour: '197',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05')
+      ],
+      earliestProdDate: '2025-10-21',
+      latestProdDate: '2025-10-21',
+      earliestDelivDate: '2025-12-05',
+      latestDelivDate: '2025-12-05',
+    ),
+    '2026|GLE 350 4MATIC|197|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 350 4MATIC',
+      colour: '197',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-10-22',
+      latestProdDate: '2025-10-22',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|GLE 450 4M AMG Line Night Edition|149|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M AMG Line Night Edition',
+      colour: '149',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-27', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-28', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-10-21', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-24'),
+        ShipmentDetailPair(prodDate: '2025-11-10', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2025-12-26'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-15', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-18', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-24', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-12-03',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4M AMG Line Night Edition|197|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M AMG Line Night Edition',
+      colour: '197',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-11'),
+        ShipmentDetailPair(prodDate: '2025-10-30', delivDate: '2025-12-15'),
+        ShipmentDetailPair(prodDate: '2025-11-11', delivDate: '2026-01-12')
+      ],
+      earliestProdDate: '2025-09-24',
+      latestProdDate: '2025-11-11',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2026-01-12',
+    ),
+    '2026|GLE 450 4M AMG Line Night Edition|922|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M AMG Line Night Edition',
+      colour: '922',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-12-03',
+      latestProdDate: '2025-12-03',
+      earliestDelivDate: '2026-01-30',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4M AMG Line Night Edition|992|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M AMG Line Night Edition',
+      colour: '992',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-10-16',
+      latestProdDate: '2025-10-16',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|GLE 450 4M Coupe|149|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M Coupe',
+      colour: '149',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-16', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-08-30', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-21', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-21', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-08-16',
+      latestProdDate: '2025-09-22',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|GLE 450 4M Coupe|197|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4M Coupe',
+      colour: '197',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-21', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-08',
+      latestProdDate: '2025-09-25',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLE 450 4MATIC|149|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '149',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-17', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-22', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-17',
+      latestProdDate: '2025-11-20',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4MATIC|149|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '149',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-15', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-08-22', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-08-26', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-08-27', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-03', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-04'),
+        ShipmentDetailPair(prodDate: '2025-10-22', delivDate: '2025-12-05'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-17'),
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-19'),
+        ShipmentDetailPair(prodDate: '2025-11-05', delivDate: '2025-12-19'),
+        ShipmentDetailPair(prodDate: '2025-11-13', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-20', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-25', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-04', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-15',
+      latestProdDate: '2025-12-04',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4MATIC|197|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '197',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-20', delivDate: '2025-10-24'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-11-19', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-08-20',
+      latestProdDate: '2025-12-02',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4MATIC|197|124': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '197',
+      trim: '124',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-01', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-09', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-11-03', delivDate: '2025-12-18'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-21', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-11-26', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-04', delivDate: '2026-01-30'),
+        ShipmentDetailPair(prodDate: '2025-12-04', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-01',
+      latestProdDate: '2025-12-04',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4MATIC|922|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '922',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-12-03', delivDate: '2026-01-30')
+      ],
+      earliestProdDate: '2025-09-17',
+      latestProdDate: '2025-12-03',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2026-01-30',
+    ),
+    '2026|GLE 450 4MATIC|992|111': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 4MATIC',
+      colour: '992',
+      trim: '111',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-10-10',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-12-20',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLE 450 d 4M Coupe|149|121': ShipmentInfo(
+      my: '2026',
+      model: 'GLE 450 d 4M Coupe',
+      colour: '149',
+      trim: '121',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-25',
+      latestProdDate: '2025-09-25',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|GLS 450 4M AMG Line Premium|149|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 450 4M AMG Line Premium',
+      colour: '149',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-05', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-10-20',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLS 450 4M AMG Line Premium|197|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 450 4M AMG Line Premium',
+      colour: '197',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-09-30',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLS 450 d 4M AMG Line Premium|149|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 450 d 4M AMG Line Premium',
+      colour: '149',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-10-14',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLS 450 d 4M AMG Line Premium|197|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 450 d 4M AMG Line Premium',
+      colour: '197',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-10-13', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-09-16',
+      latestProdDate: '2025-10-15',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|GLS 580 4MATIC|149|951': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 580 4MATIC',
+      colour: '149',
+      trim: '951',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-12',
+      latestProdDate: '2025-09-12',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|GLS 580 4MATIC|197|224': ShipmentInfo(
+      my: '2026',
+      model: 'GLS 580 4MATIC',
+      colour: '197',
+      trim: '224',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-04', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-20'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-08-04',
+      latestProdDate: '2025-10-15',
+      earliestDelivDate: '2025-12-01',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|Maybach EQS 680 4M SUV|149|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach EQS 680 4M SUV',
+      colour: '149',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-26',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|Maybach EQS 680 4M SUV|197|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach EQS 680 4M SUV',
+      colour: '197',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-09-19',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-03',
+    ),
+    '2026|Maybach EQS 680 4M SUV|197|531': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach EQS 680 4M SUV',
+      colour: '197',
+      trim: '531',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-12-19', delivDate: '2025-12-30')
+      ],
+      earliestProdDate: '2025-12-19',
+      latestProdDate: '2025-12-19',
+      earliestDelivDate: '2025-12-30',
+      latestDelivDate: '2025-12-30',
+    ),
+    '2026|Maybach EQS 680 4M SUV|771|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach EQS 680 4M SUV',
+      colour: '771',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-20')
+      ],
+      earliestProdDate: '2025-09-29',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-12-20',
+      latestDelivDate: '2025-12-20',
+    ),
+    '2026|Maybach GLS 600 4M Manufak|922|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach GLS 600 4M Manufak',
+      colour: '922',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-28', delivDate: '2025-12-11')
+      ],
+      earliestProdDate: '2025-10-28',
+      latestProdDate: '2025-10-28',
+      earliestDelivDate: '2025-12-11',
+      latestDelivDate: '2025-12-11',
+    ),
+    '2026|Maybach GLS 600 4MATIC|197|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach GLS 600 4MATIC',
+      colour: '197',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-19', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-08-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-03'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-11-13'),
+        ShipmentDetailPair(prodDate: '2025-10-04', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-10-14', delivDate: '2025-11-27'),
+        ShipmentDetailPair(prodDate: '2025-10-16', delivDate: '2025-12-01'),
+        ShipmentDetailPair(prodDate: '2025-10-27', delivDate: '2025-12-10')
+      ],
+      earliestProdDate: '2025-08-19',
+      latestProdDate: '2025-10-27',
+      earliestDelivDate: '2025-11-13',
+      latestDelivDate: '2025-12-10',
+    ),
+    '2026|Maybach GLS 600 4MATIC|885|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach GLS 600 4MATIC',
+      colour: '885',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-11', delivDate: '2025-11-25'),
+        ShipmentDetailPair(prodDate: '2025-10-31', delivDate: '2025-12-15')
+      ],
+      earliestProdDate: '2025-10-11',
+      latestProdDate: '2025-10-31',
+      earliestDelivDate: '2025-11-25',
+      latestDelivDate: '2025-12-15',
+    ),
+    '2026|Maybach S 580 4M|197|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 580 4M',
+      colour: '197',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-01', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-04', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-12', delivDate: '2025-10-31'),
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-11-17'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-08-01',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-10-31',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|Maybach S 580 4M|831|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 580 4M',
+      colour: '831',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-18',
+      latestProdDate: '2025-09-18',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|Maybach S 580 4M|885|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 580 4M',
+      colour: '885',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-29', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-10-17', delivDate: '2025-12-01')
+      ],
+      earliestProdDate: '2025-08-29',
+      latestProdDate: '2025-10-17',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2025-12-01',
+    ),
+    '2026|Maybach S 680 4M|197|511': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 680 4M',
+      colour: '197',
+      trim: '511',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-09-19',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|Maybach S 680 4M|197|514': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 680 4M',
+      colour: '197',
+      trim: '514',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-10-24')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-09-10',
+      earliestDelivDate: '2025-10-24',
+      latestDelivDate: '2025-10-24',
+    ),
+    '2026|Maybach S 680 4M|197|515': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 680 4M',
+      colour: '197',
+      trim: '515',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-09-02',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|Maybach S 680 4M|992|515': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach S 680 4M',
+      colour: '992',
+      trim: '515',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-11-04', delivDate: '2025-12-18')
+      ],
+      earliestProdDate: '2025-11-04',
+      latestProdDate: '2025-11-04',
+      earliestDelivDate: '2025-12-18',
+      latestDelivDate: '2025-12-18',
+    ),
+    '2026|Maybach SL 680 Monogram Series|659|509': ShipmentInfo(
+      my: '2026',
+      model: 'Maybach SL 680 Monogram Series',
+      colour: '659',
+      trim: '509',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-12-02', delivDate: '2026-03-02'),
+        ShipmentDetailPair(prodDate: '2025-12-05', delivDate: '2026-03-02')
+      ],
+      earliestProdDate: '2025-10-02',
+      latestProdDate: '2025-12-05',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2026-03-02',
+    ),
+    '2026|S 350 d 4MATIC|197|204': ShipmentInfo(
+      my: '2026',
+      model: 'S 350 d 4MATIC',
+      colour: '197',
+      trim: '204',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-10',
+      latestProdDate: '2025-09-16',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 350 d 4MATIC|831|204': ShipmentInfo(
+      my: '2026',
+      model: 'S 350 d 4MATIC',
+      colour: '831',
+      trim: '204',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-09-15',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|S 350 d 4MATIC|885|204': ShipmentInfo(
+      my: '2026',
+      model: 'S 350 d 4MATIC',
+      colour: '885',
+      trim: '204',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-15',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 450 4M SWB|197|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4M SWB',
+      colour: '197',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-15', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-25', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-26', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-03',
+      latestProdDate: '2025-09-26',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 450 4M SWB|197|805': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4M SWB',
+      colour: '197',
+      trim: '805',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-18', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-24', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-09-24',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 450 4M SWB|885|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4M SWB',
+      colour: '885',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-20', delivDate: '2025-12-03')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-10-20',
+      earliestDelivDate: '2025-12-03',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 450 4M SWB|885|805': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4M SWB',
+      colour: '885',
+      trim: '805',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-09-19',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 450 4MATIC L|197|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4MATIC L',
+      colour: '197',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-02', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-09', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-10', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-11-14'),
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-15', delivDate: '2025-11-28')
+      ],
+      earliestProdDate: '2025-09-02',
+      latestProdDate: '2025-10-15',
+      earliestDelivDate: '2025-11-14',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 450 4MATIC L|197|805': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4MATIC L',
+      colour: '197',
+      trim: '805',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-08', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-09-03',
+      latestProdDate: '2025-09-12',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|S 450 4MATIC L|831|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4MATIC L',
+      colour: '831',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-03', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-03',
+      latestProdDate: '2025-09-17',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 450 4MATIC L|885|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4MATIC L',
+      colour: '885',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-12', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-17', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-02', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-09-11',
+      latestProdDate: '2025-10-02',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 450 4MATIC L|885|805': ShipmentInfo(
+      my: '2026',
+      model: 'S 450 4MATIC L',
+      colour: '885',
+      trim: '805',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-23', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-23',
+      latestProdDate: '2025-09-23',
+      earliestDelivDate: '2025-12-22',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 500 4MATIC L|197|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 500 4MATIC L',
+      colour: '197',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-06-13', delivDate: '2025-08-29'),
+        ShipmentDetailPair(prodDate: '2025-09-16', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-30', delivDate: '2025-12-21'),
+        ShipmentDetailPair(prodDate: '2025-10-08', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22'),
+        ShipmentDetailPair(prodDate: '2025-10-10', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-06-13',
+      latestProdDate: '2025-10-10',
+      earliestDelivDate: '2025-08-29',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 500 4MATIC L|197|805': ShipmentInfo(
+      my: '2026',
+      model: 'S 500 4MATIC L',
+      colour: '197',
+      trim: '805',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 500 4MATIC L|885|804': ShipmentInfo(
+      my: '2026',
+      model: 'S 500 4MATIC L',
+      colour: '885',
+      trim: '804',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-01', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-01',
+      latestProdDate: '2025-10-01',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 580 4MATIC L|197|501': ShipmentInfo(
+      my: '2026',
+      model: 'S 580 4MATIC L',
+      colour: '197',
+      trim: '501',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-09-19', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-10-07', delivDate: '2025-12-22')
+      ],
+      earliestProdDate: '2025-09-19',
+      latestProdDate: '2025-10-07',
+      earliestDelivDate: '2025-12-08',
+      latestDelivDate: '2025-12-22',
+    ),
+    '2026|S 580 4MATIC L|197|504': ShipmentInfo(
+      my: '2026',
+      model: 'S 580 4MATIC L',
+      colour: '197',
+      trim: '504',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-08-28', delivDate: '2025-11-07'),
+        ShipmentDetailPair(prodDate: '2025-09-11', delivDate: '2025-12-08'),
+        ShipmentDetailPair(prodDate: '2025-09-29', delivDate: '2025-12-08')
+      ],
+      earliestProdDate: '2025-08-28',
+      latestProdDate: '2025-09-29',
+      earliestDelivDate: '2025-11-07',
+      latestDelivDate: '2025-12-08',
+    ),
+    '2026|S 580 4MATIC L|197|507': ShipmentInfo(
+      my: '2026',
+      model: 'S 580 4MATIC L',
+      colour: '197',
+      trim: '507',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-10-06', delivDate: '2025-12-21')
+      ],
+      earliestProdDate: '2025-10-06',
+      latestProdDate: '2025-10-06',
+      earliestDelivDate: '2025-12-21',
+      latestDelivDate: '2025-12-21',
+    ),
+    '2026|S 580 4MATIC L|885|505': ShipmentInfo(
+      my: '2026',
+      model: 'S 580 4MATIC L',
+      colour: '885',
+      trim: '505',
+      details: [
+        ShipmentDetailPair(prodDate: '2025-08-27', delivDate: '2025-11-17')
+      ],
+      earliestProdDate: '2025-08-27',
+      latestProdDate: '2025-08-27',
+      earliestDelivDate: '2025-11-17',
+      latestDelivDate: '2025-11-17',
+    ),
+  };
 
-  const ShipmentDetailPair({
-    required this.prodDate,
-    required this.delivDate,
-  });
+  static ShipmentInfo? getShipment(String my, String model, String colour, String trim) {
+    String key = '$my|$model|$colour|$trim';
+    return shipments[key];
+  }
 }

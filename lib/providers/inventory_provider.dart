@@ -193,7 +193,7 @@ class InventoryProvider with ChangeNotifier {
           _items = _excelService.applyEmbeddedShipmentData(_items);
           
           // 입항일정 파일명을 내장 데이터로 업데이트
-          _shipmentFileName = '내장 데이터 (331개 조합)';
+          _shipmentFileName = '내장 데이터 (298개 조합)';
           
           // 변경사항 저장
           await _saveData();
@@ -252,7 +252,7 @@ class InventoryProvider with ChangeNotifier {
       _inventoryFileDate = _excelService.extractDateFromFilename(fileName);
       
       // 입항일정 내장 데이터 사용 (파일명 설정)
-      _shipmentFileName = '내장 데이터 (331개 조합)';
+      _shipmentFileName = '내장 데이터 (298개 조합)';
       
       await _saveData(); // 데이터 저장
       notifyListeners();
