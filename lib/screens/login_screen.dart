@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../services/auth_service.dart';
 import 'signup_screen.dart';
 import 'home_screen.dart';
+import 'forgot_password_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -330,7 +331,30 @@ class _LoginScreenState extends State<LoginScreen> {
                             return null;
                           },
                         ),
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 8),
+
+                        // 비밀번호 찾기 링크
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ForgotPasswordScreen(),
+                                ),
+                              );
+                            },
+                            child: Text(
+                              '비밀번호를 잊으셨나요?',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.blue[700],
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 16),
 
                         // 로그인 버튼
                         ElevatedButton(

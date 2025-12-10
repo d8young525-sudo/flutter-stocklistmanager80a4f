@@ -309,4 +309,51 @@ class AuthService {
       throw Exception('사용자 승인 취소 중 오류가 발생했습니다: $e');
     }
   }
+
+  // 비밀번호 재설정 이메일 전송
+  Future<Map<String, dynamic>> sendPasswordResetEmail({
+    required String email,
+  }) async {
+    try {
+      // 이메일 형식 검증
+      if (!email.contains('@')) {
+        return {
+          'success': false,
+          'message': '올바른 이메일 형식이 아닙니다.',
+        };
+      }
+
+      // Firebase Authentication 비밀번호 재설정 이메일 전송
+      await _auth.sendPasswordResetEmail(email: email);
+
+      return {
+        'success': true,
+        'message': '비밀번호 재설정 링크가 이메일로 전송되었습니다.\n이메일을 확인해주세요.',
+      };
+    } on FirebaseAuthException catch (e) {
+      String message;
+      switch (e.code) {
+        case 'user-not-found':
+          message = '등록되지 않은 이메일입니다.';
+          break;
+        case 'invalid-email':
+          message = '올바른 이메일 형식이 아닙니다.';
+          break;
+        case 'too-many-requests':
+          message = '요청이 너무 많습니다. 잠시 후 다시 시도해주세요.';
+          break;
+        default:
+          message = '비밀번호 재설정 이메일 전송 중 오류가 발생했습니다: ${e.message}';
+      }
+      return {
+        'success': false,
+        'message': message,
+      };
+    } catch (e) {
+      return {
+        'success': false,
+        'message': '비밀번호 재설정 이메일 전송 중 오류가 발생했습니다: $e',
+      };
+    }
+  }
 }
