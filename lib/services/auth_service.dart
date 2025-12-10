@@ -43,11 +43,40 @@ class AuthService {
       );
 
       // Firestore에 사용자 정보 저장 (approved: false로 초기 설정)
-      await _firestore.collection('users').doc(userCredential.user!.uid).set({
-        'email': email,
-        'approved': false, // 관리자 승인 대기 상태
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+      try {
+        await _firestore.collection('users').doc(userCredential.user!.uid).set({
+          'email': email,
+          'approved': false, // 관리자 승인 대기 상태
+          'createdAt': FieldValue.serverTimestamp(),
+          'signupMethod': 'email', // 가입 방법 기록
+        });
+        
+        if (kDebugMode) {
+          print('✅ Firestore 사용자 문서 생성 완료');
+        }
+      } catch (firestoreError) {
+        // Firestore 저장 실패 시 Authentication 계정도 삭제 (롤백)
+        if (kDebugMode) {
+          print('❌ Firestore 저장 실패: $firestoreError');
+          print('🔄 Authentication 계정 롤백 시작...');
+        }
+        
+        try {
+          await userCredential.user?.delete();
+          if (kDebugMode) {
+            print('✅ Authentication 계정 삭제 완료 (롤백)');
+          }
+        } catch (deleteError) {
+          if (kDebugMode) {
+            print('❌ 계정 삭제 실패: $deleteError');
+          }
+        }
+        
+        return {
+          'success': false,
+          'message': '회원가입 중 오류가 발생했습니다. 다시 시도해주세요.',
+        };
+      }
 
       // 자동 로그아웃 (승인 전까지 로그인 불가)
       await _auth.signOut();
@@ -100,12 +129,41 @@ class AuthService {
       // Firestore에서 사용자 승인 상태 확인
       DocumentSnapshot userDoc = await _firestore.collection('users').doc(uid).get();
 
+      // 🔄 Firestore 문서가 없으면 자동 생성 (Authentication ↔ Firestore 동기화)
       if (!userDoc.exists) {
-        await _auth.signOut();
-        return {
-          'success': false,
-          'message': '사용자 정보를 찾을 수 없습니다.',
-        };
+        if (kDebugMode) {
+          print('⚠️ Firestore 문서 없음 - 자동 생성 시작');
+        }
+        
+        try {
+          // Firestore에 사용자 문서 자동 생성
+          await _firestore.collection('users').doc(uid).set({
+            'email': email,
+            'approved': false, // 기본값: 관리자 승인 필요
+            'createdAt': FieldValue.serverTimestamp(),
+            'syncedFromAuth': true, // 자동 생성 표시
+          });
+          
+          if (kDebugMode) {
+            print('✅ Firestore 문서 자동 생성 완료');
+          }
+          
+          await _auth.signOut();
+          return {
+            'success': false,
+            'message': '계정이 동기화되었습니다. 관리자 승인 후 로그인할 수 있습니다.',
+          };
+        } catch (e) {
+          if (kDebugMode) {
+            print('❌ Firestore 문서 생성 실패: $e');
+          }
+          
+          await _auth.signOut();
+          return {
+            'success': false,
+            'message': '사용자 정보 동기화 중 오류가 발생했습니다. 관리자에게 문의해주세요.',
+          };
+        }
       }
 
       Map<String, dynamic> userData = userDoc.data() as Map<String, dynamic>;
