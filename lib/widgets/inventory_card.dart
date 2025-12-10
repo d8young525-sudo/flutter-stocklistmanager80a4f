@@ -83,28 +83,36 @@ class _InventoryCardState extends State<InventoryCard> {
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
                                       ),
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
-                                  if (widget.item.price != null)
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 10,
-                                        vertical: 4,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: Colors.green[50],
-                                        borderRadius: BorderRadius.circular(6),
-                                        border: Border.all(color: Colors.green[200]!),
-                                      ),
-                                      child: Text(
-                                        widget.item.formattedPrice,
-                                        style: TextStyle(
-                                          color: Colors.green[700],
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
+                                  if (widget.item.price != null) ...[
+                                    const SizedBox(width: 8),
+                                    Flexible(
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 4,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: Colors.green[50],
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(color: Colors.green[200]!),
+                                        ),
+                                        child: Text(
+                                          widget.item.formattedPrice,
+                                          style: TextStyle(
+                                            color: Colors.green[700],
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 13,
+                                          ),
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
                                         ),
                                       ),
                                     ),
+                                  ],
                                 ],
                               ),
                             ],
