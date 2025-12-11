@@ -1047,7 +1047,7 @@ class _FileUploadDialogState extends State<FileUploadDialog> {
 
       FilePickerResult? result = await FilePicker.platform.pickFiles(
         type: FileType.custom,
-        allowedExtensions: ['xlsx', 'xls'],
+        allowedExtensions: ['xlsx', 'xls', 'xlsb'],
       );
 
       if (result != null && result.files.single.bytes != null) {
