@@ -1,11 +1,61 @@
 import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:spreadsheet_decoder/spreadsheet_decoder.dart';
+import 'package:http/http.dart' as http;
 import '../models/inventory_item.dart';
 import '../models/price_data.dart';
 import '../models/shipment_data.dart';
 
 class ExcelService {
+  // .xlsb 파일을 .xlsx로 변환하는 API 엔드포인트
+  // 개발 환경: localhost:5061
+  // 프로덕션 환경: 동일 도메인의 변환 서버
+  String get _converterApiUrl {
+    if (kDebugMode) {
+      return 'http://localhost:5061/convert';
+    }
+    // 프로덕션에서는 동일 도메인 사용 (Firebase Hosting + Cloud Functions)
+    return '/api/convert-xlsb';
+  }
+  
+  /// .xlsb 파일을 .xlsx로 자동 변환
+  /// 
+  /// [xlsbBytes]: .xlsb 파일의 바이너리 데이터
+  /// Returns: 변환된 .xlsx 파일의 바이너리 데이터
+  Future<Uint8List> _convertXlsbToXlsx(Uint8List xlsbBytes) async {
+    try {
+      if (kDebugMode) {
+        debugPrint('🔄 .xlsb → .xlsx 변환 시작 (파일 크기: ${xlsbBytes.length} bytes)');
+      }
+      
+      final response = await http.post(
+        Uri.parse(_converterApiUrl),
+        headers: {
+          'Content-Type': 'application/octet-stream',
+        },
+        body: xlsbBytes,
+      ).timeout(const Duration(seconds: 30));
+      
+      if (response.statusCode == 200) {
+        if (kDebugMode) {
+          debugPrint('✅ .xlsb → .xlsx 변환 완료 (결과 크기: ${response.bodyBytes.length} bytes)');
+        }
+        return response.bodyBytes;
+      } else {
+        throw Exception('변환 서버 응답 오류: ${response.statusCode}');
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('❌ .xlsb 변환 실패: $e');
+      }
+      throw Exception('파일 변환 중 오류가 발생했습니다: $e');
+    }
+  }
+
+  /// 파일명에서 확장자 확인
+  bool _isXlsbFile(String fileName) {
+    return fileName.toLowerCase().endsWith('.xlsb');
+  }
   // 재고현황표 파일명에서 날짜 추출
   String? extractDateFromFilename(String filename) {
     final datePattern = RegExp(r'(\d{4})[-_]?(\d{2})[-_]?(\d{2})');
@@ -115,11 +165,20 @@ class ExcelService {
     return columnIndex;
   }
 
-  // 재고현황표 파싱
+  // 재고현황표 파싱 (.xlsb 자동 변환 지원)
   Future<Map<String, InventoryItem>> parseInventoryFile(
     Uint8List bytes,
     Map<String, InventoryItem> existingItems,
+    {String? fileName}
   ) async {
+    // .xlsb 파일인 경우 자동 변환
+    Uint8List processedBytes = bytes;
+    if (fileName != null && _isXlsbFile(fileName)) {
+      if (kDebugMode) {
+        debugPrint('📦 .xlsb 파일 감지 - 자동 변환 시작');
+      }
+      processedBytes = await _convertXlsbToXlsx(bytes);
+    }
     // ✅ 재고 데이터 초기화 (중복 카운팅 방지)
     // 기존 아이템의 입항일정/가격 정보는 유지하되, 재고 카운터는 0으로 리셋
     Map<String, InventoryItem> items = {};
@@ -150,7 +209,7 @@ class ExcelService {
     }
     
     try {
-      var decoder = SpreadsheetDecoder.decodeBytes(bytes);
+      var decoder = SpreadsheetDecoder.decodeBytes(processedBytes);
       
       // allocation 시트
       try {
@@ -285,11 +344,21 @@ class ExcelService {
     }
   }
 
-  // 입항일정표 파싱
+  // 입항일정표 파싱 (.xlsb 자동 변환 지원)
   Future<Map<String, InventoryItem>> parseShipmentFile(
     Uint8List bytes,
     Map<String, InventoryItem> existingItems,
+    {String? fileName}
   ) async {
+    // .xlsb 파일인 경우 자동 변환
+    Uint8List processedBytes = bytes;
+    if (fileName != null && _isXlsbFile(fileName)) {
+      if (kDebugMode) {
+        debugPrint('📦 .xlsb 파일 감지 - 자동 변환 시작');
+      }
+      processedBytes = await _convertXlsbToXlsx(bytes);
+    }
+    
     Map<String, InventoryItem> items = Map.from(existingItems);
     
     try {
@@ -297,7 +366,7 @@ class ExcelService {
         debugPrint('🚢 입항일정표 파싱 시작...');
       }
       
-      var decoder = SpreadsheetDecoder.decodeBytes(bytes);
+      var decoder = SpreadsheetDecoder.decodeBytes(processedBytes);
 
       SpreadsheetTable? sheet1;
       if (decoder.tables.containsKey('Sheet 1')) {
@@ -528,15 +597,25 @@ class ExcelService {
     }
   }
 
-  // 가격표 파싱
+  // 가격표 파싱 (.xlsb 자동 변환 지원)
   Future<Map<String, InventoryItem>> parsePriceFile(
     Uint8List bytes,
     Map<String, InventoryItem> existingItems,
+    {String? fileName}
   ) async {
+    // .xlsb 파일인 경우 자동 변환
+    Uint8List processedBytes = bytes;
+    if (fileName != null && _isXlsbFile(fileName)) {
+      if (kDebugMode) {
+        debugPrint('📦 .xlsb 파일 감지 - 자동 변환 시작');
+      }
+      processedBytes = await _convertXlsbToXlsx(bytes);
+    }
+    
     Map<String, InventoryItem> items = Map.from(existingItems);
     
     try {
-      var decoder = SpreadsheetDecoder.decodeBytes(bytes);
+      var decoder = SpreadsheetDecoder.decodeBytes(processedBytes);
 
       SpreadsheetTable? priceTable;
       if (decoder.tables.containsKey('PRICECHART')) {

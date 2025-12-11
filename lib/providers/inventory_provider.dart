@@ -243,20 +243,8 @@ class InventoryProvider with ChangeNotifier {
   // 재고현황표 업로드
   Future<void> uploadInventoryFile(Uint8List bytes, String fileName) async {
     try {
-      // .xlsb 파일 형식 체크
-      if (fileName.toLowerCase().endsWith('.xlsb')) {
-        throw Exception(
-          '.xlsb 파일은 지원되지 않습니다.\n\n'
-          '📋 해결 방법:\n'
-          '1. Excel에서 파일 열기\n'
-          '2. "다른 이름으로 저장" 선택\n'
-          '3. 파일 형식을 "Excel 통합 문서 (*.xlsx)"로 선택\n'
-          '4. 저장 후 다시 업로드\n\n'
-          '💡 .xlsb는 바이너리 형식으로, .xlsx 변환 후 사용 가능합니다.'
-        );
-      }
-      
-      _items = await _excelService.parseInventoryFile(bytes, _items);
+      // ExcelService에서 .xlsb 파일을 자동으로 .xlsx로 변환
+      _items = await _excelService.parseInventoryFile(bytes, _items, fileName: fileName);
       
       // 재고현황표 업로드 후 자동으로 내장 입항일정 데이터 적용
       _items = _excelService.applyEmbeddedShipmentData(_items);
@@ -277,20 +265,8 @@ class InventoryProvider with ChangeNotifier {
   // 입항일정표 업로드
   Future<void> uploadShipmentFile(Uint8List bytes, String fileName) async {
     try {
-      // .xlsb 파일 형식 체크
-      if (fileName.toLowerCase().endsWith('.xlsb')) {
-        throw Exception(
-          '.xlsb 파일은 지원되지 않습니다.\n\n'
-          '📋 해결 방법:\n'
-          '1. Excel에서 파일 열기\n'
-          '2. "다른 이름으로 저장" 선택\n'
-          '3. 파일 형식을 "Excel 통합 문서 (*.xlsx)"로 선택\n'
-          '4. 저장 후 다시 업로드\n\n'
-          '💡 .xlsb는 바이너리 형식으로, .xlsx 변환 후 사용 가능합니다.'
-        );
-      }
-      
-      _items = await _excelService.parseShipmentFile(bytes, _items);
+      // ExcelService에서 .xlsb 파일을 자동으로 .xlsx로 변환
+      _items = await _excelService.parseShipmentFile(bytes, _items, fileName: fileName);
       _shipmentFileName = fileName;
       await _saveData(); // 데이터 저장
       notifyListeners();
@@ -302,20 +278,8 @@ class InventoryProvider with ChangeNotifier {
   // 가격표 업로드
   Future<void> uploadPriceFile(Uint8List bytes, String fileName) async {
     try {
-      // .xlsb 파일 형식 체크
-      if (fileName.toLowerCase().endsWith('.xlsb')) {
-        throw Exception(
-          '.xlsb 파일은 지원되지 않습니다.\n\n'
-          '📋 해결 방법:\n'
-          '1. Excel에서 파일 열기\n'
-          '2. "다른 이름으로 저장" 선택\n'
-          '3. 파일 형식을 "Excel 통합 문서 (*.xlsx)"로 선택\n'
-          '4. 저장 후 다시 업로드\n\n'
-          '💡 .xlsb는 바이너리 형식으로, .xlsx 변환 후 사용 가능합니다.'
-        );
-      }
-      
-      _items = await _excelService.parsePriceFile(bytes, _items);
+      // ExcelService에서 .xlsb 파일을 자동으로 .xlsx로 변환
+      _items = await _excelService.parsePriceFile(bytes, _items, fileName: fileName);
       _priceFileName = fileName;
       await _saveData(); // 데이터 저장
       notifyListeners();
