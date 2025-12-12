@@ -8,18 +8,10 @@ import '../models/shipment_data.dart';
 
 class ExcelService {
   // .xlsb 파일을 .xlsx로 변환하는 API 엔드포인트
-  // 개발 환경: localhost:5061
   // 프로덕션 환경: Firebase Cloud Functions (asia-northeast3 서울 리전)
   String get _converterApiUrl {
-    // 🔧 미리보기 테스트용: 항상 localhost 사용
-    // TODO: Firebase 배포 전에 이 줄을 주석 처리하고 아래 조건문 활성화
-    return 'http://localhost:5061/convert';
-    
-    // 프로덕션 배포용 (현재 주석 처리됨)
-    // if (kDebugMode) {
-    //   return 'http://localhost:5061/convert';
-    // }
-    // return 'https://asia-northeast3-stocklistmanager-80a4f.cloudfunctions.net/convertXlsb';
+    // 프로덕션 URL 사용
+    return 'https://asia-northeast3-stocklistmanager-80a4f.cloudfunctions.net/convertXlsb';
   }
   
   /// .xlsb 파일을 .xlsx로 자동 변환
