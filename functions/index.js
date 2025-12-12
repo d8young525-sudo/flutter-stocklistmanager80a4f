@@ -101,8 +101,9 @@ exports.health = functions
     res.status(200).json({
       status: 'ok',
       service: 'xlsb-converter',
-      version: '2.0.0',
-      runtime: 'nodejs',
+      version: '3.6.0',
+      apiVersion: '2.0.0',
+      runtime: 'nodejs20',
       library: 'xlsx (SheetJS)',
       timestamp: new Date().toISOString()
     });

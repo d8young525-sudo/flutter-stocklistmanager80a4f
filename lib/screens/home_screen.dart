@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.5 업데이트',
+                '버전 3.6 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,8 +237,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
-              _buildPatchItem('📦', 'v3.5.7: .xlsb 파일 지원 (2024.12.11 업데이트)', 
-                '.xlsb 형식의 엑셀 파일도 .xlsx처럼 바로 업로드 가능합니다! 변환 시 2-5초 정도 소요될 수 있습니다. 불편하시면 Excel에서 직접 .xlsx로 저장하여 기존처럼 사용하시면 됩니다.'),
+              _buildPatchItem('🚀', 'v3.6.0: .xlsb 변환 성능 대폭 개선! (2024.12.11)', 
+                '.xlsb 파일 변환 속도가 37초 → 2-5초로 획기적으로 빨라졌습니다! Node.js 네이티브 라이브러리(SheetJS)를 사용하여 더욱 안정적이고 빠른 변환을 제공합니다.'),
+              _buildPatchItem('📦', 'v3.5.7: .xlsb 파일 지원 (2024.12.11)', 
+                '.xlsb 형식의 엑셀 파일도 .xlsx처럼 바로 업로드 가능합니다! Excel에서 .xlsx로 직접 저장할 필요 없이 바로 업로드하세요.'),
               _buildPatchItem('🔐', 'v3.5.5: 비밀번호 찾기 기능 (2024.11.18 추가)', 
                 '비밀번호를 잊어버리셨나요? 로그인 화면에서 "비밀번호를 잊으셨나요?" 클릭 → 계정 이메일 주소 입력 → 비밀번호 재설정 링크를 메일로 받아보실 수 있습니다.'),
               _buildPatchItem('🚢', '입항일정표 내장 적용 (2024.11.18 업데이트)', 
@@ -560,7 +562,28 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text('재고 관리 시스템'),
+        title: Row(
+          children: [
+            const Text('재고 관리 시스템'),
+            const SizedBox(width: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.white.withOpacity(0.3)),
+              ),
+              child: const Text(
+                'v3.6.0',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
+        ),
         backgroundColor: Colors.blue[700],
         foregroundColor: Colors.white,
         elevation: 0,
