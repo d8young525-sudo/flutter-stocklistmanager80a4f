@@ -533,7 +533,7 @@ class ExcelService {
         InventoryItem item = entry.value;
         
         // ShipmentData에서 입항일정 조회
-        ShipmentInfo? shipmentInfo = ShipmentData.getShipment(
+        ShipmentDetailPair? shipmentInfo = ShipmentData.getShipment(
           item.my,
           item.model,
           item.color,
@@ -543,17 +543,15 @@ class ExcelService {
         if (shipmentInfo != null) {
           matchedCount++;
           
-          // 입항일정 상세 정보 추가 (각 생산일-입항일 쌍)
-          for (var detailPair in shipmentInfo.details) {
-            item.shipmentDetails.add(ShipmentDetail(
-              model: item.model,
-              modelYear: item.my,
-              colour: item.color,
-              trim: item.trim,
-              prodDate: detailPair.prodDate,
-              planDelivDate: detailPair.delivDate,
-            ));
-          }
+          // 입항일정 상세 정보 추가 (단일 날짜 범위)
+          item.shipmentDetails.add(ShipmentDetail(
+            model: item.model,
+            modelYear: item.my,
+            colour: item.color,
+            trim: item.trim,
+            prodDate: shipmentInfo.earliestProdDate,
+            planDelivDate: shipmentInfo.earliestDelivDate,
+          ));
           
           // 최소/최대 날짜 업데이트
           item.earliestProdDate = shipmentInfo.earliestProdDate.isNotEmpty 

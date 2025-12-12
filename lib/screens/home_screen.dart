@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.6 업데이트',
+                '버전 3.7 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,6 +237,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
+              _buildPatchItem('📅', 'v3.7.0: 입항일정표 최신 업데이트', 
+                '2025년 3월 ~ 2026년 1월 생산분 최신 입항일정이 반영되었습니다! 재고현황표 업로드 시 자동으로 최신 입항일정이 표시됩니다.'),
               _buildPatchItem('🚀', 'v3.6.0: .xlsb 변환 성능 대폭 개선!', 
                 '.xlsb 파일 변환 속도가 37초 → 2-5초로 획기적으로 빨라졌습니다! Node.js 네이티브 라이브러리(SheetJS)를 사용하여 더욱 안정적이고 빠른 변환을 제공합니다.'),
               _buildPatchItem('📦', 'v3.5.7: .xlsb 파일 지원', 
@@ -562,28 +564,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: Row(
-          children: [
-            const Text('재고 관리 시스템'),
-            const SizedBox(width: 12),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.white.withOpacity(0.3)),
-              ),
-              child: const Text(
-                'v3.6.0',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ],
-        ),
+        title: const Text('재고 관리 시스템'),
         backgroundColor: Colors.blue[700],
         foregroundColor: Colors.white,
         elevation: 0,

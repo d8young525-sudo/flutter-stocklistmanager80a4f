@@ -39,6 +39,12 @@ class SessionService {
         return;
       }
 
+      // 🔥 로그인 상태가 아니면 세션 검증 중지
+      if (!user.emailVerified && user.email != null) {
+        // 이메일 미인증 사용자는 세션 검증 스킵
+        return;
+      }
+
       // ignore: avoid_print
       print('🔍 [세션검증] 시작 - UID: ${user.uid.substring(0, 8)}...');
 
