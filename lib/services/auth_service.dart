@@ -136,22 +136,23 @@ class AuthService {
         }
         
         try {
-          // Firestore에 사용자 문서 자동 생성
+          // Firestore에 사용자 문서 자동 생성 (복구 로직)
           await _firestore.collection('users').doc(uid).set({
             'email': email,
             'approved': false, // 기본값: 관리자 승인 필요
             'createdAt': FieldValue.serverTimestamp(),
             'syncedFromAuth': true, // 자동 생성 표시
+            'signupMethod': 'recovery', // 복구된 계정임 표시
           });
           
           if (kDebugMode) {
-            print('✅ Firestore 문서 자동 생성 완료');
+            print('✅ Firestore 문서 자동 생성 완료 (계정 복구)');
           }
           
           await _auth.signOut();
           return {
             'success': false,
-            'message': '계정이 동기화되었습니다. 관리자 승인 후 로그인할 수 있습니다.',
+            'message': '회원 정보가 누락되어 복구했습니다. 관리자 승인을 기다려주세요.',
           };
         } catch (e) {
           if (kDebugMode) {
@@ -161,7 +162,7 @@ class AuthService {
           await _auth.signOut();
           return {
             'success': false,
-            'message': '사용자 정보 동기화 중 오류가 발생했습니다. 관리자에게 문의해주세요.',
+            'message': '계정 복구 실패 (DB 접근 거부). 관리자에게 문의하세요.\n(Error: $e)',
           };
         }
       }
