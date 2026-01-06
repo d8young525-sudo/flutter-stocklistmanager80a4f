@@ -74,7 +74,7 @@ class AuthService {
         
         return {
           'success': false,
-          'message': '회원가입 중 오류가 발생했습니다. 다시 시도해주세요.',
+          'message': '회원가입 실패 (Firestore): $firestoreError',
         };
       }
 
