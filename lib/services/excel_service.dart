@@ -543,29 +543,49 @@ class ExcelService {
         if (shipmentInfo != null) {
           matchedCount++;
           
-          // 입항일정 상세 정보 추가 (단일 날짜 범위)
-          item.shipmentDetails.add(ShipmentDetail(
-            model: item.model,
-            modelYear: item.my,
-            colour: item.color,
-            trim: item.trim,
-            prodDate: shipmentInfo.earliestProdDate,
-            planDelivDate: shipmentInfo.earliestDelivDate,
-          ));
+          // 입항일정 리스트 처리
+          // prodDates와 delivDates의 길이는 동일하다고 가정 (Python 스크립트에서 보장)
+          int count = shipmentInfo.prodDates.length;
+          
+          for (int i = 0; i < count; i++) {
+            String pDate = i < shipmentInfo.prodDates.length ? shipmentInfo.prodDates[i] : '';
+            String dDate = i < shipmentInfo.delivDates.length ? shipmentInfo.delivDates[i] : '';
+            
+            if (pDate.isEmpty && dDate.isEmpty) continue;
+            
+            item.shipmentDetails.add(ShipmentDetail(
+              model: item.model,
+              modelYear: item.my,
+              colour: item.color,
+              trim: item.trim,
+              prodDate: pDate,
+              planDelivDate: dDate,
+            ));
+          }
           
           // 최소/최대 날짜 업데이트
-          item.earliestProdDate = shipmentInfo.earliestProdDate.isNotEmpty 
-              ? shipmentInfo.earliestProdDate 
-              : null;
-          item.latestProdDate = shipmentInfo.latestProdDate.isNotEmpty 
-              ? shipmentInfo.latestProdDate 
-              : null;
-          item.earliestDelivDate = shipmentInfo.earliestDelivDate.isNotEmpty 
-              ? shipmentInfo.earliestDelivDate 
-              : null;
-          item.latestDelivDate = shipmentInfo.latestDelivDate.isNotEmpty 
-              ? shipmentInfo.latestDelivDate 
-              : null;
+          // 리스트가 이미 정렬되어 있다고 가정하면 첫번째가 최소, 마지막이 최대
+          // 하지만 안전을 위해 리스트에서 직접 찾음
+          List<String> validProdDates = shipmentInfo.prodDates.where((d) => d.isNotEmpty).toList();
+          List<String> validDelivDates = shipmentInfo.delivDates.where((d) => d.isNotEmpty).toList();
+          
+          if (validProdDates.isNotEmpty) {
+            validProdDates.sort();
+            item.earliestProdDate = validProdDates.first;
+            item.latestProdDate = validProdDates.last;
+          } else {
+            item.earliestProdDate = null;
+            item.latestProdDate = null;
+          }
+          
+          if (validDelivDates.isNotEmpty) {
+            validDelivDates.sort();
+            item.earliestDelivDate = validDelivDates.first;
+            item.latestDelivDate = validDelivDates.last;
+          } else {
+            item.earliestDelivDate = null;
+            item.latestDelivDate = null;
+          }
           
           if (kDebugMode && matchedCount <= 5) {
             debugPrint('✅ 입항일정 매칭: ${item.model} (${item.my}) - Prod: ${item.earliestProdDate} ~ ${item.latestProdDate}');
