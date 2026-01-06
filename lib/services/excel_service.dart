@@ -534,8 +534,8 @@ class ExcelService {
         
         // ShipmentData에서 입항일정 조회
         ShipmentDetailPair? shipmentInfo = ShipmentData.getShipment(
-          item.my,
           item.model,
+          item.my,
           item.color,
           item.trim,
         );
