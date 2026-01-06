@@ -1,9 +1,16 @@
 import pandas as pd
 import os
+import sys
 
-# 파일 경로 설정
-excel_path = '../../uploaded_files/수정본 2 Enquiries_20251223_25.03월~26.01월_생산분.xlsx'
+# 기본 경로 설정 (인자가 없으면 기본값 사용)
+default_excel_path = '../../uploaded_files/수정본 2 Enquiries_20251223_25.03월~26.01월_생산분.xlsx'
 output_path = '../lib/models/shipment_data.dart'
+
+# 커맨드라인 인자로 파일 경로 받기
+if len(sys.argv) > 1:
+    excel_path = sys.argv[1]
+else:
+    excel_path = default_excel_path
 
 def clean_date(date_val):
     if pd.isna(date_val):
