@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDHrEq_bBDe902iRX_qXqMfQd-UgpqnGPo',
+    apiKey: 'AIzaSyBTbzpNQ3oXAElb7Tbmk1stNB8XItz3SfI',
     appId: '1:407357129583:web:a5347a29e7483a04729e9a',
     messagingSenderId: '407357129583',
     projectId: 'stocklistmanager-80a4f',

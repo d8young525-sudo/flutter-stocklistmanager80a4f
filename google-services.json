@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "407357129583",
+    "firebase_url": "https://stocklistmanager-80a4f-default-rtdb.firebaseio.com",
     "project_id": "stocklistmanager-80a4f",
     "storage_bucket": "stocklistmanager-80a4f.firebasestorage.app"
   },
