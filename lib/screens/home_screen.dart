@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '버전 3.7 업데이트',
+                '버전 3.7.1 업데이트',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -237,8 +237,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16),
+              _buildPatchItem('🛠️', 'v3.7.1: 회원가입 오류 수정', 
+                '회원가입 시 간헐적으로 발생하던 오류를 수정했습니다. 이제 정상적으로 가입이 가능합니다.'),
               _buildPatchItem('📅', 'v3.7.0: 입항일정표 최신 업데이트', 
-                '2025년 3월 ~ 2026년 1월 생산분 최신 입항일정이 반영되었습니다! 재고현황표 업로드 시 자동으로 최신 입항일정이 표시됩니다.'),
+                '2025년 3월 ~ 2026년 1월 생산분 최신 입항일정이 반영되었습니다! (총 249개 조합 반영)'),
               _buildPatchItem('🚀', 'v3.6.0: .xlsb 변환 성능 대폭 개선!', 
                 '.xlsb 파일 변환 속도가 37초 → 2-5초로 획기적으로 빨라졌습니다! Node.js 네이티브 라이브러리(SheetJS)를 사용하여 더욱 안정적이고 빠른 변환을 제공합니다.'),
               _buildPatchItem('📦', 'v3.5.7: .xlsb 파일 지원', 
